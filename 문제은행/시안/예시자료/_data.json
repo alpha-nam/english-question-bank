@@ -1,0 +1,190 @@
+[
+ {
+  "id": "2099.09-18",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 18,
+  "type": "글의 목적 파악",
+  "pts": 2,
+  "ans": "②",
+  "top": null,
+  "stem": "다음 글의 목적으로 가장 적절한 것은?",
+  "body": "Dear Ms. Rivera, Our community garden club will hold its first seed exchange next Saturday at the old library hall. Since you have grown rare tomatoes for years, we would be honored if you could share a few seeds and a short story about how you keep them healthy. Please let me know by Wednesday whether you can join us. Warm regards, Daniel Ortiz",
+  "ch": [
+   "정원 가꾸기 강좌를 홍보하려고",
+   "씨앗 나눔 행사 참여를 부탁하려고",
+   "도서관 대관 일정을 변경하려고",
+   "토마토 재배 방법을 문의하려고",
+   "동호회 회비 납부를 안내하려고"
+  ],
+  "img": "",
+  "topic": "씨앗 나눔 행사 참여 부탁",
+  "fake": true
+ },
+ {
+  "id": "2099.09-22",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 22,
+  "type": "요지 파악",
+  "pts": 2,
+  "ans": "④",
+  "top": {
+   "rank": 9,
+   "wr": 46.0,
+   "sel": [
+    6.1,
+    10.2,
+    21.7,
+    54.0,
+    8.0
+   ]
+  },
+  "stem": "다음 글의 요지로 가장 적절한 것은?",
+  "body": "When students explain an idea to a classmate, they often discover gaps they did not notice while reading alone. Speaking forces them to put steps in order and to choose words that someone else can follow. For this reason, a short pair explanation after reading can do more for understanding than a second silent reading.",
+  "ch": [
+   "혼자 읽는 시간을 늘려야 한다.",
+   "어휘를 먼저 익혀야 이해가 깊어진다.",
+   "친구의 설명을 들으면 집중력이 떨어진다.",
+   "남에게 설명하는 활동이 이해를 돕는다.",
+   "읽기 속도가 이해의 정도를 결정한다."
+  ],
+  "img": "",
+  "topic": "설명하기가 이해를 돕는 이유",
+  "fake": true
+ },
+ {
+  "id": "2099.09-31",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 31,
+  "type": "빈칸 추론",
+  "pts": 2,
+  "ans": "①",
+  "top": {
+   "rank": 3,
+   "wr": 68.4,
+   "sel": [
+    31.6,
+    24.1,
+    18.9,
+    15.0,
+    10.4
+   ]
+  },
+  "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+  "body": "Maps are useful precisely because they leave things out. A city map that showed every tree, crack, and parked car would be as large and as confusing as the city itself. What makes a map helpful is its willingness to _____, keeping only what a traveler needs for a particular purpose.",
+  "ch": [
+   "ignore most details",
+   "record every change",
+   "copy the real world",
+   "follow old traditions",
+   "add personal stories"
+  ],
+  "img": "",
+  "topic": "지도가 쓸모 있는 까닭: 생략",
+  "fake": true
+ },
+ {
+  "id": "2099.09-32",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 32,
+  "type": "빈칸 추론",
+  "pts": 2,
+  "ans": "③",
+  "top": {
+   "rank": 1,
+   "wr": 77.2,
+   "sel": [
+    12.5,
+    20.3,
+    22.8,
+    30.1,
+    14.3
+   ]
+  },
+  "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+  "body": "A runner who checks a watch every few seconds may actually run slower. Constant measuring pulls attention away from breathing and stride, the very things that create speed. In many skills, performance improves when we _____ for a while and let practiced movements work on their own.",
+  "ch": [
+   "set higher goals",
+   "compare with others",
+   "stop monitoring ourselves",
+   "change our equipment",
+   "increase the distance"
+  ],
+  "img": "",
+  "topic": "지나친 측정이 수행을 방해함",
+  "fake": true
+ },
+ {
+  "id": "2099.09-36",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 36,
+  "type": "글의 순서 배열",
+  "pts": 2,
+  "ans": "②",
+  "top": {
+   "rank": 5,
+   "wr": 58.9,
+   "sel": [
+    9.8,
+    41.1,
+    20.6,
+    17.2,
+    11.3
+   ]
+  },
+  "stem": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+  "body": "Bread dough that sits overnight in a cool room tastes different from dough baked right away. (A) As the yeast works slowly, it produces small amounts of acids and other flavors. (B) The cold slows the yeast, giving it more time to break down starches. (C) These compounds build up hour by hour, which is why patient bakers often get richer bread.",
+  "ch": [
+   "(A)-(C)-(B)",
+   "(B)-(A)-(C)",
+   "(B)-(C)-(A)",
+   "(C)-(A)-(B)",
+   "(C)-(B)-(A)"
+  ],
+  "img": "",
+  "topic": "천천히 발효한 빵의 풍미",
+  "fake": true
+ },
+ {
+  "id": "2099.09-38",
+  "exam": "9월 예시 가짜지문",
+  "org": "평가원",
+  "yr": 2100,
+  "no": 38,
+  "type": "주어진 문장 넣기",
+  "pts": 3,
+  "ans": "④",
+  "top": {
+   "rank": 2,
+   "wr": 72.5,
+   "sel": [
+    8.4,
+    14.9,
+    21.1,
+    27.5,
+    28.1
+   ]
+  },
+  "stem": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+  "body": "Some birds hide thousands of seeds each autumn. ( ① ) Remarkably, they find most of them months later under snow. ( ② ) Scientists once thought the birds simply searched everywhere. ( ③ ) Careful tests showed otherwise. ( ④ ) The birds remember landmarks such as rocks and trees around each hiding place. ( ⑤ ) When researchers moved the landmarks, the birds dug in the wrong spots.",
+  "ch": [
+   "①",
+   "②",
+   "③",
+   "④",
+   "⑤"
+  ],
+  "img": "",
+  "topic": "새들이 숨긴 씨앗을 찾는 방법",
+  "fake": true
+ }
+]

@@ -3,8 +3,11 @@ import json, math, os, re
 from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 t = open(os.path.join(HERE, '시안.template.html'), encoding='utf-8').read()
-data = json.load(open(os.path.join(HERE, '_data.json'), encoding='utf-8'))
-book = json.load(open(os.path.join(HERE, '_book_sample.json'), encoding='utf-8'))
+import sys
+EXAMPLE = '--예시' in sys.argv          # 공개용: 예시자료/의 가짜 지문으로 만든다
+SRC = os.path.join(HERE, '예시자료') if EXAMPLE else HERE
+data = json.load(open(os.path.join(SRC, '_data.json'), encoding='utf-8'))
+book = json.load(open(os.path.join(SRC, '_book_sample.json'), encoding='utf-8'))
 bp = json.load(open(os.path.join(HERE, '_blueprint.json'), encoding='utf-8'))
 
 STOP = set('''a an the and or but if of to in on at by for with from as is are was were be been being it its this that these those he she they we you i his her their our your my me him them us not no nor so than then there here what which who whom whose when where why how all any both each few more most other some such only own same too very can will just should would could may might must do does did have has had having into over under again further once about against between through during before after above below up down out off also because while until even though although whether however therefore thus one two'''.split())
@@ -53,5 +56,5 @@ print('소재: 기출', sum(1 for d in data if d.get('topic')), '교재', sum(1 
 print('지문', N, '비슷한 짝 있는 지문', sum(1 for _, d in docs if d.get('sim')))
 j = lambda x: json.dumps(x, ensure_ascii=False).replace('</', '<\\/')
 out = t.replace('__DATA__', j(data)).replace('__BOOK__', j(book)).replace('__BP__', j(bp))
-open(os.path.join(HERE, '문제은행_화면시안.html'), 'w', encoding='utf-8').write(out)
+open(os.path.join(HERE, '예시_화면시안.html' if EXAMPLE else '문제은행_화면시안.html'), 'w', encoding='utf-8').write(out)
 print(len(out) // 1024, 'KB')

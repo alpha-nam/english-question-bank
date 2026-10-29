@@ -1,0 +1,32 @@
+[
+ {
+  "id": "T901",
+  "code": "Exercises 01 (예시-0001)",
+  "lec": "07 제목 추론",
+  "page": "42",
+  "type": "제목",
+  "text": "Libraries today lend more than books. Some offer sewing machines, telescopes, and even fishing rods, so that people can try a hobby before buying anything.",
+  "topic": "예시 소재(가짜)",
+  "fake": true
+ },
+ {
+  "id": "T902",
+  "code": "Exercises 02 (예시-0002)",
+  "lec": "13 빈칸 추론",
+  "page": "78",
+  "type": "빈칸",
+  "text": "A good question can be more valuable than a quick answer, because it keeps a conversation open and invites others to think along with us.",
+  "topic": "예시 소재(가짜)",
+  "fake": true
+ },
+ {
+  "id": "T903",
+  "code": "Exercises 01 (예시-0003)",
+  "lec": "16 글의 순서",
+  "page": "96",
+  "type": "글의 순서",
+  "text": "Before a storm, ants often move their eggs to higher ground, a habit that protects the colony from sudden floods.",
+  "topic": "예시 소재(가짜)",
+  "fake": true
+ }
+]
