@@ -1,0 +1,2148 @@
+{
+ "meta": {
+  "작성일": "2026-10-28",
+  "대상": "변형단계_경계측정.json에서 뺀 읽기 문항 21행(듣기 교재 연계: 일부변형 8, 소재만 13)과 대본이 없어 못 잰 3행(2024.09-27, 2024.09-43~45, 2024.11-27). 3행의 대본은 2025 수능완성 영어.txt의 정답과 해설 부분(PDF 224·244·269~270쪽)에 있었음",
+  "방법": "기존 측정(scratchpad/m/measure.py)의 a·b·최장·c 정의를 그대로 씀. 교재 쪽은 듣기 대본의 영어 부분만 씀(화자 표시 M:/W:, [Pause] 같은 효과음 표시, 한글 번역·해설, 쪽 바닥글 제거). 응답 문항의 정답 선택지(마지막 응답)는 대본에 없으면 넣지 않음(2024.11-19는 대본 끝에 Amy의 말이 있어 포함). OCR 띄어쓰기(Y ou, w as, ha ve 등)는 기출 어휘 목록으로 이어 붙임. 시험 쪽은 body(43~45는 group_passage), 각주 제거. 실용문 표 안 내용([ ])은 시험 JSON에 없어 빠짐",
+  "기준선": "보충 지문 18개끼리 연계되지 않은 짝(시험 k vs 다른 행의 대본)",
+  "스크립트": "C:\\Users\\user\\AppData\\Local\\Temp\\claude\\C--Users-user-Desktop-claude-----------\\b5979773-91dd-4f94-a541-a9686c39b8c8\\scratchpad\\m2 (scfg.py, supp.py, runs.py, sfinal.py)"
+ },
+ "summary_supplement_unique": {
+  "일부변형_보충": {
+   "a_content_token_ratio": {
+    "n": 7,
+    "min": 0.136,
+    "q1": 0.231,
+    "median": 0.344,
+    "q3": 0.352,
+    "max": 0.362
+   },
+   "a_content_type_ratio": {
+    "n": 7,
+    "min": 0.144,
+    "q1": 0.206,
+    "median": 0.244,
+    "q3": 0.264,
+    "max": 0.347
+   },
+   "b_4gram_token_coverage": {
+    "n": 7,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.011,
+    "max": 0.04
+   },
+   "longest_shared_run_words": {
+    "n": 7,
+    "min": 2,
+    "q1": 2.5,
+    "median": 3.0,
+    "q3": 3.5,
+    "max": 4
+   },
+   "c_same_meaning_strict": {
+    "n": 7,
+    "min": 0,
+    "q1": 0.0,
+    "median": 1.0,
+    "q3": 1.0,
+    "max": 2
+   },
+   "c_same_meaning_partial": {
+    "n": 7,
+    "min": 2,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 3.0,
+    "max": 3
+   }
+  },
+  "소재만_보충": {
+   "a_content_token_ratio": {
+    "n": 11,
+    "min": 0.038,
+    "q1": 0.066,
+    "median": 0.138,
+    "q3": 0.17,
+    "max": 0.316
+   },
+   "a_content_type_ratio": {
+    "n": 11,
+    "min": 0.028,
+    "q1": 0.073,
+    "median": 0.094,
+    "q3": 0.123,
+    "max": 0.196
+   },
+   "b_4gram_token_coverage": {
+    "n": 11,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "longest_shared_run_words": {
+    "n": 11,
+    "min": 1,
+    "q1": 1.5,
+    "median": 2.0,
+    "q3": 2.0,
+    "max": 3
+   },
+   "c_same_meaning_strict": {
+    "n": 11,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 11,
+    "min": 0,
+    "q1": 0.5,
+    "median": 1.0,
+    "q3": 1.5,
+    "max": 3
+   }
+  }
+ },
+ "summary_combined_unique": {
+  "일부변형_전체": {
+   "a_content_token_ratio": {
+    "n": 12,
+    "min": 0.038,
+    "q1": 0.246,
+    "median": 0.352,
+    "q3": 0.629,
+    "max": 0.681
+   },
+   "a_content_type_ratio": {
+    "n": 12,
+    "min": 0.036,
+    "q1": 0.224,
+    "median": 0.264,
+    "q3": 0.564,
+    "max": 0.75
+   },
+   "b_4gram_token_coverage": {
+    "n": 12,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.011,
+    "q3": 0.079,
+    "max": 0.259
+   },
+   "longest_shared_run_words": {
+    "n": 12,
+    "min": 2,
+    "q1": 2.75,
+    "median": 3.5,
+    "q3": 5.0,
+    "max": 12
+   },
+   "c_same_meaning_strict": {
+    "n": 12,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 1.0,
+    "max": 2
+   },
+   "c_same_meaning_partial": {
+    "n": 12,
+    "min": 0,
+    "q1": 1.75,
+    "median": 2.0,
+    "q3": 2.25,
+    "max": 3
+   }
+  },
+  "일부변형_비도표": {
+   "a_content_token_ratio": {
+    "n": 8,
+    "min": 0.038,
+    "q1": 0.184,
+    "median": 0.303,
+    "q3": 0.351,
+    "max": 0.362
+   },
+   "a_content_type_ratio": {
+    "n": 8,
+    "min": 0.036,
+    "q1": 0.164,
+    "median": 0.242,
+    "q3": 0.26,
+    "max": 0.347
+   },
+   "b_4gram_token_coverage": {
+    "n": 8,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.005,
+    "max": 0.04
+   },
+   "longest_shared_run_words": {
+    "n": 8,
+    "min": 2,
+    "q1": 2.0,
+    "median": 3.0,
+    "q3": 3.25,
+    "max": 4
+   },
+   "c_same_meaning_strict": {
+    "n": 8,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.5,
+    "q3": 1.0,
+    "max": 2
+   },
+   "c_same_meaning_partial": {
+    "n": 8,
+    "min": 0,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 3.0,
+    "max": 3
+   }
+  },
+  "일부변형_도표": {
+   "a_content_token_ratio": {
+    "n": 4,
+    "min": 0.622,
+    "q1": 0.641,
+    "median": 0.655,
+    "q3": 0.666,
+    "max": 0.681
+   },
+   "a_content_type_ratio": {
+    "n": 4,
+    "min": 0.55,
+    "q1": 0.591,
+    "median": 0.629,
+    "q3": 0.678,
+    "max": 0.75
+   },
+   "b_4gram_token_coverage": {
+    "n": 4,
+    "min": 0.039,
+    "q1": 0.157,
+    "median": 0.21,
+    "q3": 0.232,
+    "max": 0.259
+   },
+   "longest_shared_run_words": {
+    "n": 4,
+    "min": 5,
+    "q1": 5.0,
+    "median": 7.0,
+    "q3": 9.75,
+    "max": 12
+   },
+   "c_same_meaning_strict": {
+    "n": 4,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 4,
+    "min": 1,
+    "q1": 1.0,
+    "median": 1.5,
+    "q3": 2.0,
+    "max": 2
+   }
+  },
+  "소재만_전체": {
+   "a_content_token_ratio": {
+    "n": 31,
+    "min": 0.038,
+    "q1": 0.09,
+    "median": 0.138,
+    "q3": 0.17,
+    "max": 0.316
+   },
+   "a_content_type_ratio": {
+    "n": 31,
+    "min": 0.028,
+    "q1": 0.076,
+    "median": 0.106,
+    "q3": 0.148,
+    "max": 0.209
+   },
+   "b_4gram_token_coverage": {
+    "n": 31,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.034
+   },
+   "longest_shared_run_words": {
+    "n": 31,
+    "min": 1,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 3.0,
+    "max": 4
+   },
+   "c_same_meaning_strict": {
+    "n": 31,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 31,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 1.0,
+    "max": 3
+   }
+  },
+  "일부변형_비도표_2024.11-43~45를_실전1회14번값으로": {
+   "a_content_token_ratio": {
+    "n": 8,
+    "min": 0.136,
+    "q1": 0.226,
+    "median": 0.303,
+    "q3": 0.351,
+    "max": 0.362
+   },
+   "a_content_type_ratio": {
+    "n": 8,
+    "min": 0.144,
+    "q1": 0.164,
+    "median": 0.242,
+    "q3": 0.26,
+    "max": 0.347
+   },
+   "b_4gram_token_coverage": {
+    "n": 8,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.018,
+    "max": 0.04
+   },
+   "longest_shared_run_words": {
+    "n": 8,
+    "min": 2,
+    "q1": 2.75,
+    "median": 3.0,
+    "q3": 4.0,
+    "max": 6
+   },
+   "c_same_meaning_strict": {
+    "n": 8,
+    "min": 0,
+    "q1": 0.0,
+    "median": 1.0,
+    "q3": 1.0,
+    "max": 2
+   },
+   "c_same_meaning_partial": {
+    "n": 8,
+    "min": 2,
+    "q1": 2.0,
+    "median": 2.5,
+    "q3": 3.0,
+    "max": 3
+   }
+  }
+ },
+ "baseline_supplement_unrelated_pairs": {
+  "보충_전체": {
+   "a_content_token_ratio": {
+    "n": 306,
+    "min": 0.0,
+    "q1": 0.029,
+    "median": 0.058,
+    "q3": 0.092,
+    "max": 0.217
+   },
+   "b_4gram_token_coverage": {
+    "n": 306,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.073
+   },
+   "longest_shared_run_words": {
+    "n": 306,
+    "min": 1,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 2.0,
+    "max": 5
+   }
+  },
+  "보충_실용문끼리": {
+   "a_content_token_ratio": {
+    "n": 132,
+    "min": 0.0,
+    "q1": 0.02,
+    "median": 0.058,
+    "q3": 0.099,
+    "max": 0.217
+   },
+   "b_4gram_token_coverage": {
+    "n": 132,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.073
+   },
+   "longest_shared_run_words": {
+    "n": 132,
+    "min": 1,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 2.0,
+    "max": 5
+   }
+  },
+  "보충_이야기끼리": {
+   "a_content_token_ratio": {
+    "n": 30,
+    "min": 0.029,
+    "q1": 0.081,
+    "median": 0.102,
+    "q3": 0.121,
+    "max": 0.185
+   },
+   "b_4gram_token_coverage": {
+    "n": 30,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "longest_shared_run_words": {
+    "n": 30,
+    "min": 2,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 3.0,
+    "max": 3
+   }
+  }
+ },
+ "rule_check": {
+  "기존규칙": "2단계: a>=0.45 또는 b>=0.10 또는 c strict>=1 / 3단계: a<0.30 그리고 b<0.05 그리고 최장<=4 그리고 c strict=0 / 나머지 회색",
+  "수정규칙": "2단계: c strict>=1, 또는 (도표이고 a>=0.45 또는 b>=0.10) / 3단계: c strict=0 그리고 c partial<=1 그리고 a<0.30 그리고 b<0.05 그리고 최장<=4 / 나머지 회색",
+  "집계_기존규칙": {
+   "소재만|3단계": 30,
+   "소재만|회색": 1,
+   "일부변형|2단계": 8,
+   "일부변형|3단계": 3,
+   "일부변형|회색": 1
+  },
+  "집계_수정규칙": {
+   "소재만|3단계": 28,
+   "소재만|회색": 3,
+   "일부변형|2단계": 8,
+   "일부변형|3단계": 1,
+   "일부변형|회색": 3
+  },
+  "rows": [
+   {
+    "시험": "2024.09",
+    "문항": "22",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.132,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.09",
+    "문항": "25",
+    "연계방식": "일부변형",
+    "도표": true,
+    "a": 0.648,
+    "b": 0.039,
+    "최장": 5,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.09",
+    "문항": "26",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.241,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "22",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.221,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "23",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.146,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "25",
+    "연계방식": "일부변형",
+    "도표": true,
+    "a": 0.661,
+    "b": 0.223,
+    "최장": 5,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "43~45",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.038,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.06",
+    "문항": "20",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.068,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.06",
+    "문항": "22",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.09,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "22",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.21,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "23",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.07,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "25",
+    "연계방식": "일부변형",
+    "도표": true,
+    "a": 0.622,
+    "b": 0.196,
+    "최장": 12,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "32",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.147,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "22",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.109,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "24",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.087,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "25",
+    "연계방식": "일부변형",
+    "도표": true,
+    "a": 0.681,
+    "b": 0.259,
+    "최장": 9,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "29",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.12,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "32",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.126,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "19",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.048,
+    "b": 0.034,
+    "최장": 4,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "24",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.168,
+    "b": 0.023,
+    "최장": 4,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "29",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.2,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "43",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.157,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "21",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.157,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "29",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.274,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "31",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.13,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "기존"
+   },
+   {
+    "시험": "2024.06",
+    "문항": "27",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.362,
+    "b": 0.04,
+    "최장": 4,
+    "c_strict": 2,
+    "c_partial": 3,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.06",
+    "문항": "28",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.2,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 1,
+    "c_partial": 2,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.06",
+    "문항": "43~45",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.136,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "3단계",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.09",
+    "문항": "27",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.35,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 1,
+    "c_partial": 3,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.09",
+    "문항": "43~45",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.091,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "19",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.262,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "3단계",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "27",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.04,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "28",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.344,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 3,
+    "기존규칙": "회색",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2025.06",
+    "문항": "28",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.138,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "27",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.206,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "3단계",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "28",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.143,
+    "b": 0.0,
+    "최장": 1,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2025.09",
+    "문항": "43",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.316,
+    "b": 0.0,
+    "최장": 3,
+    "c_strict": 0,
+    "c_partial": 3,
+    "기존규칙": "회색",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2025.11",
+    "문항": "43",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.355,
+    "b": 0.022,
+    "최장": 4,
+    "c_strict": 1,
+    "c_partial": 2,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "27",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.038,
+    "b": 0.0,
+    "최장": 1,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2026.06",
+    "문항": "28",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.167,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 2,
+    "기존규칙": "3단계",
+    "수정규칙": "회색",
+    "출처": "보충"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "27",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.04,
+    "b": 0.0,
+    "최장": 1,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "28",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.173,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 1,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2026.09",
+    "문항": "43",
+    "연계방식": "소재만",
+    "도표": false,
+    "a": 0.131,
+    "b": 0.0,
+    "최장": 2,
+    "c_strict": 0,
+    "c_partial": 0,
+    "기존규칙": "3단계",
+    "수정규칙": "3단계",
+    "출처": "보충"
+   },
+   {
+    "시험": "2024.11",
+    "문항": "43~45(실전1회14번 대조)",
+    "연계방식": "일부변형",
+    "도표": false,
+    "a": 0.234,
+    "b": 0.016,
+    "최장": 6,
+    "c_strict": 1,
+    "c_partial": 3,
+    "기존규칙": "2단계",
+    "수정규칙": "2단계",
+    "출처": "보충_보조"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "시험": "2024.06",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어듣기",
+   "쪽": "124",
+   "번호확인": "일치: 18강(본문 120~125쪽) 8번은 Rural Wildlife Caretaker Project 매니저가 실습생에게 부상 야생 동물 구조·돌봄 업무를 안내하는 담화 내용 불일치(정답 ③ 5일간 훈련)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     101
+    ],
+    "segments": [
+     {
+      "start": "W: Hello, everybody! I’m Judy Smith",
+      "end": "see me at the management office. Thank you."
+     }
+    ],
+    "note": "18강 8번(담화) 대본"
+   },
+   "exam_words": 100,
+   "book_words": 115,
+   "exam_content_tokens": 58,
+   "a_content_token_ratio": 0.362,
+   "a_content_type_ratio": 0.347,
+   "b_4gram_token_coverage": 0.04,
+   "b_4gram_share": 0.01,
+   "longest_shared_run_words": 4,
+   "exam_text": "Summer Job at Wildlife Rescue Center We are looking for summer workers who will take care of the animals rescued from Mount Donovahn. Schedule ∙Dates: August 1st to 31st ∙Hours: 10 a.m.—4 p.m. ※ On rainy days, working hours may change. Requirements ∙Only those aged 18 and over can apply. ∙Previous experience with animals Tasks ∙Preparing food for animals and feeding them ∙Writing reports about animals - Summer workers will get training from our caretakers. - Free shuttle bus service will be provided twice a day. To learn more about the summer job, please visit our website, www.dwildliferescue.org.",
+   "book_text": "Hello, everybody! I’m Judy Smith, manager of the Rural Wildlife Caretaker Project. It’s a pleasure to have student trainees in the animal resources department. This project serves to rescue and help wounded wild animals. And it provides opportunities to practice what you have learned in your major subjects. The whole project will last for twelve weeks. During the first week, you will have a five- day training and follow and watch instructors working before starting independent shifts. During your practice, you will prepare food, feed animals, clean cages, and keep animal records. Free shuttle bus services will be provided for your convenience. If you have any questions, see me at the management office. Thank you.",
+   "c_same_meaning_strict": 2,
+   "c_same_meaning_partial": 3,
+   "c_note": "strict: 'Preparing food for animals and feeding them' = 'prepare food, feed animals'; 'Writing reports about animals' = 'keep animal records'. partial: 구조된 동물 돌봄(교재 부상 야생 동물 구조), 직원 교육(교재 5일 훈련·강사 관찰), 무료 셔틀버스(시험은 '하루 두 번' 추가)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "free shuttle bus service",
+    "will be provided"
+   ]
+  },
+  {
+   "시험": "2024.06",
+   "문항": "28",
+   "시험유형": "실용문",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어듣기",
+   "쪽": "56",
+   "번호확인": "일치: 9강(본문 54~57쪽) 3번은 지리학과 1학년 대상 GET 2024(Geography Exploration Tour) 행사 언급 유무 대화(정답 ④ 참가 비용)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     44,
+     45
+    ],
+    "segments": [
+     {
+      "start": "W: Mark, have you heard about the GET 2024",
+      "end": "local markets for shopping."
+     },
+     {
+      "start": "M: Awesome. Who’s in charge of it?",
+      "end": "I ’ ll go with you."
+     }
+    ],
+    "note": "9강 3번(대화) 대본, 두 단으로 나뉨"
+   },
+   "exam_words": 78,
+   "book_words": 111,
+   "exam_content_tokens": 50,
+   "a_content_token_ratio": 0.2,
+   "a_content_type_ratio": 0.171,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "LCU Geography Field Trip Lionsford City University is offering a one-day geography field trip on June 17th. We believe it is one of the finest field trips in the country. Participants: First-year students majoring in geography Course Options [ ] Participation Fee: $70 per person (lunch included) How to Apply ∙Email the application to geography lcu.edu or drop it off at the department office. ∙Deadline: June 4th ※ For further information, please contact us at 607-223-2127.",
+   "book_text": "Mark, have you heard about the GET 2024 event? No, what is it, Jenny? GET stands for Geography Exploration Tour. It’s for first-year geography majors like us. That sounds fun. What exactly will we do if we join? We will visit a region down south and examine its soil and rocks. Wow, that’s an excellent way to get hands-on experience. Right. We’ll also visit its local markets for shopping. Awesome. Who’s in charge of it? Professor Richard is the supervisor. Great! How can we sign up for it? You need to fill out a form in the department office. I’m going there after lunch. Cool. I’ll go with you.",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 2,
+   "c_note": "strict: 'Participants: First-year students majoring in geography' = 'It's for first-year geography majors'. partial: 지리 답사 행사 자체(GET→LCU 1일 답사, 날짜 추가), 학과 사무실 신청(시험은 이메일 신청 추가)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "the department office"
+   ]
+  },
+  {
+   "시험": "2024.06",
+   "문항": "43~45",
+   "시험유형": "1지문 3문항",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어듣기",
+   "쪽": "113",
+   "번호확인": "일치: 17강(본문 110~115쪽) 6번은 Singapore 자매학교 방문 환영식에서 힙합 댄스를 공연할 남학생이 Westfield Mall에 옷을 사러 같이 가 달라고 부탁하는 대화(정답 ⑤, 과학 동아리 캠페인 때문에 거절)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     91
+    ],
+    "segments": [
+     {
+      "start": "M: Hey, Jenny, I heard you won the science",
+      "end": "Sorry about that."
+     }
+    ],
+    "note": "17강 6번(대화) 대본"
+   },
+   "exam_words": 338,
+   "book_words": 125,
+   "exam_content_tokens": 206,
+   "a_content_token_ratio": 0.136,
+   "a_content_type_ratio": 0.144,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Garcia stood outside Frontcountry Mall, waiting for his brother, Jeff. Garcia’s band had been chosen to perform at the welcoming ceremony for a large group of students from their sister university in Singapore. Garcia was hoping to find the perfect clothing for the performance. That was why he had asked Jeff to help him pick out new clothes. “I’m sorry. I’m late because traffic was terrible,” Jeff apologized as he arrived. “Don’t worry. I haven’t waited long,” Garcia replied as they entered the lively shopping center. The band performance was the first event of the ceremony. The host introduced the band, and each member took their place on stage. Garcia stood at the center of the stage. As he started playing, everyone fell silent, fascinated by the music. Garcia’s trumpet playing was flawless. When the band was finished, the audience loudly cheered. After the show, Jeff approached Garcia. “It was fantastic. I think that was the best performance I’ve ever seen,” he said. Garcia beamed with joy at his brother’s praise. Garcia felt good as he arrived at the concert hall for the rehearsal wearing his new clothes. His confidence was, however, quickly changed to nervousness when he thought of how many people would be there. As the rehearsal began, he struggled with the rhythm, making several mistakes. Tom, Garcia’s band mate, came over and put a hand on Garcia’s back, saying, “Don’t worry, I’ll be right behind you. ” He looked at his friend, took a deep breath and started to feel much better. “Aren’t these cool?” Garcia asked, pointing at a patterned red shirt and yellow pants he had found in the store. “Um, I think they’re a bit too colorful,” Jeff objected. Instead, Jeff picked out a white shirt and black jeans. He asked the store clerk, “Don’t you think these would look great on my brother ?” The clerk stopped her work and looked at the clothes, quickly agreeing with Jeff’s choice. Garcia bought the recommended clothes, saying, “Maybe I’ll wear these for tonight’s rehearsal, too.”",
+   "book_text": "Hey, Jenny, I heard you won the science competition. Congratulations! Thanks. It feels so good. I guess my hard work paid off. I bet! So are you free these days? Yeah. What’s up? You know our sister school from Singapore is visiting next week, right? Yes. We’re having a welcoming ceremony. Yeah. Well, actually, I’m performing a hip-hop dance routine at the ceremony. Wow, that’s really cool! So I’m planning to go to the Westfield Mall this Friday after school to buy some clothes for it. Would you mind going with me and helping me pick something out? Oh, I’d love to, but I’m afraid I can’t. I have to participate in the science club’s ECO Challenge Campaign on that day. Sorry about that.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "partial: 싱가포르 자매학교(→자매 대학) 환영식에서 공연(힙합 댄스→밴드 트럼펫); 공연용 옷 고르는 걸 도와 달라고 부탁(친구 Jenny→동생 Jeff, 교재는 거절·시험은 함께 감). 리허설·Tom·공연 성공 장면은 교재에 없음",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2024.09",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "일부변형",
+   "교재": "2025 수능완성 영어",
+   "쪽": "100",
+   "번호확인": "일치: 실전 모의고사 2회 9번은 9월 26일 Campus Visit Day 안내 담화의 내용 불일치 문항(정답 ⑤ 당일 등록 가능)",
+   "supplement_group": "previously_not_found",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능완성 영어.txt",
+    "pdf_pages": [
+     244
+    ],
+    "segments": [
+     {
+      "start": "M : Hello , everyone ! I ’ m excited to tell you about our fantastic Campus",
+      "end": "Hope to see you there !"
+     }
+    ],
+    "note": "실전 2회 9번(담화) 대본(같은 책 정답과 해설 부분)"
+   },
+   "exam_words": 126,
+   "book_words": 145,
+   "exam_content_tokens": 60,
+   "a_content_token_ratio": 0.35,
+   "a_content_type_ratio": 0.255,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "University of Teverley Campus Visit Day Do you want to see if the University of Teverley is the right fit for you? Come to our annual campus visit event for prospective students on Thursday, September 26th. Participants ∙3rd-year high school students only Meeting Time & Place ∙The auditorium at the Student Center at 9:30 a.m. Schedule ∙10:00 a.m.: Presentation on the admissions process ∙10:30 a.m.: Campus tour ∙12:00 p.m.: Free lunch provided at the students’ cafeteria ∙1:00 p.m.: Q&A with the student tour staff ※ After the event, a T-shirt with our university logo will be given out as a gift. Registration ∙Register by 6 p.m., September 17th, on our website, www.teverley.edu.",
+   "book_text": "Hello, everyone! I’m excited to tell you about our fantastic Campus Visit Day. It will be held on September 26th. It starts at 9 a.m. with an introduction covering general information about campus life. Then, at 1 p.m., there’s a campus tour that gives you the opportunity to experience the beauty and liveliness of our campus. Our friendly college students will accompany you and answer any questions you may have. If you need any assistance or information, our counselors at the headquarters will be happy to provide you with the detailed schedule of the event. All those interested in our campus are welcome to attend, but it is required that you register on our website at least one week prior to the event. If you have any questions about Campus Visit Day, please leave them on the website. Hope to see you there!",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 3,
+   "c_note": "strict: 9월 26일 캠퍼스 방문의 날 개최('Come to our annual campus visit event ... on Thursday, September 26th' = 'It will be held on September 26th'). partial: 캠퍼스 투어(1 p.m.→10:30), 대학생 안내·질의(→학생 투어 직원과 Q&A), 웹사이트 사전 등록(1주 전→9월 17일 마감)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "campus visit day",
+    "the event a",
+    "on our website"
+   ]
+  },
+  {
+   "시험": "2024.09",
+   "문항": "43~45",
+   "시험유형": "1지문 3문항",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "119",
+   "번호확인": "일치: 실전 모의고사 3회 16~17번은 중고품 쇼핑의 이점과 인기 품목(자동차·전자 제품·책·악기)을 소개하는 듣기 1담화 2문항(정답 ①·④)",
+   "supplement_group": "previously_not_found",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능완성 영어.txt",
+    "pdf_pages": [
+     269,
+     270
+    ],
+    "segments": [
+     {
+      "start": "W : Welcome to the Shop Savvy Workshop",
+      "end": "smart shopping can lead to amazing discoveries ."
+     }
+    ],
+    "note": "실전 3회 16~17번(담화) 대본(같은 책 정답과 해설 부분)"
+   },
+   "exam_words": 328,
+   "book_words": 173,
+   "exam_content_tokens": 175,
+   "a_content_token_ratio": 0.091,
+   "a_content_type_ratio": 0.097,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Helen was thrilled when she received a notification on a second-hand shopping app from a seller named Anna. For months, she had been looking for a Philodendron gloriosum, a Colombian plant with dark, velvety leaves shaped like hearts. She had almost given up on getting one. Anna, though, had put one up for sale. The posting read, “ I’m selling my favorite plant, because I’m moving abroad. If you pick it up today from Edincester Heights, you can have it for the current price, which is half the market rate.” Arriving at the building, Helen could identify Julia by the large paper bag she was holding. The bag had leaves sticking out of the top. She said, “You must be Julia!” Laughing, the woman said, “Yes! Please take good care of this plant. Anna had it for six years, so she considers it family.” From the bag, she pulled out another plant, a tiny one with thick, glossy leaves. “Are you familiar with this? It’s called a Dragon’s Tail. My housemate said you could take it too, if you’d like.” Helen immediately messaged the seller. “Hello! I’m interested in purchasing your plant. If it works for your schedule, I can be there in 10 minutes!” Anna replied, “Hi, there! I am at work right now, but my housemate, Julia, can meet you in front of the building.” Unable to believe her good luck, Helen typed back in excitement, “Great! I can leave now. I’ll wear a black baseball cap.” Helen exclaimed, “Yes, I’d love to! Please thank Anna for me. Both are in such wonderful condition. Do you have any tips for keeping them in good shape?” Handing over the bag, Julia replied, “I’m not a plant expert, but I know that Anna kept them away from windows to avoid direct sunlight. Why don’t you message her? She would be happy to offer advice.” “I’ll be sure to do that,” Helen said, as she handed over the cash.",
+   "book_text": "Welcome to the Shop Savvy Workshop. Today, we’re going to explore the world of smart shopping and discover some hidden treasures. We sometimes buy things we don’t use often. That’s where second - hand shopping helps. Let’s dive into our list of popular second - hand items that can help us save money and find amazing deals! First, cars. New ones are cool, but used ones are exciting too, and they’re cheaper. Just make sure to inspect them first. Next on our list are electronics. From smartphones to laptops, there’s a wide range of second - hand electronics available. You can find high - quality devices at lower prices. Let’s turn the page 3 101 2:31:39 to books. Books can transport us to new worlds and expand our knowledge. Many second - hand bookstores sell rare editions that are real treasures for book collectors. Last but not least, musical instruments. If you’ve dreamed of learning an instrument, second - hand ones are the most affordable option. So, listeners, remember that smart shopping can lead to amazing discoveries.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 중고품 쇼핑 이점·인기 품목(자동차·전자 제품·책·악기) 담화, 시험 중고 앱으로 식물을 사는 이야기. 'second-hand shopping'만 공유",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "second hand shopping"
+   ]
+  },
+  {
+   "시험": "2024.11",
+   "문항": "19",
+   "시험유형": "심경 변화",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어듣기",
+   "쪽": "196",
+   "번호확인": "일치(강·번호 기준): 27강(실전 모의고사 6회) 15번은 몇 달째 데이트 중인 Amy와 Peter가 함께 해 본 적 없는 새 데이트를 고르는 상황 문항(정답 ④ 요리 수업 먼저). 본책 쪽은 정답과해설로 확인 불가",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     188
+    ],
+    "segments": [
+     {
+      "start": "M: Amy and Peter have been dating",
+      "end": "let’s try the cooking class f irst."
+     }
+    ],
+    "note": "27강(실전 6회) 15번(상황) 대본"
+   },
+   "exam_words": 128,
+   "book_words": 140,
+   "exam_content_tokens": 65,
+   "a_content_token_ratio": 0.262,
+   "a_content_type_ratio": 0.241,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "It was Valentine’s Day on Friday and Peter was certain that his wife, Amy, was going to love his surprise. Peter had spent a long time searching online for an event that would be a new way to spend time with Amy. He had finally found the perfect thing for her. She often told him that she liked to go to places she had never visited before, and he was absolutely sure that she would love going to the new, five-star restaurant downtown. He smiled as he called the restaurant and asked for a reservation for Friday. Unfortunately, his smile quickly disappeared when he was told that the restaurant was fully reserved. “That’s too bad,” he said quietly. “I thought that I had found the right place.”",
+   "book_text": "Amy and Peter have been dating for a few months and they are looking for new ways to spend time together. They usually have dinner dates, movie nights and they often go on long walks, but they are both looking to do something they’ve never done together before. One day, Peter suggests they go on a hiking trip, since they both like outdoor activities. On the other hand, Amy finds out about a cooking class for couples at a nearby community center. Peter says he would be glad to try both, and asks Amy what she would like to do. Amy also thinks that both are great plans, but she wants to take the cooking class first. In this situation, what would Amy most likely say to Peter? Both sound good to me, but let’s try the cooking class first.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "partial: Peter가 Amy와 시간을 보낼 새로운 방법을 찾음(교재는 두 사람이 함께 찾음); Amy가 가 보지 않은 곳을 좋아함(교재 '함께 해 본 적 없는 것'). 레스토랑 예약 실패 전개는 교재에 없음",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "to spend time"
+   ]
+  },
+  {
+   "시험": "2024.11",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "84",
+   "번호확인": "일치: 실전 모의고사 1회 12번은 뉴욕 휴가에서 돌아온 Andrew와 대중교통이 편리해 관광이 쉬웠다는 짧은 대화(정답 ①)",
+   "supplement_group": "previously_not_found",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능완성 영어.txt",
+    "pdf_pages": [
+     224
+    ],
+    "segments": [
+     {
+      "start": "W : Hey , Andrew ! Welcome back !",
+      "end": "public transportation there is really convenient , too ."
+     }
+    ],
+    "note": "실전 1회 12번(짧은 대화) 대본. 마지막 응답(정답 선택지)은 넣지 않음"
+   },
+   "exam_words": 69,
+   "book_words": 42,
+   "exam_content_tokens": 50,
+   "a_content_token_ratio": 0.04,
+   "a_content_type_ratio": 0.061,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Adenville City Pass Card The Adenville City Pass Card is a public transportation card for tourists visiting Adenville. Service Range ∙Adenville-based subway lines ∙Adenville-licensed buses ※ This card cannot be used for city tour buses. Card Type [ ] ※ Unused cards are refundable within 30 days of the purchase date. Purchase Information ∙Physical cards can be purchased at subway stations. ∙Mobile cards can be purchased on the A-Transit app.",
+   "book_text": "Hey, Andrew! Welcome back! How was your vacation in New York? It was fantastic! I went to so many famous landmarks and took some amazing pictures. Sounds like a lot of fun. I’ve heard the public transportation there is really convenient, too.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 뉴욕 여행 뒤 대중교통이 편리했다는 대화 앞부분, 시험 관광객용 교통 카드 안내. 'public transportation'만 공유",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2024.11",
+   "문항": "28",
+   "시험유형": "실용문",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어듣기",
+   "쪽": "62",
+   "번호확인": "일치: 10강 Exercises 2번은 매년 1월 열리는 Lockwood Snow Festival 홍보 담화(내용 일치, 정답 ④ 일부 활동 유료↔모두 무료). 10강 Exercises는 본문 62~63쪽",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     49
+    ],
+    "segments": [
+     {
+      "start": "W: Good morning, listeners! Are you looking for a place",
+      "end": "you can’t miss the Lockwood Snow Festival!"
+     }
+    ],
+    "note": "10강 Exercises 2번(담화) 대본"
+   },
+   "exam_words": 97,
+   "book_words": 122,
+   "exam_content_tokens": 61,
+   "a_content_token_ratio": 0.344,
+   "a_content_type_ratio": 0.273,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Luckwood Snow Festival We’re happy to announce the 15th annual Luckwood Snow Festival. Come to the festival to enjoy winter activities. When & Where ∙January 24th—30th (7 days), from 9 a.m. to 8 p.m. ∙Luckwood Park Special Activities ∙Snow Sculpture Contest: 11 teams will participate. ∙Fun in the Snow: Kids can enjoy snow tunnels and snow slides. Transportation ∙Parking is not available (Use public transportation and/or shuttle bus service). ∙The shuttle bus runs between Luckwood Subway Station and Luckwood Park (One-way fare: $1, cash only). ※ For more information, please visit www.ldsnow.org.",
+   "book_text": "Good morning, listeners! Are you looking for a place to go with your family this winter? Then why not consider going to the Lockwood Snow Festival? It takes place in January every year and features a wide range of winter activities. One of the main attractions is the “Ice Sculpture Contest,” in which artists from all over the world participate by creating amazing sculptures out of ice. Visitors can enjoy sledding, snow tubing, and nighttime activities like ice skating under the stars. And remember all of these activities are free. The festival also has a lot of food trucks selling snacks and drinks. So if you’re looking for a fun way to enjoy the winter, you can’t miss the Lockwood Snow Festival!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 3,
+   "c_note": "partial: 매년 1월 열리는 Snow Festival(Lockwood→Luckwood, 날짜·15회 추가); 겨울 활동을 즐기러 오라(교재 썰매·스케이트 등 나열); 조각 대회(Ice→Snow Sculpture, 세계 예술가→11개 팀)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2025.06",
+   "문항": "28",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "142",
+   "번호확인": "일치: 20강 1번은 어린이들에게 유익한 TV 쇼를 소개하는 목적 문항(정답 ②). 듣기 문항이라 읽기 안내문과 유형이 다름",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     113
+    ],
+    "segments": [
+     {
+      "start": "M: Hello, everyone! It’s great to see all of you back",
+      "end": "responsible and compassionate individuals!"
+     }
+    ],
+    "note": "20강 1번(담화) 대본"
+   },
+   "exam_words": 99,
+   "book_words": 103,
+   "exam_content_tokens": 58,
+   "a_content_token_ratio": 0.138,
+   "a_content_type_ratio": 0.085,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "2025 Science Gamification Challenge Learn science through games at Evernville Science Park! Participants: Ages 8—13 Date and Time: June 7, 9:00 a.m.—11:30 a.m. Guidelines ∙Download the game map from the website. ∙Start the first mission at the main gate. ∙Complete each mission using your knowledge of science. ∙Go back to the main gate after you complete all five missions. Reservation: Online reservation is required. Participation Fee: $20 (lunch not included) Note: Only the first participant who completes all five missions will receive a medal. ※ For more information, please visit www. * s * gc * .com.",
+   "book_text": "Hello, everyone! It’s great to see all of you back on my channel, What’s Amazing! Today, I’ve got something exciting for you. I’m going to share some great information about two popular TV shows that are both fun and educational for young children. First up is Hello, Doctor Bell. This show brings science to life and makes it fun with science experiments that kids love. Second is Cindy in School. It’s a drama series about Cindy’s experiences with her friends and school life, helping children develop their emotional intelligence. Both shows are sure to help your children grow into responsible and compassionate individuals!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "partial: 아이들이 과학을 재미있게 배운다(교재 과학 실험 TV 쇼, 시험 게임으로 과학 배우기 행사)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2025.09",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "176",
+   "번호확인": "일치: 24강 8번은 Mt. Pasador의 Jungle Yoga Shelter에 관해 언급되지 않은 것을 고르는 Simon과 친구의 대화 문항",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     153
+    ],
+    "segments": [
+     {
+      "start": "W: Hi, Simon. How was your summer vacation?",
+      "end": "It’s truly a special place."
+     }
+    ],
+    "note": "24강 8번(대화) 대본"
+   },
+   "exam_words": 104,
+   "book_words": 150,
+   "exam_content_tokens": 68,
+   "a_content_token_ratio": 0.206,
+   "a_content_type_ratio": 0.094,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Wabut Jungle Yoga In this program, you can rediscover forgotten rhythms of your life while experiencing both yoga and the jungle. Many travelers join us again year after year. Where: Wabut Jungle Yoga Center in Kroiwan What ∙Doing yoga on the deck outside ∙Bird watching in the jungle ∙Hiking in the jungle with a guide Lodging: Beautifully crafted bungalow (No private restroom inside bungalow, but common restrooms easily accessible) Application ∙Visit our website at www.wabu*.com and fill out the application form online. ∙For more information, email us at wabu* *mail.com. Transportation: It is offered from the airport to the yoga center.",
+   "book_text": "Hi, Simon. How was your summer vacation? Great. I visited this place called Jungle Yoga Shelter. It was amazing! That’s new to me. What exactly is it? It’s an incredible yoga center located deep in the forest at Mt. Pasador. Sounds interesting! How did you get there? First, I had to go to the nearest city, Greenhaven. From there, I caught a shuttle bus that took me straight to the Jungle Yoga Shelter. I see. How much was it? For me it was $500 a week, but it depends on the length of your stay and the activities you choose. Not bad. What are the facilities like? They’re great. Their outdoor yoga platforms are surrounded by nature. They also provide communal areas for dining and socializing, as well as peaceful meditation spaces for relaxation. Very nice! I’d like to check it out sometime. You should. It’s truly a special place.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "partial: 야외에서 요가(교재 outdoor yoga platforms, 시험 deck outside); 요가 센터까지 교통편 제공(교재 가까운 도시에서 셔틀, 시험 공항에서)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2025.09",
+   "문항": "28",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "176",
+   "번호확인": "일치: 24강 9번은 Solgreen Character Goods Design Contest 안내 담화의 일치하지 않는 것 문항",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     154
+    ],
+    "segments": [
+     {
+      "start": "W: Attention, Solgreen residents!",
+      "end": "please visit our website."
+     }
+    ],
+    "note": "24강 9번(담화) 대본"
+   },
+   "exam_words": 72,
+   "book_words": 119,
+   "exam_content_tokens": 49,
+   "a_content_token_ratio": 0.143,
+   "a_content_type_ratio": 0.125,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 1,
+   "exam_text": "Under the Sea Mascot Contest Design a unique marine animal mascot, reflecting the theme of marine ecosystem conservation. Schedule ∙Submission period: September 15—October 15 ∙Judging period: October 16—October 20 ∙Winner announcement: October 21 Prizes [ ] Guidelines ∙There is no participation fee. ∙The design must be in JPG format. (Maximum file size: 10MB) ∙Each participant must submit one mascot design. Assessment Criteria [ ] ※ You can find more information at www.eco*cea*.org.",
+   "book_text": "Attention, Solgreen residents! Are you ready to create a new city symbol? Join the Solgreen Character Goods Design Contest! All Solgreen residents, regardless of their age, can enter. Simply fill out the application form on the official Solgreen website with your unique character design. Categories include T-shirts, stationery, toys, and stickers. Submissions will be accepted until May 31, with results announced at the end of June. Winning designs will be featured on official Solgreen merchandise, and outstanding works will also be exhibited at the Solgreen Art Gallery. Here’s some more exciting news! An online workshop will be held in summer for the winners to enhance their skills and network with others. For more details, please visit our website.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "partial: 고유한 캐릭터(→해양 동물 마스코트) 디자인을 공모전에 제출",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2025.09",
+   "문항": "43",
+   "시험유형": "1지문 3문항",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "51",
+   "번호확인": "일치: 8강 5번(p.51)은 Mike가 Arrows 야구 경기를 보고 온 뒤 사진을 두고 여자와 이야기하는 그림 일치 문항(그림 문항은 대본 기준으로 확인)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     36
+    ],
+    "segments": [
+     {
+      "start": "W: Mike, did you enjoy the baseball game",
+      "end": "It looks like it was a super fun day."
+     }
+    ],
+    "note": "8강 5번(그림 대화) 대본"
+   },
+   "exam_words": 365,
+   "book_words": 139,
+   "exam_content_tokens": 209,
+   "a_content_token_ratio": 0.316,
+   "a_content_type_ratio": 0.196,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Mike had always dreamed about going to a baseball game. He watched his favorite team, the Arrows, on TV all the time, but he had never seen a game in person. One afternoon, Mike’s dad came home earlier than usual. “Hey, Mike,” he said, “I just got two tickets for tonight’s Arrows game. Do you want to go?” Mike was so excited that he ran to grab his Arrows hat. In the car, his dad handed him a new baseball glove and added, “Just in case a fly ball comes our way.” Several hours later, Mike’s favorite team hit a home run and won the game. Fireworks filled the sky, and the team song played throughout the stadium. When they got home, Mike told his mom all about his favorite plays and showed her the ball he caught. He knew this was a day he would never forget. It wasn’t just the game ― it was the cheering, the excitement, and best of all, spending time with his dad. He couldn’t wait for the next time they would get to go to a game. The stadium was full of people wearing Arrows shirts. Mike couldn’t believe how big the stadium looked in person. As the players ran onto the field, Mike and his dad cheered for their team’s players. His dad pointed at the player running out to third base, saying “Look, it’s Chavez, your favorite player!” Mike saw him warming up on the field and waved hoping to get his attention. After the players warmed up, Mike and his dad went to get some snacks. As soon as they sat back down, the pitcher threw the first pitch. Before long, it was Chavez’s turn to hit. He hit a high fly ball into the stands. The whole crowd stood up, but Mike reached up with his glove and grabbed the ball. Everyone clapped and smiled at Mike. He tightly held the ball and felt a little surprised, but very proud. Both teams kept scoring and the game stayed close. Mike and his dad cheered for every hit and held their breath during every big play. They high-fived each other every time the Arrows scored.",
+   "book_text": "Mike, did you enjoy the baseball game last weekend? Yeah. It was amazing! Here’s the picture my Dad took. Check it out. Cool! Wow, is this you in the curly hair wig? Yeah. I wore it for fun. I love it. I see this sign says, “Home Run Arrows!” Yeah, that’s my favorite team. Were these striped hot air balloons in the sky related to the game? I think so, and they were cool. Looking at the scoreboard, it looks like the Arrows were losing five to four. They were, but they came back and won. That must’ve been thrilling! It sure was. Look at the man on the ground. He’s extending both his arms to his sides. Yeah, he judged the plays from this spot the whole game. Cool. It looks like it was a super fun day.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 3,
+   "c_note": "partial: Mike가 좋아하는 팀은 Arrows(시험 문장의 주된 명제는 'TV로만 봤다'라서 strict 아님); 아빠와 경기를 봄(교재 '아빠가 찍은 사진'); Arrows가 이김(교재 역전승, 시험 홈런 뒤 승리). Chavez·파울볼은 교재에 없음",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "the game it"
+   ]
+  },
+  {
+   "시험": "2025.09",
+   "문항": "44",
+   "시험유형": "1지문 3문항",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "51",
+   "번호확인": "일치: 8강 5번(p.51)은 Mike가 Arrows 야구 경기를 보고 온 뒤 사진을 두고 여자와 이야기하는 그림 일치 문항(그림 문항은 대본 기준으로 확인)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     36
+    ],
+    "segments": [
+     {
+      "start": "W: Mike, did you enjoy the baseball game",
+      "end": "It looks like it was a super fun day."
+     }
+    ],
+    "note": "8강 5번(그림 대화) 대본"
+   },
+   "exam_words": 365,
+   "book_words": 139,
+   "exam_content_tokens": 209,
+   "a_content_token_ratio": 0.316,
+   "a_content_type_ratio": 0.196,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Mike had always dreamed about going to a baseball game. He watched his favorite team, the Arrows, on TV all the time, but he had never seen a game in person. One afternoon, Mike’s dad came home earlier than usual. “Hey, Mike,” he said, “I just got two tickets for tonight’s Arrows game. Do you want to go?” Mike was so excited that he ran to grab his Arrows hat. In the car, his dad handed him a new baseball glove and added, “Just in case a fly ball comes our way.” Several hours later, Mike’s favorite team hit a home run and won the game. Fireworks filled the sky, and the team song played throughout the stadium. When they got home, Mike told his mom all about his favorite plays and showed her the ball he caught. He knew this was a day he would never forget. It wasn’t just the game ― it was the cheering, the excitement, and best of all, spending time with his dad. He couldn’t wait for the next time they would get to go to a game. The stadium was full of people wearing Arrows shirts. Mike couldn’t believe how big the stadium looked in person. As the players ran onto the field, Mike and his dad cheered for their team’s players. His dad pointed at the player running out to third base, saying “Look, it’s Chavez, your favorite player!” Mike saw him warming up on the field and waved hoping to get his attention. After the players warmed up, Mike and his dad went to get some snacks. As soon as they sat back down, the pitcher threw the first pitch. Before long, it was Chavez’s turn to hit. He hit a high fly ball into the stands. The whole crowd stood up, but Mike reached up with his glove and grabbed the ball. Everyone clapped and smiled at Mike. He tightly held the ball and felt a little surprised, but very proud. Both teams kept scoring and the game stayed close. Mike and his dad cheered for every hit and held their breath during every big play. They high-fived each other every time the Arrows scored.",
+   "book_text": "Mike, did you enjoy the baseball game last weekend? Yeah. It was amazing! Here’s the picture my Dad took. Check it out. Cool! Wow, is this you in the curly hair wig? Yeah. I wore it for fun. I love it. I see this sign says, “Home Run Arrows!” Yeah, that’s my favorite team. Were these striped hot air balloons in the sky related to the game? I think so, and they were cool. Looking at the scoreboard, it looks like the Arrows were losing five to four. They were, but they came back and won. That must’ve been thrilling! It sure was. Look at the man on the ground. He’s extending both his arms to his sides. Yeah, he judged the plays from this spot the whole game. Cool. It looks like it was a super fun day.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 3,
+   "c_note": "partial: Mike가 좋아하는 팀은 Arrows(시험 문장의 주된 명제는 'TV로만 봤다'라서 strict 아님); 아빠와 경기를 봄(교재 '아빠가 찍은 사진'); Arrows가 이김(교재 역전승, 시험 홈런 뒤 승리). Chavez·파울볼은 교재에 없음",
+   "is_chart": false,
+   "duplicate_of": "2025.09-43",
+   "shared_runs_3plus": [
+    "the game it"
+   ]
+  },
+  {
+   "시험": "2025.09",
+   "문항": "45",
+   "시험유형": "1지문 3문항",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "51",
+   "번호확인": "일치: 8강 5번(p.51)은 Mike가 Arrows 야구 경기를 보고 온 뒤 사진을 두고 여자와 이야기하는 그림 일치 문항(그림 문항은 대본 기준으로 확인)",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     36
+    ],
+    "segments": [
+     {
+      "start": "W: Mike, did you enjoy the baseball game",
+      "end": "It looks like it was a super fun day."
+     }
+    ],
+    "note": "8강 5번(그림 대화) 대본"
+   },
+   "exam_words": 365,
+   "book_words": 139,
+   "exam_content_tokens": 209,
+   "a_content_token_ratio": 0.316,
+   "a_content_type_ratio": 0.196,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Mike had always dreamed about going to a baseball game. He watched his favorite team, the Arrows, on TV all the time, but he had never seen a game in person. One afternoon, Mike’s dad came home earlier than usual. “Hey, Mike,” he said, “I just got two tickets for tonight’s Arrows game. Do you want to go?” Mike was so excited that he ran to grab his Arrows hat. In the car, his dad handed him a new baseball glove and added, “Just in case a fly ball comes our way.” Several hours later, Mike’s favorite team hit a home run and won the game. Fireworks filled the sky, and the team song played throughout the stadium. When they got home, Mike told his mom all about his favorite plays and showed her the ball he caught. He knew this was a day he would never forget. It wasn’t just the game ― it was the cheering, the excitement, and best of all, spending time with his dad. He couldn’t wait for the next time they would get to go to a game. The stadium was full of people wearing Arrows shirts. Mike couldn’t believe how big the stadium looked in person. As the players ran onto the field, Mike and his dad cheered for their team’s players. His dad pointed at the player running out to third base, saying “Look, it’s Chavez, your favorite player!” Mike saw him warming up on the field and waved hoping to get his attention. After the players warmed up, Mike and his dad went to get some snacks. As soon as they sat back down, the pitcher threw the first pitch. Before long, it was Chavez’s turn to hit. He hit a high fly ball into the stands. The whole crowd stood up, but Mike reached up with his glove and grabbed the ball. Everyone clapped and smiled at Mike. He tightly held the ball and felt a little surprised, but very proud. Both teams kept scoring and the game stayed close. Mike and his dad cheered for every hit and held their breath during every big play. They high-fived each other every time the Arrows scored.",
+   "book_text": "Mike, did you enjoy the baseball game last weekend? Yeah. It was amazing! Here’s the picture my Dad took. Check it out. Cool! Wow, is this you in the curly hair wig? Yeah. I wore it for fun. I love it. I see this sign says, “Home Run Arrows!” Yeah, that’s my favorite team. Were these striped hot air balloons in the sky related to the game? I think so, and they were cool. Looking at the scoreboard, it looks like the Arrows were losing five to four. They were, but they came back and won. That must’ve been thrilling! It sure was. Look at the man on the ground. He’s extending both his arms to his sides. Yeah, he judged the plays from this spot the whole game. Cool. It looks like it was a super fun day.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 3,
+   "c_note": "partial: Mike가 좋아하는 팀은 Arrows(시험 문장의 주된 명제는 'TV로만 봤다'라서 strict 아님); 아빠와 경기를 봄(교재 '아빠가 찍은 사진'); Arrows가 이김(교재 역전승, 시험 홈런 뒤 승리). Chavez·파울볼은 교재에 없음",
+   "is_chart": false,
+   "duplicate_of": "2025.09-43",
+   "shared_runs_3plus": [
+    "the game it"
+   ]
+  },
+  {
+   "시험": "2025.11",
+   "문항": "43",
+   "시험유형": "1지문 3문항(글의 순서)",
+   "연계방식": "일부변형",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "16",
+   "번호확인": "일치: 2강 02번은 Sam과 Julia가 일일 일정에 독서 시간을 꾸준히 확보하자는 의견 문항(제목 일치)이며 문제 16쪽·대본 정답과해설 6~7쪽에서 확인. 같은 2강 04번(문제 19쪽, 정답과해설 8쪽)에 Mia와 아빠가 소설 Café Paris를 읽는 대화가 있어 시험 인물·책 제목과 더 직접 겹침",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     6,
+     7,
+     8
+    ],
+    "segments": [
+     {
+      "start": "W: Hi, Sam! Where are you going?",
+      "end": "set aside a consistent time for reading in"
+     },
+     {
+      "start": "your daily schedule. W: That sounds challenging.",
+      "end": "M: No problem!"
+     },
+     {
+      "start": "M: Mia, what are you reading?",
+      "end": "I’ll give it a try."
+     }
+    ],
+    "note": "2강 02번(Sam-Julia) + 04번(Mia-아빠) 대본 합침"
+   },
+   "exam_words": 362,
+   "book_words": 293,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.355,
+   "a_content_type_ratio": 0.244,
+   "b_4gram_token_coverage": 0.022,
+   "b_4gram_share": 0.006,
+   "longest_shared_run_words": 4,
+   "exam_text": "“Mia, let’s go walk our dog!” Julia called out, but there was no answer. She checked her daughter’s room and found that Mia was absorbed in her smartphone, wearing her earbuds. Julia was concerned about her daughter. She turned to her husband, Sam. “Mia seems to live inside her phone, not with us.” Sam nodded, “I know. I feel like she is growing distant from us. Why don’t we set up a family reading club?” Julia brightened at the suggestion, and Sam promised to talk with Mia about it. Mia’s family held their first book club meeting on Saturday afternoon. Everyone enjoyed the book Mia had chosen. Julia was the first to speak: “Dr. Duvall nearly invented a drug for eternal life, yet disappeared one day and ended up running Café Paris. That’s such a mystery.” Mia responded, her eyes sparkling, “Mom, I understand him. He always dreamed of being a barista, and his dream came true.” Sam supported his daughter, and their conversation grew lively. During the discussion, Mia felt reconnected with her parents and already looked forward to their next book club meeting. At the library, Mia scanned the shelves for nearly an hour, feeling lost among the endless titles. Then, a librarian approached and asked, “Looking for something in particular?” “I need a book for my family’s reading club,” Mia admitted. “What genre do you enjoy?” she asked kindly. “Hmm, I like mysteries,” Mia replied. The librarian handed her a book titled Café Paris and said with a smile, “You’ll love this one.” Mia thanked her and checked it out. When Sam suggested starting a family reading club, Mia immediately shook her head and said, “No, Dad. I don’t have time to read books. You know how busy I am with exams all semester.” He didn’t give up. “But wouldn’t it be fun if we all read the same story and shared our thoughts? You could simply read for 20 minutes, maybe during your lunch break.” After some persuasion, Mia reluctantly agreed. Deep down, she knew she was spending too much time on her phone. So she asked, “Dad, can I choose the first book?” Sam gladly said, “Yes.”",
+   "book_text": "Hi, Sam! Where are you going? Hi, Julia. Just heading to the library to return some books. You always seem to have time to read. I wish I could, but with my busy schedule, I never get a chance to pick up a book. I understand. But you know, it’s more about making time rather than having it. What do you mean? You should set aside a consistent time for reading in your daily schedule. That sounds challenging. It doesn’t have to be. You could simply dedicate 20 minutes before bed or during your lunch break. Just be consistent. Actually, I do spend a lot of time scrolling through my phone in bed. Why don’t you exchange some of that screen time for reading time? And remember to include it regularly in your daily schedule. Okay, I’ll give it a try. Thanks for the advice! No problem! Mia, what are you reading? Hey, Dad. I’m reading the novel Café Paris in French. Wow. You’re reading the original, not a translation! Yes, but there are several words I don’t know. It’s been taking me a long time to look them up in the dictionary. Hmm. It sounds like that’s interrupting your reading flow. I don’t think you need to look up every word you don’t know. You mean I should move on without knowing what a word means? Right. Because you can infer the meaning of it from the context. But I thought I should know the meaning of every single word to improve my reading comprehension. That’s not necessary. When reading a book in a foreign language, guessing the meanings of words from the context is often more beneficial than looking them up in the dictionary. I see. I’ll give it a try.",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 2,
+   "c_note": "strict: 'You could simply read for 20 minutes, maybe during your lunch break' = 'You could simply dedicate 20 minutes before bed or during your lunch break'(같은 Sam의 제안, 듣는 사람만 Julia→Mia). partial: 바빠서 책 읽을 시간이 없다(교재 Julia, 시험 Mia); 휴대전화를 너무 오래 본다(교재 Julia, 시험 Mia). Café Paris는 책 이름만 겹침",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": [
+    "have time to read",
+    "you could simply",
+    "during your lunch break"
+   ]
+  },
+  {
+   "시험": "2025.11",
+   "문항": "44",
+   "시험유형": "1지문 3문항(지칭 추론)",
+   "연계방식": "일부변형",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "16",
+   "번호확인": "일치: 2강 02번은 Sam과 Julia가 일일 일정에 독서 시간을 꾸준히 확보하자는 의견 문항(제목 일치)이며 문제 16쪽·대본 정답과해설 6~7쪽에서 확인. 같은 2강 04번(문제 19쪽, 정답과해설 8쪽)에 Mia와 아빠가 소설 Café Paris를 읽는 대화가 있어 시험 인물·책 제목과 더 직접 겹침",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     6,
+     7,
+     8
+    ],
+    "segments": [
+     {
+      "start": "W: Hi, Sam! Where are you going?",
+      "end": "set aside a consistent time for reading in"
+     },
+     {
+      "start": "your daily schedule. W: That sounds challenging.",
+      "end": "M: No problem!"
+     },
+     {
+      "start": "M: Mia, what are you reading?",
+      "end": "I’ll give it a try."
+     }
+    ],
+    "note": "2강 02번(Sam-Julia) + 04번(Mia-아빠) 대본 합침"
+   },
+   "exam_words": 362,
+   "book_words": 293,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.355,
+   "a_content_type_ratio": 0.244,
+   "b_4gram_token_coverage": 0.022,
+   "b_4gram_share": 0.006,
+   "longest_shared_run_words": 4,
+   "exam_text": "“Mia, let’s go walk our dog!” Julia called out, but there was no answer. She checked her daughter’s room and found that Mia was absorbed in her smartphone, wearing her earbuds. Julia was concerned about her daughter. She turned to her husband, Sam. “Mia seems to live inside her phone, not with us.” Sam nodded, “I know. I feel like she is growing distant from us. Why don’t we set up a family reading club?” Julia brightened at the suggestion, and Sam promised to talk with Mia about it. Mia’s family held their first book club meeting on Saturday afternoon. Everyone enjoyed the book Mia had chosen. Julia was the first to speak: “Dr. Duvall nearly invented a drug for eternal life, yet disappeared one day and ended up running Café Paris. That’s such a mystery.” Mia responded, her eyes sparkling, “Mom, I understand him. He always dreamed of being a barista, and his dream came true.” Sam supported his daughter, and their conversation grew lively. During the discussion, Mia felt reconnected with her parents and already looked forward to their next book club meeting. At the library, Mia scanned the shelves for nearly an hour, feeling lost among the endless titles. Then, a librarian approached and asked, “Looking for something in particular?” “I need a book for my family’s reading club,” Mia admitted. “What genre do you enjoy?” she asked kindly. “Hmm, I like mysteries,” Mia replied. The librarian handed her a book titled Café Paris and said with a smile, “You’ll love this one.” Mia thanked her and checked it out. When Sam suggested starting a family reading club, Mia immediately shook her head and said, “No, Dad. I don’t have time to read books. You know how busy I am with exams all semester.” He didn’t give up. “But wouldn’t it be fun if we all read the same story and shared our thoughts? You could simply read for 20 minutes, maybe during your lunch break.” After some persuasion, Mia reluctantly agreed. Deep down, she knew she was spending too much time on her phone. So she asked, “Dad, can I choose the first book?” Sam gladly said, “Yes.”",
+   "book_text": "Hi, Sam! Where are you going? Hi, Julia. Just heading to the library to return some books. You always seem to have time to read. I wish I could, but with my busy schedule, I never get a chance to pick up a book. I understand. But you know, it’s more about making time rather than having it. What do you mean? You should set aside a consistent time for reading in your daily schedule. That sounds challenging. It doesn’t have to be. You could simply dedicate 20 minutes before bed or during your lunch break. Just be consistent. Actually, I do spend a lot of time scrolling through my phone in bed. Why don’t you exchange some of that screen time for reading time? And remember to include it regularly in your daily schedule. Okay, I’ll give it a try. Thanks for the advice! No problem! Mia, what are you reading? Hey, Dad. I’m reading the novel Café Paris in French. Wow. You’re reading the original, not a translation! Yes, but there are several words I don’t know. It’s been taking me a long time to look them up in the dictionary. Hmm. It sounds like that’s interrupting your reading flow. I don’t think you need to look up every word you don’t know. You mean I should move on without knowing what a word means? Right. Because you can infer the meaning of it from the context. But I thought I should know the meaning of every single word to improve my reading comprehension. That’s not necessary. When reading a book in a foreign language, guessing the meanings of words from the context is often more beneficial than looking them up in the dictionary. I see. I’ll give it a try.",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 2,
+   "c_note": "strict: 'You could simply read for 20 minutes, maybe during your lunch break' = 'You could simply dedicate 20 minutes before bed or during your lunch break'(같은 Sam의 제안, 듣는 사람만 Julia→Mia). partial: 바빠서 책 읽을 시간이 없다(교재 Julia, 시험 Mia); 휴대전화를 너무 오래 본다(교재 Julia, 시험 Mia). Café Paris는 책 이름만 겹침",
+   "is_chart": false,
+   "duplicate_of": "2025.11-43",
+   "shared_runs_3plus": [
+    "have time to read",
+    "you could simply",
+    "during your lunch break"
+   ]
+  },
+  {
+   "시험": "2025.11",
+   "문항": "45",
+   "시험유형": "1지문 3문항(세부 내용)",
+   "연계방식": "일부변형",
+   "교재": "2026 수능특강 영어듣기",
+   "쪽": "16",
+   "번호확인": "일치: 2강 02번은 Sam과 Julia가 일일 일정에 독서 시간을 꾸준히 확보하자는 의견 문항(제목 일치)이며 문제 16쪽·대본 정답과해설 6~7쪽에서 확인. 같은 2강 04번(문제 19쪽, 정답과해설 8쪽)에 Mia와 아빠가 소설 Café Paris를 읽는 대화가 있어 시험 인물·책 제목과 더 직접 겹침",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2026 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     6,
+     7,
+     8
+    ],
+    "segments": [
+     {
+      "start": "W: Hi, Sam! Where are you going?",
+      "end": "set aside a consistent time for reading in"
+     },
+     {
+      "start": "your daily schedule. W: That sounds challenging.",
+      "end": "M: No problem!"
+     },
+     {
+      "start": "M: Mia, what are you reading?",
+      "end": "I’ll give it a try."
+     }
+    ],
+    "note": "2강 02번(Sam-Julia) + 04번(Mia-아빠) 대본 합침"
+   },
+   "exam_words": 362,
+   "book_words": 293,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.355,
+   "a_content_type_ratio": 0.244,
+   "b_4gram_token_coverage": 0.022,
+   "b_4gram_share": 0.006,
+   "longest_shared_run_words": 4,
+   "exam_text": "“Mia, let’s go walk our dog!” Julia called out, but there was no answer. She checked her daughter’s room and found that Mia was absorbed in her smartphone, wearing her earbuds. Julia was concerned about her daughter. She turned to her husband, Sam. “Mia seems to live inside her phone, not with us.” Sam nodded, “I know. I feel like she is growing distant from us. Why don’t we set up a family reading club?” Julia brightened at the suggestion, and Sam promised to talk with Mia about it. Mia’s family held their first book club meeting on Saturday afternoon. Everyone enjoyed the book Mia had chosen. Julia was the first to speak: “Dr. Duvall nearly invented a drug for eternal life, yet disappeared one day and ended up running Café Paris. That’s such a mystery.” Mia responded, her eyes sparkling, “Mom, I understand him. He always dreamed of being a barista, and his dream came true.” Sam supported his daughter, and their conversation grew lively. During the discussion, Mia felt reconnected with her parents and already looked forward to their next book club meeting. At the library, Mia scanned the shelves for nearly an hour, feeling lost among the endless titles. Then, a librarian approached and asked, “Looking for something in particular?” “I need a book for my family’s reading club,” Mia admitted. “What genre do you enjoy?” she asked kindly. “Hmm, I like mysteries,” Mia replied. The librarian handed her a book titled Café Paris and said with a smile, “You’ll love this one.” Mia thanked her and checked it out. When Sam suggested starting a family reading club, Mia immediately shook her head and said, “No, Dad. I don’t have time to read books. You know how busy I am with exams all semester.” He didn’t give up. “But wouldn’t it be fun if we all read the same story and shared our thoughts? You could simply read for 20 minutes, maybe during your lunch break.” After some persuasion, Mia reluctantly agreed. Deep down, she knew she was spending too much time on her phone. So she asked, “Dad, can I choose the first book?” Sam gladly said, “Yes.”",
+   "book_text": "Hi, Sam! Where are you going? Hi, Julia. Just heading to the library to return some books. You always seem to have time to read. I wish I could, but with my busy schedule, I never get a chance to pick up a book. I understand. But you know, it’s more about making time rather than having it. What do you mean? You should set aside a consistent time for reading in your daily schedule. That sounds challenging. It doesn’t have to be. You could simply dedicate 20 minutes before bed or during your lunch break. Just be consistent. Actually, I do spend a lot of time scrolling through my phone in bed. Why don’t you exchange some of that screen time for reading time? And remember to include it regularly in your daily schedule. Okay, I’ll give it a try. Thanks for the advice! No problem! Mia, what are you reading? Hey, Dad. I’m reading the novel Café Paris in French. Wow. You’re reading the original, not a translation! Yes, but there are several words I don’t know. It’s been taking me a long time to look them up in the dictionary. Hmm. It sounds like that’s interrupting your reading flow. I don’t think you need to look up every word you don’t know. You mean I should move on without knowing what a word means? Right. Because you can infer the meaning of it from the context. But I thought I should know the meaning of every single word to improve my reading comprehension. That’s not necessary. When reading a book in a foreign language, guessing the meanings of words from the context is often more beneficial than looking them up in the dictionary. I see. I’ll give it a try.",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 2,
+   "c_note": "strict: 'You could simply read for 20 minutes, maybe during your lunch break' = 'You could simply dedicate 20 minutes before bed or during your lunch break'(같은 Sam의 제안, 듣는 사람만 Julia→Mia). partial: 바빠서 책 읽을 시간이 없다(교재 Julia, 시험 Mia); 휴대전화를 너무 오래 본다(교재 Julia, 시험 Mia). Café Paris는 책 이름만 겹침",
+   "is_chart": false,
+   "duplicate_of": "2025.11-43",
+   "shared_runs_3plus": [
+    "have time to read",
+    "you could simply",
+    "during your lunch break"
+   ]
+  },
+  {
+   "시험": "2026.06",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "138",
+   "번호확인": "일치: 18강 10번은 지구의 날 학교 활동(나무 심기·재활용 챌린지)을 다룬 대화 응답 문항",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     95
+    ],
+    "segments": [
+     {
+      "start": "M: Judy , how was your Earth Day",
+      "end": "You’re like a little environmentalist."
+     }
+    ],
+    "note": "18강 10번(대화) 대본"
+   },
+   "exam_words": 87,
+   "book_words": 154,
+   "exam_content_tokens": 52,
+   "a_content_token_ratio": 0.038,
+   "a_content_type_ratio": 0.049,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 1,
+   "exam_text": "Green Dewywood Drawing Competition We are holding a drawing competition to encourage environmental preservation. Use your creativity and artistic skills to show Dewywood’s green side on paper! Theme: Green Dewywood Through Our Eyes When & Where ∙Sunday, June 21, 1:00 p.m.—4:30 p.m. ∙Dewywood Park Registration ∙Online registration is required from June 10 to June 15 (www.greendewy*#wood△△.org). ∙There is no registration fee. Competition Categories [ ] Prize ∙One winner in each age group will be selected. ∙Winners will each receive a canvas bag.",
+   "book_text": "Judy, how was your Earth Day event at school today? It was amazing, Dad! We did a bunch of activities to help the environment. That sounds great! What kind of things did you do? First, we planted trees near the playground. My teacher said they help clean the air and provide animals with places to live. That’s true! Trees are very important for the planet. What else did you do? We also had an inter-class recycling challenge! We had to sort paper, plastic, and glass into the right bins. That’s a great way to learn about recycling! Did your class win? No, but we still had fun. Dad, can we do something for Earth Day too? Of course! Why don’t we plant some flowers in our garden? They attract bees and butterflies, which helps the environment. Awesome! I’ll help plant them and take care of them. That’s wonderful! You’re like a little environmentalist.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "partial: 행사 취지가 환경 보호(교재 지구의 날 활동, 시험 그림 대회)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.06",
+   "문항": "28",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "67",
+   "번호확인": "일치: 10강 6번은 Sunset Drone Show 담화 내용 일치 문항",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     48
+    ],
+    "segments": [
+     {
+      "start": "W: Good e vening, listeners! I’m excited to announce",
+      "end": "for a night sky full of colors!"
+     }
+    ],
+    "note": "10강 6번(담화) 대본"
+   },
+   "exam_words": 80,
+   "book_words": 119,
+   "exam_content_tokens": 48,
+   "a_content_token_ratio": 0.167,
+   "a_content_type_ratio": 0.143,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Summer Night Drone Event Come and enjoy a magical summer night filled with fun family activities, great food, and a breathtaking drone show. Date: Friday, July 3, 2026 Time: 6 p.m. to 11 p.m. Place: Aurora River Park (Parking is not available.) Attractions [ ] Additional Information ∙Food and beverages will be sold during the event. ∙You may bring a lawn chair or blanket to sit on the grass. Note: In case of heavy rain, the event will be cancelled.",
+   "book_text": "Good evening, listeners! I’m excited to announce our city’s first-ever Sunset Drone Show. On the evening of May 25th, 500 drones will light up the night sky over Harbor Beach with spectacular moving images. The show starts at 7:30 p.m. and runs for approximately 30 minutes. All nearby buildings will turn off their lights during the show. Viewers can enjoy the show from anywhere along the beach, but the best viewing spots will be marked with red flags. These prime viewing areas are free of charge, but they’re expected to get crowded. If weather conditions are unfavorable, the show will be postponed to the following day. Come join us for a night sky full of colors!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "partial: 야간 드론 쇼 행사; 악천후 대응(교재 연기, 시험 취소)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.09",
+   "문항": "27",
+   "시험유형": "내용 불일치(실용문)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "182",
+   "번호확인": "일치: p.182에 22강 실전 모의고사 1회 1번 목적(총무부의 사무실 내 개인 컵 사용 요청)이 실재하며 2·3번과 함께 수록됨",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     122
+    ],
+    "segments": [
+     {
+      "start": "M: H ello, everyone! This is Edward Jackson",
+      "end": "contact the General Affairs Department. Thank you."
+     }
+    ],
+    "note": "22강(실전 1회) 1번(담화) 대본"
+   },
+   "exam_words": 85,
+   "book_words": 108,
+   "exam_content_tokens": 50,
+   "a_content_token_ratio": 0.04,
+   "a_content_type_ratio": 0.028,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 1,
+   "exam_text": "RCQ High School Food Waste Reduction Competition Our school is holding a food waste reduction competition to promote sustainable living. This competition has been held every year since 2023. Your effort makes a difference! When: October 1 to October 31, 2026 Who: All classes of RCQ High School will participate. How ∙Every lunch, we will give a point to each student who doesn’t leave food on their tray. ∙Students’ points will be combined by class. Winning classes will be decided by each class’s points. Prizes [ ]",
+   "book_text": "Hello, everyone! This is Edward Jackson from the General Affairs Department. I’d like to request that everyone use personal cups instead of disposable cups in the office from next week. Recently, the amount of waste generated by employees has increased significantly, especially disposable paper cups, which make up a large portion of the waste. This not only increases waste disposal costs, but also has a negative environmental impact. It may be inconvenient at first, but we ask everyone to actively follow this request for the benefit of both our workplace and the planet. If you have any questions about this, please contact the General Affairs Department. Thank you.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "partial: 폐기물을 줄여 환경을 보호하자는 취지(교재 일회용 컵, 시험 급식 잔반)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.09",
+   "문항": "28",
+   "시험유형": "내용 일치(실용문)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "161",
+   "번호확인": "일치: p.161에 20강 7번 언급 유무(2026 Voice Stars Challenge: 참가 대상·일자·본선 인원·참가 방법, 정답은 심사 위원)가 실재하며 8번 Youth Broadcasting Camp와 함께 수록됨",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기.txt",
+    "pdf_pages": [
+     326
+    ],
+    "segments": [
+     {
+      "start": "M: Alice, ha ve you heard about the 2026",
+      "end": "I’ ll definitely think about it."
+     }
+    ],
+    "note": "20강 7번(대화) 대본. 정답과해설 txt에는 이 대본이 빠져 있어 '2027 수능특강 영어듣기.txt'(정답과해설 합본) 326쪽에서 가져옴"
+   },
+   "exam_words": 110,
+   "book_words": 143,
+   "exam_content_tokens": 52,
+   "a_content_token_ratio": 0.173,
+   "a_content_type_ratio": 0.122,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Newstar Voice Acting Course Do you dream of hearing your own voice in an animation or movie? If so, our voice acting course is perfect for you. When & Where ∙6 p.m. to 8 p.m. every Thursday ∙Room #223, Newstar Building Course Content [ ] Registration ∙The registration fee is $170. ∙You can register only in the first week of every month. ∙To register, call 789-331-0234 or email us at n#star v#ac.com. Special Benefits ∙Video-recorded class lectures will be provided for no additional fee. ∙You will have a chance to meet the famous voice actor Richard Choi, who will share his know-how with you.",
+   "book_text": "Alice, have you heard about the 2026 Voice Stars Challenge? No, I haven’t, Mr. Thompson. What is it? It’s a voice acting competition open to all high school students across the country. Here, take a look at this flyer. Oh, thanks. So the event’s on May 30th. Yeah, you’ve got plenty of time to prepare. Got it. But it says only 10 participants will be selected to compete at the main event. That sounds pretty competitive. It is pretty tough, but definitely worth a try. To enter, you just need to submit a one-minute voice recording by April 30th. So the finalists will be selected based on that recording, right? Hmm, I’m not sure. I’m not that confident. Come on, you’re interested in becoming a voice actor, right? I really think you should go for it. Thanks! I’ll definitely think about it.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "partial: 성우가 되고 싶은 사람 대상(교재 성우 대회, 시험 성우 강좌)",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.09",
+   "문항": "43",
+   "시험유형": "장문 독해(1지문 3문항)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "135",
+   "번호확인": "일치: p.135에 18강 3번 그림 내용 일치(‘Adopt a Pet Day’ 포스터를 보며 나누는 대화)가 실재하며 4번 할 일과 함께 수록됨. 시험 43~45번은 읽기 장문이라 유형은 다름",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     91
+    ],
+    "segments": [
+     {
+      "start": "W: Hone y, look at this “Adopt a Pet Day” poster",
+      "end": "really captures the spirit of “Adopt a Pet Day”!"
+     }
+    ],
+    "note": "18강 3번(그림 대화) 대본"
+   },
+   "exam_words": 347,
+   "book_words": 135,
+   "exam_content_tokens": 213,
+   "a_content_token_ratio": 0.131,
+   "a_content_type_ratio": 0.092,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Tim adopted a dog a few months ago. When he met his dog for the first time, he named him after his favorite character, Mickey. Mickey was a healthy dog, but he soon seemed to lack energy. Tim thought that taking care of a dog was much harder than he had expected. So, he decided to sign up for a dog training course. At the training center, he met an instructor named Jack. He emphasized to Tim, “Be sure to walk your dog daily. Dogs need regular exercise to be happy and healthy.” When Tim and Mickey arrived at the park Jack had recommended, dozens of dogs were already jumping and playing. Mickey looked nervous in the unfamiliar surroundings. Tim said, “Don’t worry, Mickey. It’ll be fun.” Just then, Tim saw a boy about his age standing with a small dog. Gathering his courage, Tim walked over to him. “Hi, I’m Tim. Can I introduce my dog to yours?” The boy replied, “Sure. I’m Daniel. Oh, it looks like they like each other already!” Having something in common as dog owners, Tim and Daniel enjoyed talking to each other. They spent the next two hours pleasantly chatting and decided to walk their dogs together regularly. “See you soon,” said Tim as he and Mickey left the park. Over the next few weeks, the boys and their dogs became great friends. After returning from a walk one day, Tim said to Mickey, “Walking you felt like a burden at first, but now I see doing things for you can be great for me, too!” Being sure to follow Jack’s advice, Tim took Mickey for a walk every day. However, this extra responsibility soon seemed like a burden, and Tim felt exhausted. One day, Tim got a call from Jack. “Hello, Tim. How’s everything going with Mickey?” Tim replied, “Actually, it’s pretty hard walking him every day. We’ve been taking the same route, and it has become a little boring.” Jack offered him a new idea. “How about going to Happy Dog Park?” Tim said, “That’s a great idea!”",
+   "book_text": "Honey, look at this “Adopt a Pet Day” poster that Henry drew! Oh, it’s so nice! I love the Christmas tree wrapped in string lights. It’s so detailed. Yeah! Henry’s drawing skills have really improved. I agree. Look at the man on the left, holding the ladder. He’s holding it for the woman standing on it. Oh, look! The dog in a Christmas stocking is adorable! And look at the angel on top of the tree. Its two wings are spread wide open. Right. That looks very unique! There are also two gift boxes on the rug in the bottom right. They may be Christmas gifts from Santa. And right next to them is a cat lying on its stomach. That’s so cute! Absolutely! This poster really captures the spirit of “Adopt a Pet Day”!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 'Adopt a Pet Day' 포스터 묘사, 시험 개 입양 뒤 산책 이야기. 입양·개만 공유",
+   "is_chart": false,
+   "duplicate_of": null,
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.09",
+   "문항": "44",
+   "시험유형": "장문 독해(1지문 3문항)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "135",
+   "번호확인": "일치: p.135에 18강 3번 그림 내용 일치(‘Adopt a Pet Day’ 포스터를 보며 나누는 대화)가 실재하며 4번 할 일과 함께 수록됨. 시험 43~45번은 읽기 장문이라 유형은 다름",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     91
+    ],
+    "segments": [
+     {
+      "start": "W: Hone y, look at this “Adopt a Pet Day” poster",
+      "end": "really captures the spirit of “Adopt a Pet Day”!"
+     }
+    ],
+    "note": "18강 3번(그림 대화) 대본"
+   },
+   "exam_words": 347,
+   "book_words": 135,
+   "exam_content_tokens": 213,
+   "a_content_token_ratio": 0.131,
+   "a_content_type_ratio": 0.092,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Tim adopted a dog a few months ago. When he met his dog for the first time, he named him after his favorite character, Mickey. Mickey was a healthy dog, but he soon seemed to lack energy. Tim thought that taking care of a dog was much harder than he had expected. So, he decided to sign up for a dog training course. At the training center, he met an instructor named Jack. He emphasized to Tim, “Be sure to walk your dog daily. Dogs need regular exercise to be happy and healthy.” When Tim and Mickey arrived at the park Jack had recommended, dozens of dogs were already jumping and playing. Mickey looked nervous in the unfamiliar surroundings. Tim said, “Don’t worry, Mickey. It’ll be fun.” Just then, Tim saw a boy about his age standing with a small dog. Gathering his courage, Tim walked over to him. “Hi, I’m Tim. Can I introduce my dog to yours?” The boy replied, “Sure. I’m Daniel. Oh, it looks like they like each other already!” Having something in common as dog owners, Tim and Daniel enjoyed talking to each other. They spent the next two hours pleasantly chatting and decided to walk their dogs together regularly. “See you soon,” said Tim as he and Mickey left the park. Over the next few weeks, the boys and their dogs became great friends. After returning from a walk one day, Tim said to Mickey, “Walking you felt like a burden at first, but now I see doing things for you can be great for me, too!” Being sure to follow Jack’s advice, Tim took Mickey for a walk every day. However, this extra responsibility soon seemed like a burden, and Tim felt exhausted. One day, Tim got a call from Jack. “Hello, Tim. How’s everything going with Mickey?” Tim replied, “Actually, it’s pretty hard walking him every day. We’ve been taking the same route, and it has become a little boring.” Jack offered him a new idea. “How about going to Happy Dog Park?” Tim said, “That’s a great idea!”",
+   "book_text": "Honey, look at this “Adopt a Pet Day” poster that Henry drew! Oh, it’s so nice! I love the Christmas tree wrapped in string lights. It’s so detailed. Yeah! Henry’s drawing skills have really improved. I agree. Look at the man on the left, holding the ladder. He’s holding it for the woman standing on it. Oh, look! The dog in a Christmas stocking is adorable! And look at the angel on top of the tree. Its two wings are spread wide open. Right. That looks very unique! There are also two gift boxes on the rug in the bottom right. They may be Christmas gifts from Santa. And right next to them is a cat lying on its stomach. That’s so cute! Absolutely! This poster really captures the spirit of “Adopt a Pet Day”!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 'Adopt a Pet Day' 포스터 묘사, 시험 개 입양 뒤 산책 이야기. 입양·개만 공유",
+   "is_chart": false,
+   "duplicate_of": "2026.09-43",
+   "shared_runs_3plus": []
+  },
+  {
+   "시험": "2026.09",
+   "문항": "45",
+   "시험유형": "장문 독해(1지문 3문항)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어듣기",
+   "쪽": "135",
+   "번호확인": "일치: p.135에 18강 3번 그림 내용 일치(‘Adopt a Pet Day’ 포스터를 보며 나누는 대화)가 실재하며 4번 할 일과 함께 수록됨. 시험 43~45번은 읽기 장문이라 유형은 다름",
+   "supplement_group": "listening_textbook",
+   "status": "measured",
+   "script_source": {
+    "file": "2027 수능특강 영어듣기 정답과해설.txt",
+    "pdf_pages": [
+     91
+    ],
+    "segments": [
+     {
+      "start": "W: Hone y, look at this “Adopt a Pet Day” poster",
+      "end": "really captures the spirit of “Adopt a Pet Day”!"
+     }
+    ],
+    "note": "18강 3번(그림 대화) 대본"
+   },
+   "exam_words": 347,
+   "book_words": 135,
+   "exam_content_tokens": 213,
+   "a_content_token_ratio": 0.131,
+   "a_content_type_ratio": 0.092,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Tim adopted a dog a few months ago. When he met his dog for the first time, he named him after his favorite character, Mickey. Mickey was a healthy dog, but he soon seemed to lack energy. Tim thought that taking care of a dog was much harder than he had expected. So, he decided to sign up for a dog training course. At the training center, he met an instructor named Jack. He emphasized to Tim, “Be sure to walk your dog daily. Dogs need regular exercise to be happy and healthy.” When Tim and Mickey arrived at the park Jack had recommended, dozens of dogs were already jumping and playing. Mickey looked nervous in the unfamiliar surroundings. Tim said, “Don’t worry, Mickey. It’ll be fun.” Just then, Tim saw a boy about his age standing with a small dog. Gathering his courage, Tim walked over to him. “Hi, I’m Tim. Can I introduce my dog to yours?” The boy replied, “Sure. I’m Daniel. Oh, it looks like they like each other already!” Having something in common as dog owners, Tim and Daniel enjoyed talking to each other. They spent the next two hours pleasantly chatting and decided to walk their dogs together regularly. “See you soon,” said Tim as he and Mickey left the park. Over the next few weeks, the boys and their dogs became great friends. After returning from a walk one day, Tim said to Mickey, “Walking you felt like a burden at first, but now I see doing things for you can be great for me, too!” Being sure to follow Jack’s advice, Tim took Mickey for a walk every day. However, this extra responsibility soon seemed like a burden, and Tim felt exhausted. One day, Tim got a call from Jack. “Hello, Tim. How’s everything going with Mickey?” Tim replied, “Actually, it’s pretty hard walking him every day. We’ve been taking the same route, and it has become a little boring.” Jack offered him a new idea. “How about going to Happy Dog Park?” Tim said, “That’s a great idea!”",
+   "book_text": "Honey, look at this “Adopt a Pet Day” poster that Henry drew! Oh, it’s so nice! I love the Christmas tree wrapped in string lights. It’s so detailed. Yeah! Henry’s drawing skills have really improved. I agree. Look at the man on the left, holding the ladder. He’s holding it for the woman standing on it. Oh, look! The dog in a Christmas stocking is adorable! And look at the angel on top of the tree. Its two wings are spread wide open. Right. That looks very unique! There are also two gift boxes on the rug in the bottom right. They may be Christmas gifts from Santa. And right next to them is a cat lying on its stomach. That’s so cute! Absolutely! This poster really captures the spirit of “Adopt a Pet Day”!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 'Adopt a Pet Day' 포스터 묘사, 시험 개 입양 뒤 산책 이야기. 입양·개만 공유",
+   "is_chart": false,
+   "duplicate_of": "2026.09-43",
+   "shared_runs_3plus": []
+  }
+ ],
+ "alt_rows": [
+  {
+   "시험": "2024.11",
+   "문항": "43~45",
+   "status": "measured",
+   "script_source": {
+    "file": "2025 수능완성 영어.txt",
+    "pdf_pages": [
+     225
+    ],
+    "segments": [
+     {
+      "start": "W : Ethan , are you feeling okay ?",
+      "end": "It could create an opportunity for a good conversation ."
+     }
+    ],
+    "note": "실전 1회 14번(긴 대화) 대본. 마지막 응답(정답 선택지)은 넣지 않음. 기존 측정(1강 2번 대조)의 보조 대조"
+   },
+   "exam_words": 381,
+   "book_words": 150,
+   "exam_content_tokens": 209,
+   "a_content_token_ratio": 0.234,
+   "a_content_type_ratio": 0.144,
+   "b_4gram_token_coverage": 0.016,
+   "b_4gram_share": 0.008,
+   "longest_shared_run_words": 6,
+   "exam_text": "“Do you remember when Sean used to tell me that I was the best dad in the world?” Ethan asked his wife, Grace. “Yes, I do. I always envied your relationship with Sean,” she replied. Ethan then shared how things had changed since his son started middle school. Grace had noticed Ethan often pushing Sean to study harder. “Maybe he isn’t that into school right now. How about going hiking, just the two of you?” she suggested. He agreed, and realizing that both his and Sean’s hiking jackets were still at the laundry, he asked his wife to go and pick them up with him. Ethan and Grace came back home with the jackets and checked if Sean had everything else he needed for hiking. Luckily, in his drawers they found his hat, shoes, sunglasses, and hiking sticks. When Sean returned from school, Ethan softly said, “Sean, let’s go hiking this Saturday, just the two of us.” Though Sean thanked him for the suggestion, he said he had to go to the library. Grace stepped in, “You know, the weather this weekend will be the best of the year. Why not enjoy it?” After a moment’s hesitation, he agreed. “When did you bring the jackets in?” the clerk at the laundry asked. “Maybe two weeks ago,” Ethan replied. Then, Grace quickly reminded him, “Honey, we actually left them here a month ago.” The clerk went into the storage area to look for the clothes. Finally, he returned with the jackets and handed them to Ethan. The clerk politely said, “I am sorry, but please collect your items earlier next time. Our storage is too full.” Ethan felt embarrassed for the late collection and apologized. The weather was perfect. Ethan and Sean set off hiking along the valley by Aicken Mountain. They walked in silence until Sean fell over a rock and twisted his ankle. Realizing he couldn’t walk, Ethan carried his son down on his back. He felt Sean’s heartbeat, something he hadn’t felt since Sean was a baby. Suddenly, Sean said, “Dad, I’m sorry. At some point, I started to become afraid of disappointing you. But you are still the best dad.” Energized, he felt no weight on his back and replied, “You are the best son, no matter what.”",
+   "book_text": "Ethan, are you feeling okay? It seems like something is bothering you. Something is, Mom. Do you remember how Sean always used to say I’m the best dad in the world? Yes, you had the best father and son relationship. Well, not anymore. Things have changed since he became a teenager. What do you mean? He rarely opens up to me these days. He never leaves his room and just watches dance videos all day long. Have you tried talking to him? I have. But whenever I do that, he just says that I don’t understand him. I remember you were that way at his age. Maybe try bonding with him by doing something he likes together. Good idea. I heard there’s a dance performance at the art center downtown next week. Maybe I should take him there. That sounds perfect. It could create an opportunity for a good conversation.",
+   "c_same_meaning_strict": 1,
+   "c_same_meaning_partial": 3,
+   "c_note": "strict: 'Do you remember when Sean used to tell me that I was the best dad in the world?' = 'Do you remember how Sean always used to say I'm the best dad in the world?'. partial: 부자 관계가 좋았다(교재 어머니, 시험 아내의 말); 아들이 자라며 관계가 변함(teenager→middle school); 둘이서 무언가를 함께 하라는 조언(아들이 좋아하는 것→하이킹)",
+   "is_chart": false,
+   "shared_runs_3plus": [
+    "do you remember",
+    "the best dad in the world",
+    "the best dad"
+   ],
+   "relation_to_old": "기존 파일 rows idx 9(2024.11-43~45, 1강 2번 대조: a 0.038, b 0, 최장 2, c 0/0)를 같은 책 실전 1회 14번 대본과 다시 잰 보조 값"
+  }
+ ]
+}

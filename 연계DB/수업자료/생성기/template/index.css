@@ -1,0 +1,21 @@
+/* 전체 첫 화면(index.html): 회차 탭 8개, 회차마다 연계 지도와 수업 자료·PDF 단추. 지도 모양은 map.css 를 그대로 쓴다 */
+.ix{max-width:1200px;margin:0 auto}
+.ix h1{font-size:28px;margin:4px 0 4px;font-weight:700}
+.ix .sub{color:var(--sub);margin:0 0 16px;font-size:15px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.tabs button{font:inherit;font-size:14px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.tabs button:hover{border-color:var(--warn)}
+.tabs button[aria-selected=true]{border-color:var(--warn);background:rgba(255,185,140,.18);font-weight:700}
+.tabs button:focus-visible,.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tabs .ok{font-size:11px;font-weight:700;color:var(--paper);background:var(--warn);border-radius:999px;padding:1px 7px}
+.panel[hidden]{display:none}
+.ph{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;margin:0 0 12px}
+.ph .acts{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn{color:var(--ink);text-decoration:none;font-size:14px;font-weight:700;padding:8px 16px;border:1.5px solid var(--warn);border-radius:999px;background:rgba(255,185,140,.16)}
+.btn:hover{background:rgba(255,185,140,.3)}
+.btn.off{border-color:var(--line);background:none;color:var(--sub);font-weight:400}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0;font-size:14px;color:var(--sub)}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.chips b{color:var(--ink)}
+.ix .slide{margin-bottom:16px}
+@media (max-width:700px){.ix h1{font-size:22px}.ix .sub{font-size:14px}.tabs button{padding:8px 12px}.ph .acts{margin-left:0;width:100%}.btn{flex:1;text-align:center}.chips{font-size:13px}}

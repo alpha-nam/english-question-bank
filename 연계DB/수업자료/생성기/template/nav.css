@@ -1,0 +1,2 @@
+/* 위 목차 줄(nav.js 가 높이를 잼)이 목차 링크로 이동한 장의 위쪽을 가리지 않게. 연계 지도나 이전·다음 문항 단추가 있을 때 nav.js 와 함께 들어간다 */
+.slide{scroll-margin-top:calc(var(--navh,58px) + 12px)}

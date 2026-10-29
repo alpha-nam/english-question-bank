@@ -1,0 +1,1349 @@
+{
+ "meta": {
+  "작성일": "2026-10-28",
+  "대상": "연계DB_통합_전체문항.csv 중 연계방식이 일부변형·소재만이고 문항 번호 18 이상, 교재가 듣기 교재가 아닌 30행",
+  "방법": {
+   "시험지문": "문제은행/DB/기출/<시험>/<시험>-NN.json text.body(43번은 group_passage). 각주(* 줄)·한글·<u> 태그·①~⑤·(a)~(e)·빈칸 밑줄 제거. 도표 문항은 선택지 5개 진술을 본문에 붙임(교재 도표 지문도 진술 포함)",
+   "교재지문": "연계DB/자료/교재/<학년도> <교재>.txt 의 PDF 쪽에서 시작·끝 문구(book_anchor)로 잘라냄. 2025 수능완성은 글자 간격이 깨져 있어 기출 전체 어휘(19,043어)로 쪼개진 단어를 이어 붙인 뒤 사용. 2025 수능특강·독해연습은 OCR본",
+   "a": "시험 지문의 내용어(3글자 이상, 기능어 제외) 토큰 중 교재 지문에 같은 형태·같은 어간(단순 접미사 제거)으로 나오는 비율. 6글자 이상은 교재의 공백 제거 문자열 안에 있으면 일치로 봄(OCR 붙은 단어 대비). a_content_type_ratio는 같은 계산을 서로 다른 단어(유형) 기준으로 한 것",
+   "b": "시험 지문 단어 중, 교재에도 그대로 있는 4단어 연속 구절에 들어가는 단어의 비율(시험 기준). 교재 쪽은 공백을 없앤 문자열에서 찾음. longest_shared_run_words = 교재와 겹치는 가장 긴 연속 단어 수",
+   "c": "눈으로 대조. strict = 같은 명제를 말하는 문장 수(바꿔 쓰기 허용), partial = 핵심 사실·주장은 같지만 범위·세부가 바뀐 문장 수",
+   "기준선": "서로 연계되지 않은 짝(시험 지문 k vs 다른 행의 교재 지문)으로 같은 a·b를 잰 값. 도표는 도표끼리, 비도표는 비도표끼리"
+  }
+ },
+ "summary_unique_passages": {
+  "일부변형_전체": {
+   "a_content_token_ratio": {
+    "n": 5,
+    "min": 0.038,
+    "q1": 0.622,
+    "median": 0.648,
+    "q3": 0.661,
+    "max": 0.681
+   },
+   "a_content_type_ratio": {
+    "n": 5,
+    "min": 0.036,
+    "q1": 0.55,
+    "median": 0.605,
+    "q3": 0.654,
+    "max": 0.75
+   },
+   "b_4gram_token_coverage": {
+    "n": 5,
+    "min": 0.0,
+    "q1": 0.039,
+    "median": 0.196,
+    "q3": 0.223,
+    "max": 0.259
+   },
+   "longest_shared_run_words": {
+    "n": 5,
+    "min": 2,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 9.0,
+    "max": 12
+   },
+   "c_same_meaning_strict": {
+    "n": 5,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 5,
+    "min": 0,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 2.0,
+    "max": 2
+   }
+  },
+  "일부변형_도표만": {
+   "a_content_token_ratio": {
+    "n": 4,
+    "min": 0.622,
+    "q1": 0.641,
+    "median": 0.655,
+    "q3": 0.666,
+    "max": 0.681
+   },
+   "a_content_type_ratio": {
+    "n": 4,
+    "min": 0.55,
+    "q1": 0.591,
+    "median": 0.629,
+    "q3": 0.678,
+    "max": 0.75
+   },
+   "b_4gram_token_coverage": {
+    "n": 4,
+    "min": 0.039,
+    "q1": 0.157,
+    "median": 0.21,
+    "q3": 0.232,
+    "max": 0.259
+   },
+   "longest_shared_run_words": {
+    "n": 4,
+    "min": 5,
+    "q1": 5.0,
+    "median": 7.0,
+    "q3": 9.75,
+    "max": 12
+   },
+   "c_same_meaning_strict": {
+    "n": 4,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 4,
+    "min": 1,
+    "q1": 1.0,
+    "median": 1.5,
+    "q3": 2.0,
+    "max": 2
+   }
+  },
+  "일부변형_도표제외": {
+   "a_content_token_ratio": {
+    "n": 1,
+    "min": 0.038,
+    "q1": 0.038,
+    "median": 0.038,
+    "q3": 0.038,
+    "max": 0.038
+   },
+   "a_content_type_ratio": {
+    "n": 1,
+    "min": 0.036,
+    "q1": 0.036,
+    "median": 0.036,
+    "q3": 0.036,
+    "max": 0.036
+   },
+   "b_4gram_token_coverage": {
+    "n": 1,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "longest_shared_run_words": {
+    "n": 1,
+    "min": 2,
+    "q1": 2,
+    "median": 2,
+    "q3": 2,
+    "max": 2
+   },
+   "c_same_meaning_strict": {
+    "n": 1,
+    "min": 0,
+    "q1": 0,
+    "median": 0,
+    "q3": 0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 1,
+    "min": 0,
+    "q1": 0,
+    "median": 0,
+    "q3": 0,
+    "max": 0
+   }
+  },
+  "소재만_전체": {
+   "a_content_token_ratio": {
+    "n": 20,
+    "min": 0.048,
+    "q1": 0.104,
+    "median": 0.139,
+    "q3": 0.176,
+    "max": 0.274
+   },
+   "a_content_type_ratio": {
+    "n": 20,
+    "min": 0.056,
+    "q1": 0.076,
+    "median": 0.108,
+    "q3": 0.157,
+    "max": 0.209
+   },
+   "b_4gram_token_coverage": {
+    "n": 20,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.034
+   },
+   "longest_shared_run_words": {
+    "n": 20,
+    "min": 2,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 3.0,
+    "max": 4
+   },
+   "c_same_meaning_strict": {
+    "n": 20,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0
+   },
+   "c_same_meaning_partial": {
+    "n": 20,
+    "min": 0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 1.0,
+    "max": 1
+   }
+  }
+ },
+ "baseline_unrelated_pairs": {
+  "chart_vs_other_chart": {
+   "a_content_token_ratio": {
+    "n": 12,
+    "min": 0.056,
+    "q1": 0.121,
+    "median": 0.201,
+    "q3": 0.22,
+    "max": 0.339
+   },
+   "b_4gram_token_coverage": {
+    "n": 12,
+    "min": 0.0,
+    "q1": 0.028,
+    "median": 0.03,
+    "q3": 0.042,
+    "max": 0.071
+   },
+   "longest_shared_run_words": {
+    "n": 12,
+    "min": 2,
+    "q1": 4.0,
+    "median": 5.0,
+    "q3": 5.0,
+    "max": 5
+   }
+  },
+  "nonchart_vs_other_nonchart": {
+   "a_content_token_ratio": {
+    "n": 420,
+    "min": 0.0,
+    "q1": 0.028,
+    "median": 0.051,
+    "q3": 0.078,
+    "max": 0.272
+   },
+   "b_4gram_token_coverage": {
+    "n": 420,
+    "min": 0.0,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0,
+    "max": 0.025
+   },
+   "longest_shared_run_words": {
+    "n": 420,
+    "min": 1,
+    "q1": 2.0,
+    "median": 2.0,
+    "q3": 2.0,
+    "max": 4
+   }
+  }
+ },
+ "rows": [
+  {
+   "idx": 0,
+   "시험": "2024.09",
+   "문항": "22",
+   "시험유형": "요지",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "87",
+   "번호확인": "일치: 실전 모의고사 1회 22번은 다른 동물도 본능적으로 도덕적 행동을 한다는 요지 문항(정답 ⑤ 도덕적 행동은 의식 정도에 상관없이 본능에 기반)",
+   "status": "measured",
+   "exam_words": 147,
+   "book_words": 157,
+   "exam_content_tokens": 76,
+   "a_content_token_ratio": 0.132,
+   "a_content_type_ratio": 0.111,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Even though there is good reason to consider a dog a sentient being capable of making choices and plans ― so that we might suppose ‘it could have conceived of acting otherwise’ ― we’re unlikely to think it is wicked and immoral for attacking a child. Moral responsibility is not some universal concept like entropy or temperature ― something that applies equally, and can be measured similarly, everywhere in the cosmos. It is a notion developed specifically for human use, no more or less than languages are. While sentience and volition are aspects of mind and agency, morals are cultural tools developed to influence social behaviour: to cultivate the desirable and discourage the harmful. They are learnt, not given at birth. It’s possible, indeed likely, that we are born with a predisposition to cooperate with others ― but only within human society do we come to understand this as moral behaviour.",
+   "book_text": "Many religious belie v ers are taught that other animals don’ t have “souls” (whatever that means) so they cannot be considered moral in the same way humans are, but that is proving the point. They are agreeing that other animals sometimes act morally . Whatever happens in the brains of other species, moral behavior does exist, to some degree, regardless of how conscious the individual might be. Some argue that other animals are indeed conscious, perhaps to a lesser degree, but that is beside the point. Instinct is biological, whether there is a “soul” or not. The evidence of empathy and altruism in other species shows that we are connected to a web of life from which our behavioral instincts arise. Many animals have impulses or desires to lessen harm, and humans are no exception. Most of us will instinctively catch a falling baby and hold the door open for the person behind us without much thought.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재는 '도덕적 행동은 본능, 다른 동물에도 있음', 시험은 '도덕은 학습된 문화 도구, 인간 사회에서만' — 반대 논지, 같은 뜻 문장 없음",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     87
+    ],
+    "start": "Many religious belie",
+    "end": "without much thought."
+   }
+  },
+  {
+   "idx": 1,
+   "시험": "2024.09",
+   "문항": "25",
+   "시험유형": "도표",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어독해연습",
+   "쪽": "157",
+   "번호확인": "일치: Mini Test 1 8번(OCR)은 2022년 국가별 VR·AR·메타버스 개념 친숙도 표(인도·중국·미국·한국·독일·프랑스) 도표 문항",
+   "status": "measured",
+   "exam_words": 127,
+   "book_words": 230,
+   "exam_content_tokens": 54,
+   "a_content_token_ratio": 0.648,
+   "a_content_type_ratio": 0.654,
+   "b_4gram_token_coverage": 0.039,
+   "b_4gram_share": 0.016,
+   "longest_shared_run_words": 5,
+   "exam_text": "The graph above shows the percentages of respondents who were familiar with the concept of virtual reality (VR) and those who were familiar with the concept of augmented reality (AR) in four countries in 2022. For each country, the percentage of respondents familiar with VR was greater than the percentage of respondents familiar with AR. The country with the highest percentage of respondents familiar with AR was South Korea. The country with the largest gap between the percentage of respondents familiar with VR and that of respondents familiar with AR was Canada. In Japan, the percentage of respondents familiar with VR was greater than 60%. The percentage of respondents familiar with VR and that of respondents familiar with AR were lower in Switzerland than in Japan, respectively.",
+   "book_text": "Familiarity with VR, AR, and the MV by Country, in 2022 VR AR The MV Global Average 80% 61% 52% India 89% 79% 80% China 88% 73% 73% United States 86% 63% 59% South Korea 771% 70% 11% Germany 47% 38% 30% France 46% 38% 28% * VR: Virtual Reality / AR: Augmented Reality / MV: Metaverse The table above shows the percentages of familiarity with the concepts of VR, AR, and the MV by country, in 2022. Despite the global average familiarity with VR being 80%, France had a familiarity rate with VR that was 34 percentage points lower than the global average. India had the highest familiarity with all three technologies, with VR at 89%, AR at 79%, and the MV at 80%, followed by China, which ranked second among the six countries in familiarity with all three technologies. ) Germany had lower levels of familiarity with all three technologies compared to the global average, and for the familiarity with the MV, the gap between the global average and Germany was more than 30 percentage points. Regarding the global average, familiarity with AR was higher than that with the MV, but in India and South Korea, familiarity with the MV exceeded that with AR. While the United States showed higher familiarity with VR compared to South Korea, South Korea had higher familiarity with both AR and the MV than the United States.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 도입문(2022년 국가별 VR·AR 개념 친숙도 비율을 보여 준다). 국가·항목이 달라 선택지 진술은 모두 다름",
+   "is_chart": true,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     157
+    ],
+    "start": "Familiarity with VR",
+    "end": "than the United States."
+   }
+  },
+  {
+   "idx": 2,
+   "시험": "2024.09",
+   "문항": "26",
+   "시험유형": "내용 불일치",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "165",
+   "번호확인": "일치: 실전 모의고사 5회 41~42번은 20세기 전자 기술과 컴퓨터 아트, György Kepes가 말한 'new landscape'를 다루는 1지문 2문항(제목·어휘)",
+   "status": "measured",
+   "exam_words": 147,
+   "book_words": 221,
+   "exam_content_tokens": 79,
+   "a_content_token_ratio": 0.241,
+   "a_content_type_ratio": 0.209,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "György Kepes was an artist and educator born in Selyp, Hungary in 1906. He studied painting at the Royal Academy of Fine Arts in Budapest, Hungary. Then, he studied design and film in Berlin, Germany. He went to the United States in 1937, and about a decade later, he started teaching visual design at the Massachusetts Institute of Technology (MIT). He founded the Center for Advanced Visual Studies at MIT to form a community composed of artists and scientists. His exhibition in 1951 titled The New Landscape became the basis of his book The New Landscape in Art and Science, which was published several years later. In the book, he presented images that were not previously available, captured by the latest scientific devices. In 1995, a museum to house his works was established in Eger, Hungary. He was a great pioneer in connecting art and technology.",
+   "book_text": "The development of twentieth-century electronic technology encouraged anew responsiveness to beauty in nature. Following World War II, a “new landscape, ” as György Kepes described it, emerged out of modern science and technology . It provided for the first time totally new sensations from magnified electronic images, expanding our sensory experiences of time and space, and thus altering human perception forever . With new mechanical instruments, researchers could describe nature inprecisemathematicalterms by mapping the complex orders and disorders of natural phenomena, whether visible or not. Science was becoming increasingly visual . During this period, there was a renewed appreciation of the aesthetical nature of visual data collected through the course of scientific experimentation. Historic ally , scientistshaveplaced great aesthetic value on those images derived from nature, botanical and anatomical drawing being the most common. In the nineteenth century , however , there was a sur ge of interest in visualizing abstract language. This period witnessed mathematicians progressively composing pictures to visualize and under stand geometricforms . The art historian and critic James Elkins called these images of science, which had been neglected by art history but were semantically rich in information, “n onart. ” As wi ll be shown by its history , computer art successfully made that transition from “nonart” to “art” through a series ofp rece de ntsthatsawscie nt i s ts ignoring agro wing aesthetic sensibility",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "공유는 인물명 Kepes와 'new landscape'라는 이름뿐. 시험은 생애 사실 나열",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     165
+    ],
+    "start": "The development of twentieth",
+    "end": "aesthetic sensibility"
+   }
+  },
+  {
+   "idx": 3,
+   "시험": "2024.09",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "일부변형",
+   "교재": "2025 수능완성 영어",
+   "쪽": "100",
+   "번호확인": "일치: 실전 모의고사 2회 9번은 9월 26일 Campus Visit Day 안내 담화의 내용 불일치 문항(정답 ⑤ 당일 등록 가능)",
+   "status": "not_found",
+   "reason": "교재 출처가 수능완성 실전 모의고사 2회 9번(듣기 담화, Campus Visit Day). 학생용 교재 txt에는 선택지만 있고 듣기 대본(정답과 해설)이 자료에 없음 → 듣기 문항이라 제외"
+  },
+  {
+   "idx": 4,
+   "시험": "2024.09",
+   "문항": "43~45",
+   "시험유형": "1지문 3문항",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "119",
+   "번호확인": "일치: 실전 모의고사 3회 16~17번은 중고품 쇼핑의 이점과 인기 품목(자동차·전자 제품·책·악기)을 소개하는 듣기 1담화 2문항(정답 ①·④)",
+   "status": "not_found",
+   "reason": "교재 출처가 수능완성 실전 모의고사 3회 16~17번(듣기 1담화 2문항, 중고품 쇼핑). 대본이 자료에 없음 → 듣기 문항이라 제외"
+  },
+  {
+   "idx": 5,
+   "시험": "2024.11",
+   "문항": "22",
+   "시험유형": "요지",
+   "연계방식": "소재만",
+   "교재": "2025 수능특강 영어",
+   "쪽": "168",
+   "번호확인": "일치(OCR): 31강 1번은 숙련된 임상의에게 질병 지식만큼 질병이 환자의 감정에 미치는 영향에 대한 지식이 중요하다는 글. 발문·선택지 한글은 OCR 깨짐, 영어 본문은 판독 가능",
+   "status": "measured",
+   "exam_words": 151,
+   "book_words": 122,
+   "exam_content_tokens": 77,
+   "a_content_token_ratio": 0.221,
+   "a_content_type_ratio": 0.167,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "The ability to understand emotions ― to have a diverse emotion vocabulary and to understand the causes and consequences of emotion ― is particularly relevant in group settings. Individuals who are skilled in this domain are able to express emotions, feelings and moods accurately and thus, may facilitate clear communication between co-workers. Furthermore, they may be more likely to act in ways that accommodate their own needs as well as the needs of others (i.e. cooperate). In a group conflict situation, for example, a member with a strong ability to understand emotion will be able to express how he feels about the problem and why he feels this way. He also should be able to take the perspective of the other group members and understand why they are reacting in a certain manner. Appreciation of differences creates an arena for open communication and promotes constructive conflict resolution and improved group functioning.",
+   "book_text": "Skilled clinicians pride themselves in their knowledge of diseases and treatments. Having an extensive command of anatomy and physiology, pharmacology, and the latest evidence-based breakthroughs is critical to providing competent care. But just as important is the knowledge of how illness can impact patient emotions. And although there is certainly room for individual variation, typical emotional reactions can often be anticipated. Having a sense of the normal emotions that accompany phases and stages of illness allows clinicians to think about how to incorporate the emotional domain into patient assessments and plans of care. Working with patients’ emotions, from a place of understanding and acceptance, allows the clinician to skillfully address the emotions in a manner that best serves the patients’ needs.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 임상의-환자 감정, 시험 직장 동료 간 감정 이해. 같은 뜻 문장 없음",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     168
+    ],
+    "start": "Skilled clinicians",
+    "end": "patients’ needs."
+   }
+  },
+  {
+   "idx": 6,
+   "시험": "2024.11",
+   "문항": "23",
+   "시험유형": "주제",
+   "연계방식": "소재만",
+   "교재": "2025 수능특강 영어",
+   "쪽": "202",
+   "번호확인": "쪽만 일치(OCR): Test 2 15번은 산업 혁명 이후 반복된 기술 실업 예측과 '창조적 파괴'를 통한 성장에 관한 글. OCR상 선택지가 idea generation, creative destruction 등 구(句)로 되어 있어 EBSi 표의 '(주제)'와 달리 빈칸 추론 문항으로 보임",
+   "status": "measured",
+   "exam_words": 154,
+   "book_words": 129,
+   "exam_content_tokens": 89,
+   "a_content_token_ratio": 0.146,
+   "a_content_type_ratio": 0.159,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "The arrival of the Industrial Age changed the relationship among time, labor, and capital. Factories could produce around the clock, and they could do so with greater speed and volume than ever before. A machine that runs twelve hours a day will produce more widgets than one that runs for only eight hours per day ― and a machine that runs twenty-four hours per day will produce the most widgets of all. As such, at many factories, the workday is divided into eight-hour shifts, so that there will always be people on hand to keep the widget machines humming. Industrialization raised the potential value of every single work hour ― the more hours you worked, the more widgets you produced, and the more money you made ― and thus wages became tied to effort and production. Labor, previously guided by harvest cycles, became clock-oriented, and society started to reorganize around new principles of productivity.",
+   "book_text": "Predictions of technological unemployment have recurred since the onset of the Industrial Revolution. But the recurring reality was one of economic growth through . Yes, machines destroyed lots of jobs, often with devastating effects on displaced workers for whom new jobs were often too late or out of reach. Over time, however, job destruction freed up labor and capital that went into new and usually better jobs and higher incomes. That is because technology both substitutes for labor — in particular, less-skilled labor — and complements labor, or makes it more productive, thus generating new demand for labor. Casual observers have often tended “to overstate the extent of machine substitution for human labor,” which was readily observable; they “repeatedly underestimated the demand for the work of human beings that would remain.”",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 기술 실업 예측과 창조적 파괴, 시험 산업 시대의 시간·노동 관계 변화",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     202
+    ],
+    "start": "Predictions of technological",
+    "end": "that would remain.”"
+   }
+  },
+  {
+   "idx": 7,
+   "시험": "2024.11",
+   "문항": "25",
+   "시험유형": "도표",
+   "연계방식": "일부변형",
+   "교재": "2025 수능특강 영어",
+   "쪽": "218",
+   "번호확인": "일치(OCR): Test 3 9번은 2015~2021년 미국 흥행 상위 250편 영화의 주요 제작 스태프 중 여성 비율과 2021년 역할별 비율(Producers·Executive Producers·Editors·Directors·Writers·Cinematographers) 도표",
+   "status": "measured",
+   "exam_words": 166,
+   "book_words": 231,
+   "exam_content_tokens": 59,
+   "a_content_token_ratio": 0.661,
+   "a_content_type_ratio": 0.75,
+   "b_4gram_token_coverage": 0.223,
+   "b_4gram_share": 0.061,
+   "longest_shared_run_words": 5,
+   "exam_text": "The graph above shows the percentages of women employed behind the scenes on the top 100 U.S. films by role in 2020, 2021, and 2022. For each of the three years, the percentage of women employed as producers on the top 100 U.S. films was the highest as compared with the percentages of each of the other three roles. The percentage of women employed as directors on the top 100 U.S. films in 2021 was lower than in 2020 but higher than in 2022. The percentage of women employed as writers on the top 100 U.S. films increased by 4 percentage points from 2020 to 2021 and by 1 percentage point from 2021 to 2022. The percentage of women employed as editors on the top 100 U.S. films was less than 20% in each of the three years. In 2022, the percentage of women employed as producers on the top 100 U.S. films was the same as that in 2020.",
+   "book_text": "Number of Women in the Film Industry in the U.S. Percentage of women who worked in major behind-the-scenes roles in the 250 highest-grossing U.S. films 2015 2016 2017 2018 2019 2020 2021 Females in major behind-the-scenes roles (2021) 32% | 26% 22% 17% 17% 6% Producers Executive Editors Directors Writers Cinemato- Producers graphers The charts above show the percentage of women who worked in major behind-the-scenes roles in the 250 highest-grossing U.S. films from 2015 to 2021 and the percentage of those women in 2021 by role. Compared to 2015, the percentage of women who worked in the 250 highest-grossing U.S. films was lower in 2016 and 2017, but it was higher in 2018. In 2021, the percentage of women who worked in the 250 highest-grossing U.S. films accounted for a quarter of the total. In the same year, the percentage of female executive producers in these films was lower than that of female producers. While the share of female directors and writers in the 250 highest-grossing U.S. films in 2021 stood at 17 percent each, 22 percent of all editors were female. In the same year, among the major behind-the-scenes roles, cinematographers had the lowest percentage of women, at less than a third of the percentage of women who worked as writers.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 도입문(미국 영화 제작 스태프 중 여성 비율). 영화 수(100 vs 250)·연도가 달라 선택지 진술은 모두 다름",
+   "is_chart": true,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     218
+    ],
+    "start": "Number of Women in the Film",
+    "end": "worked as writers."
+   }
+  },
+  {
+   "idx": 8,
+   "시험": "2024.11",
+   "문항": "27",
+   "시험유형": "실용문",
+   "연계방식": "소재만",
+   "교재": "2025 수능완성 영어",
+   "쪽": "84",
+   "번호확인": "일치: 실전 모의고사 1회 12번은 뉴욕 휴가에서 돌아온 Andrew와 대중교통이 편리해 관광이 쉬웠다는 짧은 대화(정답 ①)",
+   "status": "not_found",
+   "reason": "교재 출처가 수능완성 실전 모의고사 1회 12번(듣기 짧은 대화, 뉴욕 휴가). 대본이 자료에 없음 → 듣기 문항이라 제외"
+  },
+  {
+   "idx": 9,
+   "시험": "2024.11",
+   "문항": "43~45",
+   "시험유형": "1지문 3문항",
+   "연계방식": "일부변형",
+   "교재": "2025 수능완성 영어",
+   "쪽": "10",
+   "번호확인": "일치: 1강 2번은 Deception River 계곡 트레일을 걸으며 강을 건너는 'I'의 들뜬 심경 글(정답 ④ excited and fascinated)로, 'rugged Aicken Range'가 나옴. 단 시험 이야기의 골격(Ethan·Sean 부자, 'best dad in the world')은 같은 책 실전 모의고사 1회 14번(p.84, 듣기 긴 대화 응답)과 더 닮음",
+   "status": "measured",
+   "exam_words": 381,
+   "book_words": 175,
+   "exam_content_tokens": 209,
+   "a_content_token_ratio": 0.038,
+   "a_content_type_ratio": 0.036,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "“Do you remember when Sean used to tell me that I was the best dad in the world?” Ethan asked his wife, Grace. “Yes, I do. I always envied your relationship with Sean,” she replied. Ethan then shared how things had changed since his son started middle school. Grace had noticed Ethan often pushing Sean to study harder. “Maybe he isn’t that into school right now. How about going hiking, just the two of you?” she suggested. He agreed, and realizing that both his and Sean’s hiking jackets were still at the laundry, he asked his wife to go and pick them up with him. Ethan and Grace came back home with the jackets and checked if Sean had everything else he needed for hiking. Luckily, in his drawers they found his hat, shoes, sunglasses, and hiking sticks. When Sean returned from school, Ethan softly said, “Sean, let’s go hiking this Saturday, just the two of us.” Though Sean thanked him for the suggestion, he said he had to go to the library. Grace stepped in, “You know, the weather this weekend will be the best of the year. Why not enjoy it?” After a moment’s hesitation, he agreed. “When did you bring the jackets in?” the clerk at the laundry asked. “Maybe two weeks ago,” Ethan replied. Then, Grace quickly reminded him, “Honey, we actually left them here a month ago.” The clerk went into the storage area to look for the clothes. Finally, he returned with the jackets and handed them to Ethan. The clerk politely said, “I am sorry, but please collect your items earlier next time. Our storage is too full.” Ethan felt embarrassed for the late collection and apologized. The weather was perfect. Ethan and Sean set off hiking along the valley by Aicken Mountain. They walked in silence until Sean fell over a rock and twisted his ankle. Realizing he couldn’t walk, Ethan carried his son down on his back. He felt Sean’s heartbeat, something he hadn’t felt since Sean was a baby. Suddenly, Sean said, “Dad, I’m sorry. At some point, I started to become afraid of disappointing you. But you are still the best dad.” Energized, he felt no weight on his back and replied, “You are the best son, no matter what.”",
+   "book_text": "The first few kilometres of the trail snak ed through thin , native b u sh beside the Deception River . It didn’ t take long for the first river crossing to present itself. I slowly crossed the thunderous river . The water was over my knees and so much colder than I expected. I felt a burst of energy . I really do love the river crossings, and there were so many over the next couple of hours. My adrenaline was up from all the crossings and I was amazed by the beauty of the river . The water was perfectly clear with heavy w aterf alls and whitecapped rapids constantly flowing. It was a scene of majestic natural wonder . Breath taking crystal clear pools were built up everywhere. The valley was narrow , with tall, steep hills of the rugged Aicken Range reaching high and leaving only a bit of o v ercast sky above. “ A we so me !” Iex claimed . The river raced past me, like a never -ending, horizontal waterfall, as I moved up the steep valley",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "1강 2번과 겹치는 것은 Aicken 지명·계곡 하이킹 배경뿐. 이야기 골격 출처(실전 1회 14번 듣기)는 대본이 없어 대조 못 함",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     10
+    ],
+    "start": "The first few kilometres",
+    "end": "up the steep valley"
+   },
+   "caveat": "CSV 근거상 이야기 골격 출처는 같은 책 실전 1회 14번(듣기 긴 대화)이며 대본이 자료에 없음. 1강 2번만 대조함"
+  },
+  {
+   "idx": 10,
+   "시험": "2025.06",
+   "문항": "20",
+   "시험유형": "주장",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어",
+   "쪽": "31",
+   "번호확인": "일치: 4강 4번은 위기 극복을 위해 감정을 다른 사람과 공유하라는 주장 파악 문항",
+   "status": "measured",
+   "exam_words": 137,
+   "book_words": 158,
+   "exam_content_tokens": 74,
+   "a_content_token_ratio": 0.068,
+   "a_content_type_ratio": 0.076,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Our ability to respond to danger has been important for survival, so feeling worried in uncertain situations is normal. Feelings of worry, which are activated in anticipation of future events, are often experienced in everyday situations. For example, we may feel nervous imagining unlikely events, such as a computer crashing during an important presentation. To some extent, thinking through potential scenarios can be helpful. When our worries exceed our control, however, they cause us unnecessary suffering. Consider how many times you have lost sleep thinking about a terrible situation, which, in the end, did not actually take place. If that situation actually occurred, it only goes to show that worrying about it did nothing to prevent it from happening. It is worth making a conscious effort, then, to stop worrying endlessly about events you may not experience.",
+   "book_text": "The ethos of the American mind includes the belief that people who overcome a crisis are tough and unemotional, almost like the US version of the English expression “keep a stiff upper lip.” Yet, the body of research exploring the most productive ways to respond to adversity and stress (which crises have in spades) contradicts this view. The findings indicate that emotional expression (i.e., talking about your feelings rather than bottling them up) is associated with increased adaptation and growth. So, whether you’re experiencing fear, frustration, anger, despair, or any other emotion, share them with others. You’ll feel better from having an emotional release and feel support from those with whom you share. Plus, the opportunity to process your emotions with a trusted friend will put you in a better space from which to tackle the crisis. As Nelson Mandela put it, “Live life as though nobody is watching, and express yourself as though everyone is listening.”",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 위기 때 감정 공유, 시험 위험 반응·걱정. 같은 뜻 문장 없음",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     31
+    ],
+    "start": "The ethos of the American",
+    "end": "everyone is listening.”"
+   }
+  },
+  {
+   "idx": 11,
+   "시험": "2025.06",
+   "문항": "22",
+   "시험유형": "요지",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어",
+   "쪽": "150",
+   "번호확인": "일치: 26강 2번은 텍스트의 해석을 다룬 무관한 문장 찾기 문항",
+   "status": "measured",
+   "exam_words": 153,
+   "book_words": 161,
+   "exam_content_tokens": 78,
+   "a_content_token_ratio": 0.09,
+   "a_content_type_ratio": 0.076,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Information and meaning are, clearly, not the same thing. The former refers to uninterpreted data or sensory states whose probability in a certain situation can be easily measured; the latter refers to the interpretation of the data or sensory states, including the special kinds of nuances and values that the information entails, or is intended to have, in the given situation. This applies to any type of information, from alarm signals to sophisticated statements. Take, for instance, a coin-tossing game in which it is decided that throwing three heads in a row constitutes a win. If a certain player ends up consistently with the desired outcome, defeating all who challenge that player, then we tend to interpret the outcome either as the work of Fortune, or else as clever and undetectable cheating on the part of the winning player. Interpretation is at the core of everything we do, think about, and feel.",
+   "book_text": "Texts must be interpreted, that is, analyzed for both explicit and implicit meanings. Since it is impossible to know with any certainty what an author intends, one alternative is to discount the intentions of the author and concentrate on whatever meaning the text generates. As D. H. Lawrence famously declared, “Never trust the teller , trust the tale.” The physical aspects of a book, such as the texture of the paper or the size of the font, can significantly influence the reading experience. New Criticism in the twentieth century would reject the notion that deciphering an author’s intention is a central goal of literature. Literature, they argued, is not a secret message planted by the author to be decoded but a dynamic field of multiple meanings, generated because of, despite, and indeed regardless of the author. In this model, literature is a textual world that the author has set in motion but does not control; the reader controls the text through interpretation.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 텍스트 해석(저자 의도), 시험 정보와 의미의 구분. 'interpret'만 공유",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     150
+    ],
+    "start": "Texts must be interpreted",
+    "end": "through interpretation."
+   }
+  },
+  {
+   "idx": 12,
+   "시험": "2025.09",
+   "문항": "22",
+   "시험유형": "요지",
+   "연계방식": "소재만",
+   "교재": "2026 수능완성 영어",
+   "쪽": "161",
+   "번호확인": "일치: 실전모의고사 5회 21번(p.161)은 SNS가 인기를 끄는 이유를 인간의 사회성과 정보 교환 본능으로 설명하는 밑줄 의미 추론 문항",
+   "status": "measured",
+   "exam_words": 145,
+   "book_words": 187,
+   "exam_content_tokens": 81,
+   "a_content_token_ratio": 0.21,
+   "a_content_type_ratio": 0.136,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "One reason that people participate in social media is because it builds social relations. We increase our social capital when we successfully engage in social media. Social capital describes the networks of relationships we have that are built on mutuality and sharing of identity, understanding, norms and values. We build ties that may pay off with a job lead or a letter of recommendation. We reinforce our identities through our online presentation in a personal blog or our profile. “The premise behind the notion of social capital is rather simple and straightforward: investment in social relations with expected returns,” noted sociologist Nan Lin. Lin’s work stresses that it is who you know as much as what you know that shapes our experience in society. With new media, our reach of connecting is all the greater, expanding our “who you know” to greater and greater lengths.",
+   "book_text": "The answer to why using social sites is enjoyable and popular has deep behavioral and historical roots. The first is that as primates, humans are inherently social animals. Primate brains appear to have evolved specifically to process social information, to enable primates to function more effectively in groups. Second, one of the main ways humans assess and maintain their positions within social networks is by exchanging information with and about others (i.e., gossip). Through the exchange of gossip, individuals can advertise their status within the group and demonstrate their expertise, trustworthiness, and suitability as an ally. Humans are, in short, built to form networks and to exchange information with others. The third component, media technology, enables literate humans to extend this exchange of information across time and space to include people who are not physically present. The Internet, with its instant, global reach, does this effectively, allowing users to share information with unprecedented ease. But it is not the first technology to have supported such a social-media environment; it is merely the most recent, efficient way that humans have found to scratch a prehistoric itch",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 첫 문장(사람들이 소셜 미디어를 하는 이유는 사회적 관계를 쌓기 때문) ≈ 교재 첫 문장·결론(소셜 사이트가 인기 있는 이유는 인간의 사회적 본능)",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     161
+    ],
+    "start": "The answer to why",
+    "end": "scratch a prehistoric itch"
+   }
+  },
+  {
+   "idx": 13,
+   "시험": "2025.09",
+   "문항": "23",
+   "시험유형": "주제",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어독해연습",
+   "쪽": "92",
+   "번호확인": "일치: 8강 Exercise 3은 이야기로 자신의 삶을 말하는 것이 자기 이해를 깊게 한다는 제목 추론 문항",
+   "status": "measured",
+   "exam_words": 150,
+   "book_words": 164,
+   "exam_content_tokens": 86,
+   "a_content_token_ratio": 0.07,
+   "a_content_type_ratio": 0.057,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "In writing a life, the life narrator and the biographer engage different kinds of evidence. Most biographers incorporate multiple forms of evidence, including historical documents, interviews, and family archives, which they evaluate for validity. Relatively few biographers use their personal memories of their subject as reliable evidence, unless they had a personal relationship to the subject of the biography (as a relative, child, friend, or colleague). For life narrators, by contrast, personal memories are the primary archival source. They may have recourse to other kinds of sources ― letters, journals, photographs, conversations ― and to their knowledge of a historical moment. But the usefulness of such evidence for their stories lies in the ways in which they employ that evidence to support, supplement, or offer commentary on their personalized acts of remembering. In autobiographical narratives, imaginative acts of remembering always overlap with such rhetorical acts as assertion, justification, judgment, conviction, and questioning.",
+   "book_text": "We explain our world through stories. In our stories, we are both the storyteller and the principal character. Being able to tell our life story helps us to make sense of it. Perhaps we tell it to ourselves, quietly pondering. Perhaps we write it down, recognising in reading back something that we did not recognise at the time. But for most of us, chatting to a friend or reflecting with a confidant is the way we tell our stories. And as we tell them, we hear them anew. Telling helps us to notice and to interpret details, to become aware of the bigger picture or to discern aspects we previously overlooked or denied. Finding a listener who will give our story their full attention, who is prepared to become completely caught up in the tale, is an opportunity to meet ourselves, complete with our noble hopes and miserable failings, and to understand ourselves and the world around us in a truer, more helpful way.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 이야기하기와 자기 이해, 시험 전기 작가와 자서전 화자의 증거 차이",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     92
+    ],
+    "start": "We explain our world",
+    "end": "more helpful way."
+   }
+  },
+  {
+   "idx": 14,
+   "시험": "2025.09",
+   "문항": "25",
+   "시험유형": "도표",
+   "연계방식": "일부변형",
+   "교재": "2026 수능특강 영어",
+   "쪽": "176",
+   "번호확인": "일치: Test 1 8번은 2015년 성별·제품군별 온라인 구매평 독자 비율 도표의 일치하지 않는 것을 고르는 문항",
+   "status": "measured",
+   "exam_words": 158,
+   "book_words": 192,
+   "exam_content_tokens": 90,
+   "a_content_token_ratio": 0.622,
+   "a_content_type_ratio": 0.605,
+   "b_4gram_token_coverage": 0.196,
+   "b_4gram_share": 0.103,
+   "longest_shared_run_words": 12,
+   "exam_text": "The above graph shows the percentages of U.S. shoppers who read online reviews before making purchases in 2015 by product category and age group. Of all the above categories, people from each age group tended to read online reviews the most, by percentage, before buying electronics. The age group least likely to read online reviews before buying a car was the 18—34 age group. The percentage of people in the 35—54 age group using online reviews before making purchases of household appliances was more than twice that of people in the same age group using online reviews before purchasing clothes. For people who read online reviews before purchasing household appliances, the percentage of people aged 35—54 was higher than that of those aged 18—34 and lower than that of those aged 55+. The percentage of people reading online reviews before buying clothes was less than 30% for each of the three age groups.",
+   "book_text": "Online Review Readership by Gender and Product Category in 2015 W omenMen Household appliances Hotels and rooms for rent Electronics Buying a car Vacation packages Insurance policies Clothes Renting a car Food for delivery Beauty products 0 20 40 60 80 100 140 (%)120 50 44 72 64 56 48 29 26 19 16 14 8 59 48 31 20 32 13 14 36 The graph above shows the percentage of men and women who read online reviews before making purchases in 2015 by product category. Both men and women had the highest percentage of online review readership in the electronics category . The categories with the lowest percentage of online review readership were renting a car for women and beauty products for men. Men were more likely than women to read online reviews in four categories: electronics, buying a car, insurance policies, and renting a car. In the food for delivery category, the percentage of online review readership was the same for men and women. In the beauty products category, far more women than men read online reviews, with women being more than five times as likely as men to do so.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "부분: 도입문(2015년 온라인 리뷰 독자 비율, 제품군별) + '전자 제품에서 리뷰 읽는 비율이 가장 높다'(교재 성별, 시험 연령대)",
+   "is_chart": true,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     176
+    ],
+    "start": "Online Review Readership",
+    "end": "as likely as men to do so."
+   }
+  },
+  {
+   "idx": 15,
+   "시험": "2025.09",
+   "문항": "32",
+   "시험유형": "빈칸 추론",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어",
+   "쪽": "159",
+   "번호확인": "일치: 28강 2번(p.159)은 공감의 성별 차이를 다룬 어법 문항(Women and men differ in whether they describe themselves as empathic)",
+   "status": "measured",
+   "exam_words": 175,
+   "book_words": 171,
+   "exam_content_tokens": 95,
+   "a_content_token_ratio": 0.147,
+   "a_content_type_ratio": 0.071,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Although empathy is widely praised by scholars and public figures, not everyone is an empathy booster. Critics of empathy argue that empathy will not save us from interpersonal and intergroup conflict. In fact, they argue, empathy makes such conflicts worse. These critics maintain that empathy can be exhausting and lead to burnout, insensitivity to suffering, or worse. They argue that we tend to empathize strongly with our in-group and resist empathizing with out-groups, and even enjoy the suffering of out-groups in competitive or threatening contexts. Thus, the prescription for more empathy ＿＿＿. Empathy, they argue, can further entrench conflict and force us into an us vs. them mentality. Finally, even when we try to empathize with others who are dissimilar from us or in unfamiliar contexts, sometimes we are unable to accurately empathize with their experiences, causing further misunderstandings and frustration. Critics of empathy argue that we should give up on empathy and employ other tools in pursuit of social harmony, e.g., rational compassion or moral emotions like fear, anger, and shame.",
+   "book_text": "Women and men differ in whether they describe themselves as empathic. If you have empathy, you identify with others and imagine what it must be like to walk in their shoes. You celebrate with those who are happy and cry with those who cry. Physiological measures of empathy, such as heart rate while seeing another ’s distress, reveal a much smaller gender gap than is found in self-reports in surveys. Nevertheless, females are more likely to express empathy — to cry and to report distress when observing someone in distress. Ann Kring and Albert Gordon observed this gender difference in videotapes of men and women students watch film clips that were sad (children with a dying parent), happy (slapstick comedy), or frightening (a man nearly falling off of a tall building). Their findings showed that the women reacted more visibly to each film type. Women also tend to experience emotional events more deeply — with more brain activation in areas sensitive to emotion — and to remember the scenes better three weeks later.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 공감의 성별 차이, 시험 공감 비판론",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     159
+    ],
+    "start": "Women and men differ",
+    "end": "three weeks later."
+   }
+  },
+  {
+   "idx": 16,
+   "시험": "2025.11",
+   "문항": "22",
+   "시험유형": "요지",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어",
+   "쪽": "142",
+   "번호확인": "일치: 24강 1번은 스포츠가 사회의 규범과 가치를 보여 준다는 주제 파악 문항으로 142쪽에서 확인",
+   "status": "measured",
+   "exam_words": 177,
+   "book_words": 164,
+   "exam_content_tokens": 92,
+   "a_content_token_ratio": 0.109,
+   "a_content_type_ratio": 0.073,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "A sport ecosystem exists based on the type and rate of coopetition existing. Coopetition is defined as “the simultaneous pursuit of cooperation and competition among firms to leverage strategically important resources for superior value creation purposes”. It is a useful way to understand the dynamic nature of sport businesses which need to collaborate for resource efficiency purposes but potentially compete with each other. This special relationship should be managed properly due to trust and confidence issues being paramount. It can be challenging to be collaborative and competitive in sport as they involve different forms of behaviour. This means a careful balancing act may be required in terms of the amount of emphasis placed on each activity. Often sport managers will try to be more competitive due to performance reasons and less collaborative. By necessity they may need to share information but do so in a cautious manner. This means it might be better to have plans in place about how to pursue both simultaneously. This will ensure one is not neglected at the expense of the other.",
+   "book_text": "Sport reflects the norms and values of the general culture of a society. In most world cultures, winning and success are highly valued qualities. Sport can serve as an excellent exemplar of the valued “win-at-all-costs” philosophy. This prevailing attitude often leads to elitism, sexism, racism, nationalism, extreme competitiveness, abuse of drugs (including performance-enhancing drugs), gambling, and a number of other deviant behaviors. However, the true spirit of sport often reveals itself as well. The notions of cooperation and teamwork, fair play, sportsmanship, hard work, dedication, reaching to achieve personal excellence, obedience to rules, commitment and loyalty are also revered values of the society, and that is, perhaps, the primary reason that people love sport so much. Despite the highly publicized negative sport stories that are often sensationalized by the mass media, including social media, there are far more positive sport-related stories which help to justify that our support of our favorite teams and athletes is not a wasted endeavor.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 스포츠가 사회 가치를 반영, 시험 스포츠 산업의 협력적 경쟁(coopetition)",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     142
+    ],
+    "start": "Sport reflects the norms",
+    "end": "wasted endeavor."
+   }
+  },
+  {
+   "idx": 17,
+   "시험": "2025.11",
+   "문항": "24",
+   "시험유형": "제목",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어독해연습",
+   "쪽": "105",
+   "번호확인": "일치: 9강 4번(Exercise 4 어휘)은 축제가 처음부터 도시 정책 도구로 만들어졌다는 글로 105쪽에서 확인",
+   "status": "measured",
+   "exam_words": 162,
+   "book_words": 168,
+   "exam_content_tokens": 92,
+   "a_content_token_ratio": 0.087,
+   "a_content_type_ratio": 0.083,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "The economic benefit of culturtainment makes it attractive to politicians and policy makers alike. A potential increase in inbound visitor numbers coupled with their demand for related goods and services (travel, accommodation, retail) is an incentive for those within governments and authorities to work with cultural groups in order to develop celebrations and commemorations into larger and more high-profile events. However, such commercialization risks culturtainment becoming homogeneous and losing its original ‘message’ that could lead to a dilution of audiences. This could also lead to smaller non-commercial independent events being set up that would only serve to divide audiences further. This is something that planners and stakeholders will need to balance against potential financial gain. Changing political, social and religious landscapes will lead to the emergence of new cultures, and with them new culturtainment experiences. Overall this is a healthy growth sector of the entertainment industry, but one that by its very nature is delicate in the face of exploitation.",
+   "book_text": "Whilst some stakeholders may try to protect the integrity of arts and cultural festivals from their reconfiguration as urban policy tools, we should recognise that policy-oriented festivals can still have very positive social and cultural effects. And we cannot ignore / acknowledge the fact that some festivals were established to strategically assist urban areas. In other words, they have always been strategic interventions rather than artistic, social or cultural phenomena. Film festivals are a good example: many of these events were established for economic / recreational reasons: for example, the Cannes Film Festival was launched to prolong the tourist season. The Brighton Festival was created for similar reasons. The re-establishment of the Venice Carnival in 1979, following a long break, was also a(n) deliberate / accidental attempt to address some of the issues the city was facing at that time, including the lack of provision for young people. These festivities have not been appropriated as urban policy tools: they have always been staged with wider objectives in mind.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 '방문객 수요가 정부가 행사를 키우는 유인' ≈ 교재 '많은 축제가 경제적 이유로 만들어짐(관광 시즌 연장)'",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     105
+    ],
+    "start": "Whilst some stakeholders",
+    "end": "wider objectives in mind."
+   }
+  },
+  {
+   "idx": 18,
+   "시험": "2025.11",
+   "문항": "25",
+   "시험유형": "도표",
+   "연계방식": "일부변형",
+   "교재": "2026 수능특강 영어",
+   "쪽": "55",
+   "번호확인": "일치: 8강 4번은 2014~2015년 미국 십 대가 친구와 시간을 보내는 의사소통 유형별 비율 도표 문항으로 55쪽에서 확인",
+   "status": "measured",
+   "exam_words": 174,
+   "book_words": 225,
+   "exam_content_tokens": 91,
+   "a_content_token_ratio": 0.681,
+   "a_content_type_ratio": 0.55,
+   "b_4gram_token_coverage": 0.259,
+   "b_4gram_share": 0.123,
+   "longest_shared_run_words": 9,
+   "exam_text": "The graph above shows the percentages of U.S. teenagers who spent time with friends by communication type, based on a survey conducted between 2014 and 2015. In the category of Every Day, text messaging showed the highest percentage among the four types of communication that teenagers used to spend time with friends. In the category of Less Often, the percentage of teenagers who spent time with friends through talking on the phone was more than twice that of teenagers who did so through text messaging. The percentage of teenagers who spent time with friends through talking on the phone in the category of Every Day was lower than that of teenagers who did so in the category of Less Often. In the category of Less Often, emailing was the second highest in percentage among the types of communication listed above. The percentage of teenagers who spent time with friends through video chatting in the category of Less Often was higher than that of teenagers who did so in the category of Every Day.",
+   "book_text": "Types of Communication U.S. Teenagers Have with Friends by Gender (2014–2015) Girls Boys Girls Boys Girls Boys Girls Boys Every day Every few days Less often 62% 18% 12% 48% 23% 14% 21% 27% 41% 26% 30% 19% 19% 25% 23% 18% 21% 42% 3% 5% 23% 22% 27% 25% Text messaging Talking on the phone Posting to social media sites Talking while playing video games The graph above shows the types of communication that U.S. teenagers had when they spent time together with friends, by gender, from 2014 to 2015. The most common way for both boys and girls in the United States to spend time with friends was through text messaging. Over 80% of both U.S. boys and girls responded that they spent time with friends through talking on the phone, and about one in five girls did so every day. Posting to social media sites was the least popular among boys with less than one-third answering a combination of ‘every day’ and ‘every few days.’ Boys were much more likely than girls to spend time talking with friends while playing video games: 74% of boys reported they did so. More than three-fifths of girls spent time with friends every day via text messaging, while only 3% of girls talked daily with friends while playing video games.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 2,
+   "c_note": "부분: 도입문(2014~2015 미국 십 대 친구와의 의사소통 유형) + '문자 메시지가 가장 흔하다'(교재 성별, 시험 빈도 범주)",
+   "is_chart": true,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     55
+    ],
+    "start": "Types of Communication",
+    "end": "talked daily with friends while playing video games."
+   }
+  },
+  {
+   "idx": 19,
+   "시험": "2025.11",
+   "문항": "29",
+   "시험유형": "어법",
+   "연계방식": "소재만",
+   "교재": "2026 수능특강 영어",
+   "쪽": "94",
+   "번호확인": "일치: 16강 3번은 문화가 물리적·인지적 도구를 전달한다는 글의 순서 배열 문항으로 94쪽에서 확인",
+   "status": "measured",
+   "exam_words": 149,
+   "book_words": 192,
+   "exam_content_tokens": 75,
+   "a_content_token_ratio": 0.12,
+   "a_content_type_ratio": 0.106,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "We are exceptionally smart, and this helps us adapt to a wide range of environments. But we are not nearly smart enough as individuals to solve the adaptive problems that confronted modern humans as they spread across the globe. The package of tools, foraging techniques, ecological knowledge, and social arrangements used by any group of foragers being far too complex for any individual to create. We are able to learn all the things we need to know in each of the many different environments in which we live only because we acquire information from others. We are much better at learning from others than other species are, and we are motivated to learn from others even when we do not understand why our models are doing what they are doing. This psychology allows human populations to accumulate pools of adaptive information that greatly exceed the inventive capacities of individuals.",
+   "book_text": "One important way in which our culture enhances our ability to survive and thrive in the world is by passing along the tools it has created to make our daily living more effective and efficient. Some tools are actual physical objects; for example, hammers help us build houses and scissors can cut paper and cloth. For example, our system of numbers allows us to perform precise calculations related to building construction, engine design, and cooking. The maps we create help us find our way around new cities, subway systems, and shopping malls. Our writing system allows us to record our thoughts on paper or in computer documents. By the way, computers are cognitive tools as well as physical ones because they help us think in increasingly sophisticated ways. All of these tools are cultural creations — the results of many, many years of our collective ingenuity and meaning-making. But many others are cognitive tools that enable us to think in more productive ways. Cognitive tools take a variety of forms, including concepts, symbols, strategies, procedures, and any other culturally constructed mechanisms that help us tackle life’s mental challenges more efficiently and effectively.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 '집단이 개인의 발명 능력을 넘는 적응 정보를 축적' ≈ 교재 '도구는 오랜 집단적 독창성의 문화적 산물'",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     94
+    ],
+    "start": "One important way in which",
+    "end": "more efficiently and effectively."
+   }
+  },
+  {
+   "idx": 20,
+   "시험": "2025.11",
+   "문항": "32",
+   "시험유형": "빈칸 추론",
+   "연계방식": "소재만",
+   "교재": "2026 수능완성 영어",
+   "쪽": "77",
+   "번호확인": "일치: 12강 3번은 플라톤이 글쓰기의 부정적 결과를 우려했다는 요약문 완성 문항으로 77쪽에서 확인",
+   "status": "measured",
+   "exam_words": 161,
+   "book_words": 189,
+   "exam_content_tokens": 87,
+   "a_content_token_ratio": 0.126,
+   "a_content_type_ratio": 0.106,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "The basic guidelines for good style are not mysterious; in fact, you use them every day in conversation. In conversation and in writing, we all rely heavily on cooperation to make sense of exchanges, and a polished practical style makes cooperation easier. Writers develop such a style by acknowledging that readers expect the same things that listeners expect in conversation: clarity, relevance, and proportion. If you listen to someone who is not clear, who cannot stay on the topic, or who offers too much or too little information, you will quickly lose interest in the conversation. Writers, too, need to be clear, stay on the topic, and give information appropriately. In fact, this attention to audience and appropriateness may be even more important in writing than in conversation because writing does not permit the nonverbal communication and immediate feedback that are part of conversation. As writers, we have to ＿＿＿; in effect, we have to imagine both halves of a virtual conversation.",
+   "book_text": "Plato was gravely concerned about the profoundly negative consequences of the great communication revolution of his age: writing. In the Phaedrus , he has Socrates tell the story of a great inventor who has just created the written word, who then presents it as a gift to the Egyptian king. To this, the king replies: “This discovery of yours will create forgetfulness in the learners’ souls, because they will not use their memories; they will trust to the external written characters and not remember of themselves.” By fixating words into text, the truth of the ensouled speech will be reduced to the mere appearance of truth of the characters in the inert page. And, as dead records pile up, living memory will deteriorate. Few people alive today would think that Plato was justified in his criticism of writing. Even if — as it surely was the case — we lost something irreparably by leaving the mind of the oral tradition behind, the possibilities opened by writing far outstrip any possible downsides it may have. Most of us would surely agree that illiteracy has proven to have much more paralyzing consequences than literacy.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 플라톤의 글쓰기 비판, 시험 대화 원리로 본 좋은 문체",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     77
+    ],
+    "start": "Plato was gravely",
+    "end": "than literacy."
+   }
+  },
+  {
+   "idx": 21,
+   "시험": "2026.06",
+   "문항": "19",
+   "시험유형": "심경 변화",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "145",
+   "번호확인": "일치: 24강 3번은 Grand Rails Adventure Package 안내문 일치 문항",
+   "status": "measured",
+   "exam_words": 119,
+   "book_words": 155,
+   "exam_content_tokens": 62,
+   "a_content_token_ratio": 0.048,
+   "a_content_type_ratio": 0.056,
+   "b_4gram_token_coverage": 0.034,
+   "b_4gram_share": 0.009,
+   "longest_shared_run_words": 4,
+   "exam_text": "Mark’s friends had invited him to Sky National Park to ride the Cloud Monorail, which went to the top of the mountain. Mark didn’t feel like going, but he went because he had nothing better to do. He checked his watch as the monorail departed and then blankly looked out the window. Clouds surrounded the monorail, so all he saw was grey for what felt like forever. Just as he started feeling sleepy, the monorail rose above the clouds. He opened his mouth as he saw the most beautiful mountains spreading out before him all the way to the ocean. He couldn’t believe how marvelous nature could be and wondered what he would have missed if he hadn’t come.",
+   "book_text": "Grand Rails Adventure Package Enjoy an unforgettable 3-night rail journey with our exclusive Grand Rails Adventure Package! Package Highlights: - Save up to 25% on round trip train travel from Silver Creek Station to Sky National Park. - Stay at the charming downtown hotel for the first and last night of your trip. - Relax in comfort at Ridge Lodge inside the park for the second night of your stay. - Enjoy free breakfast and dinner throughout your stay, with lunch available at an additional charge. - Receive a $20 Gift Certificate per adult to use at the hotel gift shops. How to Book: - Select “Vacation Packages” in the reservation form. - Call us at 1-800-123-4567 (available 7 AM–7 PM), or click below to book your trip today! [Book Now] This package is on sale for a limited time only: March 1 through June 30. *Don’t miss this chance to experience the adventure of a lifetime!",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "공유는 Sky National Park 지명뿐(교재 안내문, 시험 심경 이야기)",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     145
+    ],
+    "start": "Grand Rails Adventure Package Enjoy",
+    "end": "adventure of a lifetime!"
+   }
+  },
+  {
+   "idx": 22,
+   "시험": "2026.06",
+   "문항": "24",
+   "시험유형": "제목",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어독해연습",
+   "쪽": "130",
+   "번호확인": "일치: 11강 5~6번은 관광·환대 산업의 인적 자원 관리를 다룬 1지문 2문항이며 5번이 제목 문항",
+   "status": "measured",
+   "exam_words": 174,
+   "book_words": 266,
+   "exam_content_tokens": 101,
+   "a_content_token_ratio": 0.168,
+   "a_content_type_ratio": 0.164,
+   "b_4gram_token_coverage": 0.023,
+   "b_4gram_share": 0.006,
+   "longest_shared_run_words": 4,
+   "exam_text": "Before the 1950s, tourism was very much an industry which was fragmented; hotels, transport operators, travel agents, and tour operators all tended to work independently of each other. Hotels were largely in the business of selling bed nights. Airlines and railways were in the business of selling seats. Travel agents, of course, were selling travel and holidays, but in each case they tended to operate very much as individual businesses. From the mid-1950s onwards, particularly in the UK, the growth of tour operators began to change the nature of the industry from essentially individual business activities to more integrated activities. Hotels, for example, were beginning to see customers as wanting a range of services rather than simply buying accommodation. So hotels began to develop shopping arcades and later to offer secretarial centres to try to increase the spend of guests within the hotel complex. Transport operators, particularly in the airline business, saw the sale of transport services as being integral to a much wider need. Airlines offered insurance and accommodation booking for travellers.",
+   "book_text": "The tourism and hospitality industry is particularly sensitive to economic cycles and political trouble and can be badly affected in times of uncertainty. For example, the global nature of the industry means that it is vulnerable to external events that cause fluctuations in tourist visits and spend. The global 2001-2004 economic downturn, 9/11, the Iraq War and the outbreak of SARS all led to a drop in revenue in the industry. These factors reduced the number of travellers internationally and removed uncertainty and fragility in the tourism market. Many of these aspects are particularly pronounced in the airline industry and trade unions have often railed against the manner in which employees are used as ‘shock absorbers’ to protect the industry from the cyclical nature of the market. These hard approaches to HRM have seen major redundancy programmes in a number of airlines in recent years, especially after 9/11. On the other hand, a number of companies have sought a more soft approach to HRM which aimed at increasing the customer responsiveness of their front-line staff. British Airways, for example, had a series of initiatives in the 1980sand 1990s such as ‘Putting People First’ and ‘Winning for Customers’. Among other things, these initiatives sought to introduce teamwork, implement extensive training programmes, enhance quality procedures, and develop multi-skilled staff. As companies alternate between hard and soft approaches to HRM, employees may become confused as to what the company message is. Ultimately, employees may well be a company’s ‘greatest asset’, but in times of uncertainty and downturn are equally expendable as recent history suggests.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 관광·환대 산업 인적 자원 관리, 시험 1950년대 이후 관광 산업 통합",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     130
+    ],
+    "start": "The tourism and hospitality",
+    "end": "recent history suggests."
+   }
+  },
+  {
+   "idx": 23,
+   "시험": "2026.06",
+   "문항": "29",
+   "시험유형": "어법",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "114",
+   "번호확인": "일치: 19강 1~2번은 18세기 여성 드레스 개조 지문의 제목·어휘 문항",
+   "status": "measured",
+   "exam_words": 163,
+   "book_words": 251,
+   "exam_content_tokens": 95,
+   "a_content_token_ratio": 0.2,
+   "a_content_type_ratio": 0.153,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Fashion is always deeply cultural, and an excellent example of this can be seen in the evolution of European clothing. At the beginning of the Middle Ages, clothing tended to be simple and was frequently made of rough wool or animal furs. With advances in cloth making, however, fashion began moving toward styles what were more elaborate and form-fitting. In the Renaissance and Elizabethan eras, styles became even more refined. The clothes that wealthy people were wearing became increasingly fancier, with a particular emphasis being placed on smaller waists. The connection between clothing and social status was so pronounced that laws were enacted to limit the wearing of certain luxury items. Allowed only for higher social classes, luxurious styles and decorations such as feathers, silk, or velvet were used as a means of demonstrating one’s standing in society. This was further reinforced as upperclass styles came to be explicitly incorporated into cultural ceremonies so that their wearers’ roles could be identified clearly.",
+   "book_text": "Women’s dresses from the eighteenth century offered a great opportunity for repurposing, as they were frequently fashioned from long, uncut lengths of fabric. Textiles were significantly more costly than the labor it took to alter them, and as a result, most garments were modified numerous times to keep up with changes in fashion. “Even the wealthy saved fabrics, remodeled clothes, and sold unwanted items in the secondhand market,” observes fashion scholar Linda Welters. “Sustainability was a way of life.” Indeed, although change is inherent to fashion, the remodeling of the existing clothing, rather than buying new, was a widespread practice. It is rare , in fact, to find an eighteenth-century dress that does not show some sign of alteration. The cost of having a gown made, or remade, was only about half the cost of the textile itself and could be significantly less, depending on the type of fabric. In addition to updated dress silhouettes, accessories and trimmings played an important role in refreshing old clothing styles. For example, the addition of a row of lace on an upper part of a gown was an economical alternative to the full replacement of the gown. Many eighteenth-century dresses, particularly those from the first half of the century, were constructed with relatively crude stitches, indicating that the effortless preservation of the original gown was a consideration. Because fabrics retained value even when they were not in fashion, hand-woven silks, cherished for their quality and beauty, were sometimes passed down through generations.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 18세기 드레스 개조(지속 가능성), 시험 유럽 복식과 사회적 지위",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     114
+    ],
+    "start": "Women’s dresses from",
+    "end": "through generations."
+   }
+  },
+  {
+   "idx": 24,
+   "시험": "2026.06",
+   "문항": "43",
+   "시험유형": "1지문 3문항(글의 순서)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "217",
+   "번호확인": "일치: Test 3의 2번은 바이올린 경연 대회 무대에 선 '나'의 심경 변화 문항",
+   "status": "measured",
+   "exam_words": 374,
+   "book_words": 156,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.157,
+   "a_content_type_ratio": 0.156,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Every day after school, Sally walked home through the park. She liked listening to music in her headphones and looking at the trees on her way home. One day, while she was changing songs, she heard strange, unpolished music. She took off her headphones and followed the music through the park. She saw a kind-looking old woman sitting on a small bench and playing the violin. While her music wasn’t perfect, there was something warm and welcoming about it. So, Sally walked closer. The following day, they met at the same bench. Sally was happy to hear the old woman’s music again, but when she sat, the woman stopped playing. “Today is your first full lesson,” she said as she handed the violin to Sally. She showed the young woman how to place her fingers on the strings. After an hour, she had learned some basics. Then, the old woman played the same music from the day before. Sally promised to meet her every day and started walking home. As she walked, simple, unpolished music was playing in her mind. The old woman asked Sally if she played any instruments. Suddenly, Sally remembered learning the recorder from her older sister Beatrice when she was a girl. Beatrice had said, “You just have no musical talent.” Sally looked back to the old woman sadly and told her the story. The old woman winked, handed the violin to Sally, and said, “You don’t need talent to enjoy playing.” Feeling brave, Sally accepted the instrument and tried playing. The sound was rough, and she felt embarrassed. But the old woman just smiled and said, “That’s how it begins. I hope to see you again tomorrow.” “Hello! Are you going to listen to my performance?” the old woman looked up and asked. Sally laughed and replied, “Oh sorry, I was just passing by.” She turned to continue walking home, but decided to stop for a bit and listen. After the woman’s music finished, Sally asked her when she had started playing the violin. “I just started last year, but I always wanted to learn,” the woman answered. Sally was impressed by her response. Even though she loved listening to music, she could not play any instruments well.",
+   "book_text": "At the violin competition, my hands shook slightly as I stepped onto the stage. It had been years since I last performed on stage, and every eye in the room seemed fixed on me, pressing down with silent weight. I held the violin tightly, uncertain of how the first note would sound. Then, as I looked down, the polished surface caught a faint reflection — my father’s face, just as I remembered. In that moment, something settled. I thought of the quiet evenings when he sat beside me during practice, gently nodding in rhythm. His presence was steady and unwavering. I drew in a slow breath and raised the violin to my chin, anchoring it against my shoulder. The bow paused just above the strings, then touched down with purpose. My grip steadied, and with each movement that followed, I played Pachelbel’s Canon in D — no longer hesitating, but sure and measured from the first note on.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "교재 바이올린 경연 무대의 '나', 시험 공원에서 할머니에게 바이올린을 배우는 Sally. 같은 뜻 문장 없음",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     217
+    ],
+    "start": "At the violin competition",
+    "end": "from the first note on."
+   }
+  },
+  {
+   "idx": 25,
+   "시험": "2026.06",
+   "문항": "44",
+   "시험유형": "1지문 3문항(지칭 추론)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "217",
+   "번호확인": "일치: Test 3의 2번은 바이올린 경연 대회 무대에 선 '나'의 심경 변화 문항",
+   "status": "measured",
+   "exam_words": 374,
+   "book_words": 156,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.157,
+   "a_content_type_ratio": 0.156,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Every day after school, Sally walked home through the park. She liked listening to music in her headphones and looking at the trees on her way home. One day, while she was changing songs, she heard strange, unpolished music. She took off her headphones and followed the music through the park. She saw a kind-looking old woman sitting on a small bench and playing the violin. While her music wasn’t perfect, there was something warm and welcoming about it. So, Sally walked closer. The following day, they met at the same bench. Sally was happy to hear the old woman’s music again, but when she sat, the woman stopped playing. “Today is your first full lesson,” she said as she handed the violin to Sally. She showed the young woman how to place her fingers on the strings. After an hour, she had learned some basics. Then, the old woman played the same music from the day before. Sally promised to meet her every day and started walking home. As she walked, simple, unpolished music was playing in her mind. The old woman asked Sally if she played any instruments. Suddenly, Sally remembered learning the recorder from her older sister Beatrice when she was a girl. Beatrice had said, “You just have no musical talent.” Sally looked back to the old woman sadly and told her the story. The old woman winked, handed the violin to Sally, and said, “You don’t need talent to enjoy playing.” Feeling brave, Sally accepted the instrument and tried playing. The sound was rough, and she felt embarrassed. But the old woman just smiled and said, “That’s how it begins. I hope to see you again tomorrow.” “Hello! Are you going to listen to my performance?” the old woman looked up and asked. Sally laughed and replied, “Oh sorry, I was just passing by.” She turned to continue walking home, but decided to stop for a bit and listen. After the woman’s music finished, Sally asked her when she had started playing the violin. “I just started last year, but I always wanted to learn,” the woman answered. Sally was impressed by her response. Even though she loved listening to music, she could not play any instruments well.",
+   "book_text": "At the violin competition, my hands shook slightly as I stepped onto the stage. It had been years since I last performed on stage, and every eye in the room seemed fixed on me, pressing down with silent weight. I held the violin tightly, uncertain of how the first note would sound. Then, as I looked down, the polished surface caught a faint reflection — my father’s face, just as I remembered. In that moment, something settled. I thought of the quiet evenings when he sat beside me during practice, gently nodding in rhythm. His presence was steady and unwavering. I drew in a slow breath and raised the violin to my chin, anchoring it against my shoulder. The bow paused just above the strings, then touched down with purpose. My grip steadied, and with each movement that followed, I played Pachelbel’s Canon in D — no longer hesitating, but sure and measured from the first note on.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "24행과 같은 지문(43~45 묶음)",
+   "is_chart": false,
+   "duplicate_of_idx": 24,
+   "book_anchor": {
+    "pdf_pages": [
+     217
+    ],
+    "start": "At the violin competition",
+    "end": "from the first note on."
+   }
+  },
+  {
+   "idx": 26,
+   "시험": "2026.06",
+   "문항": "45",
+   "시험유형": "1지문 3문항(세부 내용)",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "217",
+   "번호확인": "일치: Test 3의 2번은 바이올린 경연 대회 무대에 선 '나'의 심경 변화 문항",
+   "status": "measured",
+   "exam_words": 374,
+   "book_words": 156,
+   "exam_content_tokens": 217,
+   "a_content_token_ratio": 0.157,
+   "a_content_type_ratio": 0.156,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "Every day after school, Sally walked home through the park. She liked listening to music in her headphones and looking at the trees on her way home. One day, while she was changing songs, she heard strange, unpolished music. She took off her headphones and followed the music through the park. She saw a kind-looking old woman sitting on a small bench and playing the violin. While her music wasn’t perfect, there was something warm and welcoming about it. So, Sally walked closer. The following day, they met at the same bench. Sally was happy to hear the old woman’s music again, but when she sat, the woman stopped playing. “Today is your first full lesson,” she said as she handed the violin to Sally. She showed the young woman how to place her fingers on the strings. After an hour, she had learned some basics. Then, the old woman played the same music from the day before. Sally promised to meet her every day and started walking home. As she walked, simple, unpolished music was playing in her mind. The old woman asked Sally if she played any instruments. Suddenly, Sally remembered learning the recorder from her older sister Beatrice when she was a girl. Beatrice had said, “You just have no musical talent.” Sally looked back to the old woman sadly and told her the story. The old woman winked, handed the violin to Sally, and said, “You don’t need talent to enjoy playing.” Feeling brave, Sally accepted the instrument and tried playing. The sound was rough, and she felt embarrassed. But the old woman just smiled and said, “That’s how it begins. I hope to see you again tomorrow.” “Hello! Are you going to listen to my performance?” the old woman looked up and asked. Sally laughed and replied, “Oh sorry, I was just passing by.” She turned to continue walking home, but decided to stop for a bit and listen. After the woman’s music finished, Sally asked her when she had started playing the violin. “I just started last year, but I always wanted to learn,” the woman answered. Sally was impressed by her response. Even though she loved listening to music, she could not play any instruments well.",
+   "book_text": "At the violin competition, my hands shook slightly as I stepped onto the stage. It had been years since I last performed on stage, and every eye in the room seemed fixed on me, pressing down with silent weight. I held the violin tightly, uncertain of how the first note would sound. Then, as I looked down, the polished surface caught a faint reflection — my father’s face, just as I remembered. In that moment, something settled. I thought of the quiet evenings when he sat beside me during practice, gently nodding in rhythm. His presence was steady and unwavering. I drew in a slow breath and raised the violin to my chin, anchoring it against my shoulder. The bow paused just above the strings, then touched down with purpose. My grip steadied, and with each movement that followed, I played Pachelbel’s Canon in D — no longer hesitating, but sure and measured from the first note on.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 0,
+   "c_note": "24행과 같은 지문(43~45 묶음)",
+   "is_chart": false,
+   "duplicate_of_idx": 24,
+   "book_anchor": {
+    "pdf_pages": [
+     217
+    ],
+    "start": "At the violin competition",
+    "end": "from the first note on."
+   }
+  },
+  {
+   "idx": 27,
+   "시험": "2026.09",
+   "문항": "21",
+   "시험유형": "함축적 의미 파악",
+   "연계방식": "소재만",
+   "교재": "2027 수능완성 영어",
+   "쪽": "167",
+   "번호확인": "일치: p.167에 5회 33번 빈칸 내용 추론(AI의 답은 입력된 통계적 평균을 반영)이 실재하며 34번과 함께 수록됨",
+   "status": "measured",
+   "exam_words": 189,
+   "book_words": 189,
+   "exam_content_tokens": 108,
+   "a_content_token_ratio": 0.157,
+   "a_content_type_ratio": 0.144,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Social media companies are working to keep you on site or attempting to deliver results useful to you. You can see this personalization reflected in the results of search engines, which try to maximize relevance: searching for “bakery” in New York should return different results than searching in Paris. Features like the little predictive-text cues of autocomplete also look to maximize relevance by suggesting refinements: typing in “cats” might prompt the user with “cats movie” or “cats that don’t shed.” Autocomplete suggestions offer a look into the algorithm’s understanding of accumulated user behavior ― an immensely important part of how key social media algorithms work. The outputs are personalized, but the data sets are massive, and the platforms are mining for similarities across vast quantities of user information. If a whole lot of users near you or similar to you complete the search that you’ve begun with specific words, the autocomplete algorithm takes that into account and may be more likely to suggest them to you. Since the results are derived from data related to millions of searches, autocomplete is, in a sense, holding a mirror up to society .",
+   "book_text": "AI does not match the human brain. In fact, any digital statistical pattern recognition system is subject to the garbage in, garbage out effect: the input determines the output. The better the data, the better the results. This effect cannot be entirely avoided and reflects the general human condition. We humans generate the data we input into this new technology, which then generates the outcome. The human mind and the collective psyche work the same way. Multiple cognitive frames and biases, adverse and toxic experiences, traumatic upbringings, false memory coding, pure nonsense, confabulation, hallucinations and ultimate wisdom all come together and feed into this digital algorithm. It is therefore not surprising that the digital output of an AI resembles the statistical average of the input we provide, including the programmers’ algorithms. Statistical pattern recognition on a massive scale simply confronts us with our own flaws and mirrors our own limitations. AI is thus no more objective and fact-based than natural human intelligence, since it is programmed by humans with their own cognitive limits and constraints within a certain historical and cultural context. The answers AI gives us simply",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 '자동 완성은 수백만 검색 데이터에서 나와 사회를 비추는 거울' ≈ 교재 'AI 출력은 입력의 통계적 평균을 닮아 우리 한계를 비춘다'",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     167
+    ],
+    "start": "AI does not match",
+    "end": "AI gives us simply"
+   }
+  },
+  {
+   "idx": 28,
+   "시험": "2026.09",
+   "문항": "29",
+   "시험유형": "어법 정확성 파악",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어독해연습",
+   "쪽": "43",
+   "번호확인": "일치: p.43에 4강 2번 빈칸 추론(brilliant leadership에서 empathy와 authenticity의 관계)이 실재함",
+   "status": "measured",
+   "exam_words": 163,
+   "book_words": 155,
+   "exam_content_tokens": 95,
+   "a_content_token_ratio": 0.274,
+   "a_content_type_ratio": 0.163,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 2,
+   "exam_text": "Leaders come in all shapes and sizes, but successful leaders tend to have one thing in common: the ability to share someone else’s feelings, known as empathy. While empathy forms in everyone to some degree, effective leaders know how to develop this emotional guidance system to connect with others’ feelings and perspectives. However, empathy in leaders is more than simply being kind to employees, clients, and customers. Empathetic people seem more approachable, focusing on the words of others. Listening to the needs of employees enable leaders to clearly identify what makes them feel heard. Utilized in this way, empathy can be considered a crucial part of maintaining employee satisfaction. Leaders who are unable to surround themselves with competent employees will not be successful. Indeed, a leader’s failure to empathize with talented workers is one of the main situations that could lead them to leave an organization. In this case, the organization must spend precious time and money to find suitable replacements for them.",
+   "book_text": "Central to the notion of brilliant leadership is the critical linkage between empathy and authenticity. While leaders may act on the premise that sensitivity to employee concerns is helpful in achieving organizational goals, brilliant leaders believe that empathy has value in its own right. In this regard, empathy is less a means to an end (e.g., profiting) but rather is consistent with Kant’s notion of “Character,” which underscores truthfulness as a core element of virtue. From a stakeholder perspective, particularly employees, brilliant leaders would be seen as behaving in ways that reveal a genuineness of motives. Guided by the deontologically-based philosophical guidepost, “We should do our duty for no other reason than because it’s the right thing to do,” the brilliant leader’s empathetic conduct is derived less from strategic or tactical interests than it is from one’s personal sense of integrity. That, then, is a defining feature of authenticity: it frames empathy as",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 '성공한 리더의 공통점은 공감' ≈ 교재 '뛰어난 리더십의 중심은 공감과 진정성의 연결'. 단 교재는 공감 자체의 가치, 시험은 직원 만족 수단 — 방향은 다름",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     43
+    ],
+    "start": "Central to the notion of brilliant",
+    "end": "it frames empathy as"
+   }
+  },
+  {
+   "idx": 29,
+   "시험": "2026.09",
+   "문항": "31",
+   "시험유형": "빈칸 내용 추론",
+   "연계방식": "소재만",
+   "교재": "2027 수능특강 영어",
+   "쪽": "178",
+   "번호확인": "일치: p.178에 TEST 1 7번 제목 파악(감정에 이름 붙이기가 불안을 줄인다는 UCLA 실험)이 실재함. 번호 ‘07’은 문항 뒤에 표기",
+   "status": "measured",
+   "exam_words": 174,
+   "book_words": 153,
+   "exam_content_tokens": 77,
+   "a_content_token_ratio": 0.13,
+   "a_content_type_ratio": 0.101,
+   "b_4gram_token_coverage": 0.0,
+   "b_4gram_share": 0.0,
+   "longest_shared_run_words": 3,
+   "exam_text": "What stresses you out more than anything? Perhaps it’s speaking in front of others. For many, this is so stressful it even has a name: glossophobia. The explanation for why it’s uncomfortable to have everyone’s eyes on you is probably that, for almost all of our evolution, it’s been extremely important not to be excluded from the group. To prepare for what might happen if you are evaluated and socially shamed ― and thus alienated from the group ― your brain fires up the stress system and your heart begins to beat harder. Our natural sensitivity to being evaluated by other people is another example of our brain not being adapted to the modern world. If we give a bad presentation at work, we are unlikely to lose our job and thus risk starving to death. But in the world we long ago evolved for, exclusion from the group could be a matter of life and death. ＿＿＿ was not merely a matter of safety but also of survival. You simply couldn’t make it on your own.",
+   "book_text": "In an experiment conducted by researchers at the University of California, Los Angeles, study subjects were required to give a series of unplanned speeches in front of an audience (a reliable way to trigger anxiety). Half of the participants were then asked to engage in what the researchers call “affect labeling,” filling in responses to the prompt “I feel ,” while the other half were asked to complete a neutral shape- matching task. The affect-labeling group showed steep declines in heart rate and skin conductance compared to the control group, whose levels of physiological arousal remained high. Brain-scanning studies offer further evidence of the calming effect of affect labeling: simply naming what is felt reduces activity in the amygdala, the brain structure involved in processing fear and other strong emotions. Meanwhile, thinking in a more involved way about feelings and the experiences that evoked them actually produces greater activity in the amygdala.",
+   "c_same_meaning_strict": 0,
+   "c_same_meaning_partial": 1,
+   "c_note": "부분: 시험 '남들 앞에서 말하기가 스트레스, 심장이 빨리 뜀' ≈ 교재 '청중 앞 즉흥 연설은 불안을 일으키는 확실한 방법'(괄호 속 한 구)",
+   "is_chart": false,
+   "duplicate_of_idx": null,
+   "book_anchor": {
+    "pdf_pages": [
+     178
+    ],
+    "start": "In an experiment conducted",
+    "end": "produces greater activity in the amygdala."
+   }
+  }
+ ],
+ "excluded_listening_textbook_rows": [
+  {
+   "시험": "2024.06",
+   "문항": "27",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "124"
+  },
+  {
+   "시험": "2024.06",
+   "문항": "28",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "56"
+  },
+  {
+   "시험": "2024.06",
+   "문항": "43~45",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "113"
+  },
+  {
+   "시험": "2024.11",
+   "문항": "19",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "196"
+  },
+  {
+   "시험": "2024.11",
+   "문항": "28",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "62"
+  },
+  {
+   "시험": "2025.06",
+   "문항": "28",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "142"
+  },
+  {
+   "시험": "2025.09",
+   "문항": "27",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "176"
+  },
+  {
+   "시험": "2025.09",
+   "문항": "28",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "176"
+  },
+  {
+   "시험": "2025.09",
+   "문항": "43",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "51"
+  },
+  {
+   "시험": "2025.09",
+   "문항": "44",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "51"
+  },
+  {
+   "시험": "2025.09",
+   "문항": "45",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "51"
+  },
+  {
+   "시험": "2025.11",
+   "문항": "43",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "16"
+  },
+  {
+   "시험": "2025.11",
+   "문항": "44",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "16"
+  },
+  {
+   "시험": "2025.11",
+   "문항": "45",
+   "연계방식": "일부변형",
+   "교재": "수능특강 영어듣기",
+   "쪽": "16"
+  },
+  {
+   "시험": "2026.06",
+   "문항": "27",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "138"
+  },
+  {
+   "시험": "2026.06",
+   "문항": "28",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "67"
+  },
+  {
+   "시험": "2026.09",
+   "문항": "27",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "182"
+  },
+  {
+   "시험": "2026.09",
+   "문항": "28",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "161"
+  },
+  {
+   "시험": "2026.09",
+   "문항": "43",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "135"
+  },
+  {
+   "시험": "2026.09",
+   "문항": "44",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "135"
+  },
+  {
+   "시험": "2026.09",
+   "문항": "45",
+   "연계방식": "소재만",
+   "교재": "수능특강 영어듣기",
+   "쪽": "135"
+  }
+ ]
+}

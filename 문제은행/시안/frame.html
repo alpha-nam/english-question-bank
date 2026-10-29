@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>폭 시험용 틀</title></head>
+<body style="margin:0;background:#6b6b6b">
+<!-- Chrome 헤드리스는 창 너비가 약 500px 아래로 내려가지 않으므로, 좁은 화면은 이 틀 안(iframe)에서 시험한다. 주소: frame.html?w=390&h=844&src=<시안 주소> -->
+<iframe id="f" style="border:0;background:#fff;display:block"></iframe>
+<script>
+const q = new URLSearchParams(location.search), w = +q.get('w') || 390, h = +q.get('h') || 844, f = document.getElementById('f');
+f.style.width = w + 'px'; f.style.height = h + 'px'; f.src = q.get('src');
+f.onload = () => setTimeout(() => {
+  try { const a = f.contentDocument.getElementById('__audit'); if (a) { const p = document.createElement('pre'); p.id = '__audit'; p.textContent = a.textContent; document.body.appendChild(p); } } catch (e) {}
+}, 2500);
+</script></body></html>
