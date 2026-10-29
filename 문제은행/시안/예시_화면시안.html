@@ -9,11 +9,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 :root{font-family:'Pretendard Variable',Pretendard,'Malgun Gothic',sans-serif}
-body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
+body{background:#f8fafc;color:#1e293b;font-size:15px;overflow:hidden}
 ::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-track{background:transparent}
-.sticky-header th{position:sticky;top:0;z-index:10;background:#f8fafc}
+.sticky-header th{position:sticky;top:0;z-index:10;background:#f8fafc;white-space:nowrap}
 .row-selected{background:#eff6ff!important}.row-selected td:first-child{box-shadow:inset 3px 0 0 #2563eb}
-.cbx{appearance:none;background:#fff;margin:0;width:16px;height:16px;border:1.5px solid #94a3b8;border-radius:4px;display:grid;place-content:center;cursor:pointer;flex:none;transition:all .15s}
+.cbx{appearance:none;background:#fff;margin:0;width:18px;height:18px;border:1.5px solid #94a3b8;border-radius:4px;display:grid;place-content:center;cursor:pointer;flex:none;transition:all .15s}
 .cbx::before{content:"";width:9px;height:9px;transform:scale(0);transition:120ms transform;background:#fff;clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0%,43% 62%)}
 .cbx:checked{background:#2563eb;border-color:#2563eb}.cbx:checked::before{transform:scale(1)}
 .cbx:indeterminate{background:#2563eb;border-color:#2563eb}.cbx:indeterminate::before{transform:scale(1);clip-path:inset(40% 10%)}
@@ -29,8 +29,8 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
 <!-- 1. GNB -->
 <header class="h-14 bg-white border-b border-slate-200 flex items-center justify-between px-5 shrink-0 z-20">
   <div class="flex items-center gap-6">
-    <div class="flex items-center gap-2"><div class="w-7 h-7 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm shadow-sm">Q</div><h1 class="font-bold text-[15px] tracking-tight">영어 문제은행</h1></div>
-    <nav class="flex gap-1 text-[13px] font-semibold text-slate-500" aria-label="메뉴">
+    <div class="flex items-center gap-2"><div class="w-7 h-7 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm shadow-sm">Q</div><h1 class="font-bold text-[17px] tracking-tight">영어 문제은행</h1></div>
+    <nav class="flex gap-1 text-[15px] font-semibold text-slate-500" aria-label="메뉴">
       <a href="#" class="px-3 py-2 text-blue-600 bg-blue-50/50 rounded-md" aria-current="page">문제 찾기</a>
       <a href="#" class="px-3 py-2 text-slate-400 rounded-md cursor-not-allowed" title="다음 단계에서 만듭니다" aria-disabled="true">연계 분석</a>
       <a href="#" class="px-3 py-2 text-slate-400 rounded-md cursor-not-allowed" title="다음 단계에서 만듭니다" aria-disabled="true">모의고사</a>
@@ -39,9 +39,9 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
   <div class="flex items-center gap-3">
     <div class="relative w-80">
       <svg class="w-4 h-4 absolute left-3 top-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      <input type="search" id="searchInput" aria-label="지문 속 단어·표현으로 찾기" placeholder="단어·표현으로 찾기 (예: senescence)" class="w-full bg-slate-100 border border-transparent focus:bg-white focus:border-blue-500 rounded-md pl-9 pr-3 py-1.5 text-[13px] outline-none transition-all">
+      <input type="search" id="searchInput" aria-label="지문 속 단어·표현으로 찾기" placeholder="단어·표현으로 찾기 (예: senescence)" class="w-full bg-slate-100 border border-transparent focus:bg-white focus:border-blue-500 rounded-md pl-9 pr-3 py-1.5 text-[15px] outline-none transition-all">
     </div>
-    <span class="px-3 py-1.5 border border-slate-200 rounded-md bg-white font-semibold text-slate-600 flex items-center gap-1.5">내 시험지 <span id="headerCartCount" class="min-w-5 h-5 px-1 bg-blue-600 text-white rounded-full flex items-center justify-center text-[11px]">0</span></span>
+    <span class="px-3 py-1.5 border border-slate-200 rounded-md bg-white font-semibold text-slate-600 flex items-center gap-1.5">내 시험지 <span id="headerCartCount" class="min-w-5 h-5 px-1 bg-blue-600 text-white rounded-full flex items-center justify-center text-[13px]">0</span></span>
   </div>
 </header>
 
@@ -49,7 +49,7 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
 <div class="flex flex-1 overflow-hidden">
 
   <!-- 2-1. 좌측 필터 -->
-  <aside class="w-[248px] bg-white border-r border-slate-200 flex flex-col shrink-0 z-10" aria-label="고르기">
+  <aside class="w-[272px] bg-white border-r border-slate-200 flex flex-col shrink-0 z-10" aria-label="고르기">
     <div class="p-3.5 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
       <span class="font-bold text-slate-700">필터 설정</span>
       <button id="resetBtn" class="text-xs font-semibold text-blue-600 hover:text-blue-700">초기화</button>
@@ -62,39 +62,39 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
     <div class="p-4 border-b border-slate-200 shrink-0 bg-white z-10">
       <div class="flex justify-between items-end mb-3 gap-3">
         <div class="flex items-center gap-3">
-          <div class="seg inline-flex p-0.5 rounded-md bg-slate-100 text-[12px] font-semibold text-slate-500" role="group" aria-label="자료">
+          <div class="seg inline-flex p-0.5 rounded-md bg-slate-100 text-[14px] font-semibold text-slate-500" role="group" aria-label="자료">
             <button data-src="past" class="px-3 py-1 rounded">기출문제</button><button data-src="book" class="px-3 py-1 rounded">EBS 교재 문항</button>
           </div>
           <h2 id="mainTitle" class="text-lg font-bold text-slate-800 tracking-tight">기출문제</h2>
         </div>
-        <div class="text-[13px] text-slate-500 font-medium"><b id="totalCount" class="text-blue-600 text-[14px]">0</b> 문항 <span id="psgCount" class="text-slate-400"></span></div>
+        <div class="text-[15px] text-slate-500 font-medium"><b id="totalCount" class="text-blue-600 text-[16px]">0</b> 문항 <span id="psgCount" class="text-slate-400"></span></div>
       </div>
       <div id="toolbar" class="flex justify-between items-center gap-2 flex-wrap bg-slate-50 border border-slate-200 rounded-lg p-2">
         <div class="flex items-center gap-2 flex-wrap">
-          <button id="addAllBtn" class="px-3 py-1.5 border border-slate-200 shadow-sm rounded bg-white font-semibold text-slate-700 hover:bg-slate-100 text-[12px]">보이는 문항 모두 담기</button>
+          <button id="addAllBtn" class="px-3 py-1.5 border border-slate-200 shadow-sm rounded bg-white font-semibold text-slate-700 hover:bg-slate-100 text-[14px]">보이는 문항 모두 담기</button>
           <span class="w-px h-5 bg-slate-200 mx-1"></span>
-          <span class="text-[12px] text-slate-500 font-semibold">무작위</span>
-          <select id="randN" aria-label="무작위로 담을 문항 수" class="border border-slate-200 rounded px-2 py-1 text-[12px] bg-white"><option>5</option><option selected>10</option><option>20</option></select>
-          <select id="randTop" aria-label="TOP15 섞기" class="border border-slate-200 rounded px-2 py-1 text-[12px] bg-white"><option value="0">TOP15 섞지 않음</option><option value="30">TOP15 30%</option><option value="50">TOP15 50%</option></select>
-          <button id="randBtn" class="px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[12px] hover:bg-blue-700">무작위로 담기</button>
+          <span class="text-[14px] text-slate-500 font-semibold">무작위</span>
+          <select id="randN" aria-label="무작위로 담을 문항 수" class="border border-slate-200 rounded px-2 py-1 text-[14px] bg-white"><option>5</option><option selected>10</option><option>20</option></select>
+          <select id="randTop" aria-label="TOP15 섞기" class="border border-slate-200 rounded px-2 py-1 text-[14px] bg-white"><option value="0">TOP15 섞지 않음</option><option value="30">TOP15 30%</option><option value="50">TOP15 50%</option></select>
+          <button id="randBtn" class="px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700">무작위로 담기</button>
         </div>
-        <select id="sortSel" aria-label="정렬" class="border border-slate-200 rounded px-2 py-1 text-[12px] bg-white"><option value="no">번호 순</option><option value="wr">오답률 높은 순</option></select>
+        <select id="sortSel" aria-label="정렬" class="border border-slate-200 rounded px-2 py-1 text-[14px] bg-white"><option value="no">번호 순</option><option value="wr">오답률 높은 순</option></select>
       </div>
     </div>
     <div class="flex-1 overflow-auto bg-slate-50 relative" id="listArea"></div>
   </main>
 
   <!-- 2-3. 우측 내 시험지 -->
-  <aside class="w-[300px] bg-white border-l border-slate-200 flex flex-col shrink-0 z-10" aria-label="내 시험지">
+  <aside class="w-[320px] bg-white border-l border-slate-200 flex flex-col shrink-0 z-10" aria-label="내 시험지">
     <div class="p-3.5 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
-      <h2 class="font-bold text-[14px] text-slate-800 flex items-center gap-1.5"><svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>내 시험지</h2>
-      <span id="sideCartCount" class="bg-blue-100 text-blue-700 text-[11px] px-2 py-0.5 rounded-full font-bold">0</span>
+      <h2 class="font-bold text-[16px] text-slate-800 flex items-center gap-1.5"><svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>내 시험지</h2>
+      <span id="sideCartCount" class="bg-blue-100 text-blue-700 text-[13px] px-2 py-0.5 rounded-full font-bold">0</span>
     </div>
-    <div id="cartSum" class="px-3.5 py-2 text-[11px] text-slate-500 border-b border-slate-100"></div>
+    <div id="cartSum" class="px-3.5 py-2 text-[13px] text-slate-500 border-b border-slate-100"></div>
     <div class="flex-1 overflow-y-auto p-3 bg-slate-50" id="cartList"></div>
     <div class="p-4 border-t border-slate-200 bg-white flex flex-col gap-2">
-      <button id="printBtn" class="w-full bg-blue-600 text-white font-bold py-2.5 rounded hover:bg-blue-700 shadow-sm text-[13px] disabled:opacity-40">인쇄 및 미리보기</button>
-      <button id="clearBtn" class="w-full py-2 border border-red-200 bg-red-50 text-red-600 rounded font-semibold hover:bg-red-100 text-[12px] disabled:opacity-40">전체 비우기</button>
+      <button id="printBtn" class="w-full bg-blue-600 text-white font-bold py-2.5 rounded hover:bg-blue-700 shadow-sm text-[15px] disabled:opacity-40">인쇄 및 미리보기</button>
+      <button id="clearBtn" class="w-full py-2 border border-red-200 bg-red-50 text-red-600 rounded font-semibold hover:bg-red-100 text-[14px] disabled:opacity-40">전체 비우기</button>
     </div>
   </aside>
 </div>
@@ -105,11 +105,11 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
   <div class="h-14 border-b border-slate-200 flex items-center justify-between px-5 bg-slate-50 shrink-0">
     <h3 class="font-bold text-slate-800" id="drawerTitle">문항 상세</h3>
     <div class="flex items-center gap-2">
-      <div class="seg inline-flex p-0.5 rounded-md bg-slate-200/60 text-[12px] font-semibold text-slate-500" role="group" aria-label="보기 방식"><button data-dv="img" class="px-2.5 py-1 rounded">시험지 원본</button><button data-dv="txt" class="px-2.5 py-1 rounded">글자</button></div>
+      <div class="seg inline-flex p-0.5 rounded-md bg-slate-200/60 text-[14px] font-semibold text-slate-500" role="group" aria-label="보기 방식"><button data-dv="img" class="px-2.5 py-1 rounded">시험지 원본</button><button data-dv="txt" class="px-2.5 py-1 rounded">글자</button></div>
       <button id="drawerClose" aria-label="닫기" class="w-8 h-8 rounded text-slate-500 hover:bg-slate-200 text-lg leading-none">&times;</button>
     </div>
   </div>
-  <div class="flex-1 overflow-y-auto p-6 text-[14px] leading-relaxed text-slate-800" id="drawerContent"></div>
+  <div class="flex-1 overflow-y-auto p-6 text-[16px] leading-relaxed text-slate-800" id="drawerContent"></div>
   <div class="p-4 border-t border-slate-200 bg-white shrink-0"><button id="drawerAddBtn" class="w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700">시험지에 담기</button></div>
 </aside>
 
@@ -125,7 +125,7 @@ body{background:#f8fafc;color:#1e293b;font-size:13px;overflow:hidden}
   </div>
 </div>
 
-<div id="toast" role="status" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[13px] px-4 py-2.5 rounded-lg shadow-lg z-[60] hidden items-center gap-3"></div>
+<div id="toast" role="status" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[15px] px-4 py-2.5 rounded-lg shadow-lg z-[60] hidden items-center gap-3"></div>
 
 <script>
 // ---------- 자료 ----------
@@ -156,21 +156,21 @@ function rows(){const r=base().filter(d=>wqOk(d,S.wq)&&tyOk(d));
  return r.sort((a,b)=>S.sort=='wr'?((b.top?b.top.wr:-1)-(a.top?a.top.wr:-1))||b.ex.localeCompare(a.ex)||a.no-b.no:b.ex.localeCompare(a.ex)||a.no-b.no)}
 
 // ---------- 왼쪽 필터 ----------
-const H=t=>`<h3 class="font-bold text-slate-800 text-[13px] mb-2 border-b border-slate-100 pb-1 flex justify-between items-center">${t}</h3>`;
+const H=t=>`<h3 class="font-bold text-slate-800 text-[15px] mb-2 border-b border-slate-100 pb-1 flex justify-between items-center">${t}</h3>`;
 function renderFilters(){const f=$('#filterContainer');
- if(S.src=='book'){f.innerHTML=`<div>${H('책')}<p class="text-[12px] text-slate-500">수능특강 영어만 문항이 정리되어 있습니다(시안 표본 ${BOOK.length}개).</p></div>`;return}
+ if(S.src=='book'){f.innerHTML=`<div>${H('책')}<p class="text-[14px] text-slate-500">수능특강 영어만 문항이 정리되어 있습니다(시안 표본 ${BOOK.length}개).</p></div>`;return}
  const b=base(),tb=b.filter(tyOk),years=[...new Set(EXAMS.map(e=>e.cy))];
  const wq=[['','모든 문항'],['t','EBSi 오답률 TOP15만'],[40,'그중 오답률 40% 이상'],[50,'그중 오답률 50% 이상'],[60,'그중 오답률 60% 이상']];
  const tc={};b.filter(d=>wqOk(d,S.wq)).forEach(d=>tc[d.short]=(tc[d.short]||0)+d.n);
  const types=[...new Set(b.map(d=>d.short))].sort((x,y)=>Math.min(...b.filter(d=>d.short==x).map(d=>d.no))-Math.min(...b.filter(d=>d.short==y).map(d=>d.no)));
  f.innerHTML=`
- <div>${H('영역')}<div class="seg inline-flex p-0.5 rounded-md bg-slate-100 text-[12px] font-semibold text-slate-500 w-full" role="group" aria-label="영역">${[['listen','듣기 1~17번'],['read','독해 18~45번']].map(([k,n])=>`<button data-area="${k}" aria-pressed="${S.area==k}" class="flex-1 py-1 rounded">${n}</button>`).join('')}</div></div>
- <div>${H(`출제 시험 <span class="text-[11px] font-normal text-slate-400">${S.exs.length?S.exs.length+'개 고름':'전체'}</span>`)}
-  <div class="flex flex-wrap gap-1 mb-2">${[['','전체'],['평가원','평가원'],['교육청','학평']].map(([v,n])=>`<button data-org="${v}" aria-pressed="${S.org==v}" class="px-2 py-0.5 rounded border text-[11px] font-semibold ${S.org==v?'bg-blue-50 border-blue-300 text-blue-700':'border-slate-200 text-slate-600'}">${n}</button>`).join('')}
-  <button data-quick="k3" class="px-2 py-0.5 rounded border border-slate-200 text-[11px] font-semibold text-slate-600">최근 평가원 3회</button><button data-quick="k6" class="px-2 py-0.5 rounded border border-slate-200 text-[11px] font-semibold text-slate-600">6회</button><button data-quick="all" class="px-2 py-0.5 rounded border border-slate-200 text-[11px] font-semibold text-slate-600">모두 해제</button></div>
-  <div class="flex flex-col gap-1.5 max-h-[220px] overflow-y-auto pr-1">${years.map(y=>`<div class="text-[11px] font-bold text-slate-400 mt-1">${y}년</div>`+EXAMS.filter(e=>e.cy==y&&(!S.org||e.org==S.org)).map(e=>`<label class="flex items-center gap-2 cursor-pointer text-[12px] text-slate-700 hover:text-blue-600"><input type="checkbox" class="cbx" data-ex="${e.k}" ${S.exs.includes(e.k)?'checked':''}> ${esc(e.name)}</label>`).join('')).join('')}</div></div>
- <div>${H('오답률')}<div class="flex flex-col gap-1.5" role="radiogroup" aria-label="오답률">${wq.map(([v,n],i)=>{const c=b.filter(d=>wqOk(d,v)&&tyOk(d));return `<label class="flex items-center gap-2 cursor-pointer text-[12px] ${i>1?'ml-5':''} text-slate-700"><input type="radio" name="wq" class="rad" data-wq="${v}" ${String(S.wq)===String(v)?'checked':''}> ${n} <span class="ml-auto text-slate-400">${cnt(c)}</span></label>`}).join('')}</div></div>
- <div>${H(`문제 유형 <span class="text-[11px] font-normal text-slate-400">여러 개 고르기</span>`)}<div class="flex flex-col gap-1.5">${types.map(t=>`<label class="flex items-center gap-2 cursor-pointer text-[12px] text-slate-700 hover:text-blue-600"><input type="checkbox" class="cbx" data-ty="${esc(t)}" ${S.types.includes(t)?'checked':''}> ${esc(t)} <span class="ml-auto text-slate-400">${tc[t]||0}</span></label>`).join('')}</div></div>`;
+ <div>${H('영역')}<div class="seg inline-flex p-0.5 rounded-md bg-slate-100 text-[14px] font-semibold text-slate-500 w-full" role="group" aria-label="영역">${[['listen','듣기 1~17번'],['read','독해 18~45번']].map(([k,n])=>`<button data-area="${k}" aria-pressed="${S.area==k}" class="flex-1 py-1 rounded">${n}</button>`).join('')}</div></div>
+ <div>${H(`출제 시험 <span class="text-[13px] font-normal text-slate-400">${S.exs.length?S.exs.length+'개 고름':'전체'}</span>`)}
+  <div class="flex flex-wrap gap-1 mb-2">${[['','전체'],['평가원','평가원'],['교육청','학평']].map(([v,n])=>`<button data-org="${v}" aria-pressed="${S.org==v}" class="px-2 py-0.5 rounded border text-[13px] font-semibold ${S.org==v?'bg-blue-50 border-blue-300 text-blue-700':'border-slate-200 text-slate-600'}">${n}</button>`).join('')}
+  <button data-quick="k3" class="px-2 py-0.5 rounded border border-slate-200 text-[13px] font-semibold text-slate-600">최근 평가원 3회</button><button data-quick="k6" class="px-2 py-0.5 rounded border border-slate-200 text-[13px] font-semibold text-slate-600">6회</button><button data-quick="all" class="px-2 py-0.5 rounded border border-slate-200 text-[13px] font-semibold text-slate-600">모두 해제</button></div>
+  <div class="flex flex-col gap-1.5 max-h-[220px] overflow-y-auto pr-1">${years.map(y=>`<div class="text-[13px] font-bold text-slate-400 mt-1">${y}년</div>`+EXAMS.filter(e=>e.cy==y&&(!S.org||e.org==S.org)).map(e=>`<label class="flex items-center gap-2 cursor-pointer text-[14px] text-slate-700 hover:text-blue-600"><input type="checkbox" class="cbx" data-ex="${e.k}" ${S.exs.includes(e.k)?'checked':''}> ${esc(e.name)}</label>`).join('')).join('')}</div></div>
+ <div>${H('오답률')}<div class="flex flex-col gap-1.5" role="radiogroup" aria-label="오답률">${wq.map(([v,n],i)=>{const c=b.filter(d=>wqOk(d,v)&&tyOk(d));return `<label class="flex items-center gap-2 cursor-pointer text-[14px] ${i>1?'ml-5':''} text-slate-700"><input type="radio" name="wq" class="rad" data-wq="${v}" ${String(S.wq)===String(v)?'checked':''}> ${n} <span class="ml-auto text-slate-400">${cnt(c)}</span></label>`}).join('')}</div></div>
+ <div>${H(`문제 유형 <span class="text-[13px] font-normal text-slate-400">여러 개 고르기</span>`)}<div class="flex flex-col gap-1.5">${types.map(t=>`<label class="flex items-center gap-2 cursor-pointer text-[14px] text-slate-700 hover:text-blue-600"><input type="checkbox" class="cbx" data-ty="${esc(t)}" ${S.types.includes(t)?'checked':''}> ${esc(t)} <span class="ml-auto text-slate-400">${tc[t]||0}</span></label>`).join('')}</div></div>`;
  $$('[data-area]').forEach(x=>x.onclick=()=>{S.area=x.dataset.area;S.types=[];render()});
  $$('[data-org]').forEach(x=>x.onclick=()=>{S.org=x.dataset.org;if(S.org)S.exs=S.exs.filter(k=>EXAMS.find(e=>e.k==k).org==S.org);render()});
  $$('[data-quick]').forEach(x=>x.onclick=()=>{const kr=EXAMS.filter(e=>e.org=='평가원').map(e=>e.k);S.exs=x.dataset.quick=='all'?[]:kr.slice(0,x.dataset.quick=='k3'?3:6);if(x.dataset.quick!='all')S.org='';render()});
@@ -185,24 +185,27 @@ function renderList(){const L=$('#listArea');$$('[data-src]').forEach(b=>b.setAt
  $('#totalCount').textContent=cnt(r);$('#psgCount').textContent=cnt(r)!=r.length?`(지문 ${r.length}개)`:'';
  if(!r.length){L.innerHTML=`<div class="flex flex-col items-center justify-center h-64 text-slate-400"><p>조건에 맞는 문항이 없습니다.</p><button class="mt-2 text-blue-600 font-semibold" onclick="resetAll()">필터 초기화</button></div>`;return}
  const k=r.filter(d=>S.cart.includes(d.id)).length,multi=S.exs.length!=1;
- L.innerHTML=`<table class="w-full text-[13px] text-left border-collapse"><caption class="sr-only">문항 목록</caption><thead class="sticky-header"><tr class="border-b-2 border-slate-300 text-slate-500 font-semibold text-[12px]">
+ L.innerHTML=`<table class="w-full text-[15px] text-left border-collapse"><caption class="sr-only">문항 목록</caption><thead class="sticky-header"><tr class="border-b-2 border-slate-300 text-slate-500 font-semibold text-[14px]">
   <th class="py-2 px-3 w-10 text-center"><input type="checkbox" id="selectAll" class="cbx mx-auto" aria-label="보이는 문항 모두 담기" ${k&&k==r.length?'checked':''}></th>
-  <th class="py-2 px-3 w-32">출처/번호</th><th class="py-2 px-3 w-28">유형</th><th class="py-2 px-3">소재</th>
-  <th class="py-2 px-3 w-28 text-right"><button id="sortHead" class="font-semibold ${S.sort=='wr'?'text-blue-600':''}">EBSi 오답률${S.sort=='wr'?' ↓':''}</button></th><th class="py-2 px-3 w-16 text-center">상세</th></tr></thead>
+  <th class="py-2 px-3 w-32 whitespace-nowrap">출처/번호</th><th class="py-2 px-3 w-28">유형</th><th class="py-2 px-3">소재</th>
+  <th class="py-2 px-3 w-16 text-center">정답</th><th class="py-2 px-3 w-28 text-right"><button id="sortHead" class="font-semibold ${S.sort=='wr'?'text-blue-600':''}">EBSi 오답률${S.sort=='wr'?' ↓':''}</button></th><th class="py-2 px-3 w-36">많이 고른 오답</th><th class="py-2 px-3 w-16 text-center">상세</th></tr></thead>
   <tbody class="bg-white">${r.map(d=>{const on=S.cart.includes(d.id);return `<tr class="border-b border-slate-200 hover:bg-slate-50 ${on?'row-selected':''}">
-  <td class="py-2.5 px-3 text-center"><input type="checkbox" class="cbx mx-auto row-chk" data-id="${d.id}" ${on?'checked':''} aria-label="${esc(exName(d.ex))} ${d.lab}번 담기"></td>
-  <td class="py-2.5 px-3">${multi?`<div class="font-bold text-slate-500 text-[11px] leading-tight">${esc(exName(d.ex))}</div>`:''}<div class="text-slate-800 font-bold text-[14px]">${d.lab}번${d.pts==3?' <span class="text-[11px] text-slate-400 font-semibold">3점</span>':''}</div></td>
-  <td class="py-2.5 px-3"><span class="px-2 py-0.5 bg-slate-100 border border-slate-200 text-slate-600 text-[11px] rounded font-semibold whitespace-nowrap">${esc(d.short)}</span></td>
-  <td class="py-2.5 px-3 cursor-pointer text-slate-700" data-open="${d.id}">${d.topic?esc(d.topic):'<span class="text-slate-400">소재 정리 전</span>'}</td>
-  <td class="py-2.5 px-3 text-right whitespace-nowrap">${d.top?`<span class="px-1 py-0.5 bg-rose-50 border border-rose-200 text-rose-600 text-[11px] rounded font-bold mr-1">${d.top.rank}위</span><span class="font-semibold text-slate-600">${Math.round(d.top.wr)}%</span>`:'<span class="text-slate-300">–</span>'}</td>
-  <td class="py-2.5 px-3 text-center"><button data-open="${d.id}" class="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" aria-label="${d.lab}번 문항 보기"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></button></td></tr>`}).join('')}</tbody></table>`;
+  <td class="py-3 px-3 text-center"><input type="checkbox" class="cbx mx-auto row-chk" data-id="${d.id}" ${on?'checked':''} aria-label="${esc(exName(d.ex))} ${d.lab}번 담기"></td>
+  <td class="py-3 px-3">${multi?`<div class="font-bold text-slate-500 text-[13px] leading-tight">${esc(exName(d.ex))}</div>`:''}<div class="text-slate-800 font-bold text-[16px] whitespace-nowrap">${d.lab}번${d.pts==3?' <span class="text-[13px] text-slate-400 font-semibold">3점</span>':''}</div></td>
+  <td class="py-3 px-3"><span class="px-2 py-0.5 bg-slate-100 border border-slate-200 text-slate-600 text-[13px] rounded font-semibold whitespace-nowrap">${esc(d.short)}</span></td>
+  <td class="py-3 px-3 cursor-pointer text-slate-700 w-full max-w-0" data-open="${d.id}"><div class="font-semibold text-slate-800 truncate">${d.topic?esc(d.topic):'<span class="text-slate-400 font-normal">소재 정리 전</span>'}</div><div class="text-[13px] text-slate-400 truncate">${esc(d.qs?d.qs.map(q=>q.stem).join(' / '):d.stem||'')}</div></td>
+  <td class="py-3 px-3 text-center font-bold text-slate-700 text-[18px]">${d.qs?d.qs.map(q=>q.ans||'').join(' '):esc(d.ans||'')}</td>
+  <td class="py-3 px-3 text-right whitespace-nowrap">${d.top?`<span class="px-1 py-0.5 bg-rose-50 border border-rose-200 text-rose-600 text-[13px] rounded font-bold mr-1">${d.top.rank}위</span><span class="font-semibold text-slate-600">${Math.round(d.top.wr)}%</span>`:'<span class="text-slate-300">–</span>'}</td>
+  <td class="py-3 px-3 text-slate-600 whitespace-nowrap">${mw(d)}</td>
+  <td class="py-3 px-3 text-center"><button data-open="${d.id}" class="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" aria-label="${d.lab}번 문항 보기"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></button></td></tr>`}).join('')}</tbody></table>`;
  const sa=$('#selectAll');sa.indeterminate=k>0&&k<r.length;sa.onchange=()=>{const ids=r.map(d=>d.id),old=S.cart.slice();S.cart=sa.checked?S.cart.concat(ids.filter(i=>!S.cart.includes(i))):S.cart.filter(i=>!ids.includes(i));save();render();toast(sa.checked?'보이는 문항을 모두 담았습니다':'보이는 문항을 뺐습니다',()=>{S.cart=old;save();render()})};
  $('#sortHead').onclick=()=>{S.sort=S.sort=='wr'?'no':'wr';$('#sortSel').value=S.sort;render()};
  wireRows()}
+function mw(d){if(!(d.top&&d.top.sel))return '<span class="text-slate-300">–</span>';const ai=CIR.indexOf(d.ans),w=d.top.sel.map((v,i)=>[v,i]).filter(x=>x[1]!=ai).sort((a,b)=>b[0]-a[0])[0];return `${CIR[w[1]]} <span class="text-slate-400">${Math.round(w[0])}%</span>`}
 function renderBook(){const L=$('#listArea');$('#mainTitle').textContent='2027학년도 수능 연계교재';$('#totalCount').textContent=BOOK.length;$('#psgCount').textContent='(수능특강 영어 표본)';
- L.innerHTML=`<div class="p-4"><div class="grid grid-cols-4 gap-4 max-w-[760px] mb-5">${SHELF.map(([t,on])=>`<div class="flex flex-col gap-1.5"><img class="cover-img ${on?'':'opacity-50 grayscale'}" src="표지/2027_${t.replace(/ /g,'_')}.webp" alt=""><div class="font-bold text-[12px]">${t}</div><div class="text-[11px] text-slate-400">${on?'문항 243개':'정리 중'}</div></div>`).join('')}</div></div>
- <table class="w-full text-[13px] text-left border-collapse"><caption class="sr-only">교재 문항 목록</caption><thead class="sticky-header"><tr class="border-b-2 border-slate-300 text-slate-500 font-semibold text-[12px]"><th class="py-2 px-3 w-10"></th><th class="py-2 px-3 w-36">강/번호</th><th class="py-2 px-3 w-28">유형</th><th class="py-2 px-3">소재</th><th class="py-2 px-3 w-20 text-right">쪽</th></tr></thead>
- <tbody class="bg-white">${BOOK.map(b=>{const d=BK[b.id],on=S.cart.includes(d.id);return `<tr class="border-b border-slate-200 hover:bg-slate-50 ${on?'row-selected':''}"><td class="py-2.5 px-3 text-center"><input type="checkbox" class="cbx mx-auto row-chk" data-id="${d.id}" ${on?'checked':''} aria-label="${esc(d.lab)} 담기"></td><td class="py-2.5 px-3 font-bold">${esc(d.lab)}</td><td class="py-2.5 px-3"><span class="px-2 py-0.5 bg-emerald-50 border border-emerald-200 text-emerald-700 text-[11px] rounded font-semibold">${esc(d.short)}</span></td><td class="py-2.5 px-3 text-slate-700">${esc(d.topic||'')}</td><td class="py-2.5 px-3 text-right text-slate-500">${esc(d.page)}쪽</td></tr>`}).join('')}</tbody></table>`;
+ L.innerHTML=`<div class="p-4"><div class="grid grid-cols-4 gap-4 max-w-[760px] mb-5">${SHELF.map(([t,on])=>`<div class="flex flex-col gap-1.5"><img class="cover-img ${on?'':'opacity-50 grayscale'}" src="표지/2027_${t.replace(/ /g,'_')}.webp" alt=""><div class="font-bold text-[14px]">${t}</div><div class="text-[13px] text-slate-400">${on?'문항 243개':'정리 중'}</div></div>`).join('')}</div></div>
+ <table class="w-full text-[15px] text-left border-collapse"><caption class="sr-only">교재 문항 목록</caption><thead class="sticky-header"><tr class="border-b-2 border-slate-300 text-slate-500 font-semibold text-[14px]"><th class="py-2 px-3 w-10"></th><th class="py-2 px-3 w-36">강/번호</th><th class="py-2 px-3 w-28">유형</th><th class="py-2 px-3">소재</th><th class="py-2 px-3 w-20 text-right">쪽</th></tr></thead>
+ <tbody class="bg-white">${BOOK.map(b=>{const d=BK[b.id],on=S.cart.includes(d.id);return `<tr class="border-b border-slate-200 hover:bg-slate-50 ${on?'row-selected':''}"><td class="py-3 px-3 text-center"><input type="checkbox" class="cbx mx-auto row-chk" data-id="${d.id}" ${on?'checked':''} aria-label="${esc(d.lab)} 담기"></td><td class="py-3 px-3 font-bold">${esc(d.lab)}</td><td class="py-3 px-3"><span class="px-2 py-0.5 bg-emerald-50 border border-emerald-200 text-emerald-700 text-[13px] rounded font-semibold">${esc(d.short)}</span></td><td class="py-3 px-3 text-slate-700">${esc(d.topic||'')}</td><td class="py-3 px-3 text-right text-slate-500">${esc(d.page)}쪽</td></tr>`}).join('')}</tbody></table>`;
  wireRows()}
 function wireRows(){$$('.row-chk').forEach(c=>c.onchange=()=>toggleCart(c.dataset.id));$$('[data-open]').forEach(x=>x.onclick=()=>openDrawer(x.dataset.open))}
 
@@ -212,10 +215,10 @@ function renderCart(){const r=S.cart.map(find).filter(Boolean),n=cnt(r);$('#head
  const L=cnt(r.filter(d=>d.no<=17));$('#cartSum').textContent=`독해 ${n-L} · 듣기 ${L} · 오답률 TOP15 ${r.filter(d=>d.top).length}`;
  $('#printBtn').disabled=$('#clearBtn').disabled=!r.length;
  $('#cartList').innerHTML=r.length?r.map((d,i)=>`<div class="p-2 bg-white border border-slate-200 rounded flex gap-2 items-center mb-1.5 shadow-sm">
-  <span class="w-5 h-5 bg-slate-100 text-slate-500 rounded text-[11px] font-bold flex items-center justify-center shrink-0">${i+1}</span>
-  <div class="flex-1 min-w-0"><div class="text-[12px] font-bold text-slate-700 truncate">${d.book?'수능특강 '+esc(d.lab):esc(exName(d.ex))+' '+d.lab+'번'}</div><div class="text-[11px] text-slate-400 truncate">${esc(d.short)}${d.topic?' · '+esc(d.topic):''}</div></div>
+  <span class="w-5 h-5 bg-slate-100 text-slate-500 rounded text-[13px] font-bold flex items-center justify-center shrink-0">${i+1}</span>
+  <div class="flex-1 min-w-0"><div class="text-[14px] font-bold text-slate-700 truncate">${d.book?'수능특강 '+esc(d.lab):esc(exName(d.ex))+' '+d.lab+'번'}</div><div class="text-[13px] text-slate-400 truncate">${esc(d.short)}${d.topic?' · '+esc(d.topic):''}</div></div>
   <button data-mv="${i}" data-d="-1" class="w-6 h-6 rounded text-slate-400 hover:bg-slate-100" aria-label="${i+1}번째 위로">▲</button><button data-mv="${i}" data-d="1" class="w-6 h-6 rounded text-slate-400 hover:bg-slate-100" aria-label="${i+1}번째 아래로">▼</button>
-  <button data-rm="${d.id}" class="w-6 h-6 rounded text-slate-300 hover:text-red-500 hover:bg-red-50" aria-label="빼기">✕</button></div>`).join(''):`<div class="h-full flex items-center justify-center text-slate-400 text-[12px] text-center px-4">표에서 ☐을 체크하면<br>여기에 쌓입니다.</div>`;
+  <button data-rm="${d.id}" class="w-6 h-6 rounded text-slate-300 hover:text-red-500 hover:bg-red-50" aria-label="빼기">✕</button></div>`).join(''):`<div class="h-full flex items-center justify-center text-slate-400 text-[14px] text-center px-4">표에서 ☐을 체크하면<br>여기에 쌓입니다.</div>`;
  $$('[data-mv]').forEach(b=>b.onclick=()=>{const i=+b.dataset.mv,j=i+ +b.dataset.d;if(j<0||j>=S.cart.length)return;const c=S.cart.slice();[c[i],c[j]]=[c[j],c[i]];S.cart=c;save();renderCart();const nb=$(`[data-mv="${j}"][data-d="${b.dataset.d}"]`);if(nb)nb.focus()});
  $$('[data-rm]').forEach(b=>b.onclick=()=>{const old=S.cart.slice();toggleCart(b.dataset.rm);toast('내 시험지에서 뺐습니다',()=>{S.cart=old;save();render()})})}
 
@@ -225,12 +228,12 @@ function openDrawer(id){const d=find(id);if(!d)return;S.cur=d;lastFocus=document
 function drawerRender(){const d=S.cur;$('#drawerTitle').textContent=d.book?`수능특강 영어 ${d.lab}`:`${exName(d.ex)} ${d.lab}번 · ${d.short}`;
  const hasImg=!!(d.img||(d.imgs&&d.imgs.length));$$('[data-dv]').forEach(b=>{b.setAttribute('aria-pressed',S.dv==b.dataset.dv);b.disabled=b.dataset.dv=='img'&&!hasImg});
  let h='';
- if(d.top&&d.top.sel){const ai=CIR.indexOf(d.ans),w=d.top.sel.map((v,i)=>[v,i]).filter(x=>x[1]!=ai).sort((a,b)=>b[0]-a[0])[0];h+=`<div class="mb-4 flex flex-wrap gap-2 text-[12px]"><span class="px-2 py-1 bg-rose-50 border border-rose-200 text-rose-700 rounded font-bold">TOP15 ${d.top.rank}위 · 오답률 ${d.top.wr}%</span><span class="px-2 py-1 bg-slate-100 rounded font-semibold">정답 ${d.ans} ${d.top.sel[ai]}% · 매력적 오답 ${CIR[w[1]]} ${w[0]}%</span></div>`}
+ if(d.top&&d.top.sel){const ai=CIR.indexOf(d.ans),w=d.top.sel.map((v,i)=>[v,i]).filter(x=>x[1]!=ai).sort((a,b)=>b[0]-a[0])[0];h+=`<div class="mb-4 flex flex-wrap gap-2 text-[14px]"><span class="px-2 py-1 bg-rose-50 border border-rose-200 text-rose-700 rounded font-bold">TOP15 ${d.top.rank}위 · 오답률 ${d.top.wr}%</span><span class="px-2 py-1 bg-slate-100 rounded font-semibold">정답 ${d.ans} ${d.top.sel[ai]}% · 매력적 오답 ${CIR[w[1]]} ${w[0]}%</span></div>`}
  if(S.dv=='img'&&hasImg){h+=(d.imgs&&d.imgs.length?d.imgs:[d.img]).map(s=>`<img src="${esc(s)}" alt="${esc(d.lab)}번 시험지 원본" class="w-full border border-slate-200 rounded mb-3">`).join('')}
  else{const Q=d.qs||[{stem:d.stem,ch:d.ch,ans:d.ans,no:d.no}];
-  h+=`${!d.qs&&d.stem?`<div class="font-bold text-[15px] text-slate-900 mb-3 leading-snug">${esc(d.stem)}</div>`:''}${d.body?`<div class="bg-slate-50 border border-slate-200 rounded-lg p-5 leading-relaxed whitespace-pre-wrap font-serif" lang="en">${esc(d.body)}</div>`:''}`+
-  Q.map(q=>`${d.qs?`<div class="font-bold mt-5 mb-1">${q.no}. ${esc(q.stem)}</div>`:''}${q.ch?`<ol class="mt-3 space-y-1 text-slate-700 text-[13px]">${q.ch.map((c,i)=>`<li class="${CIR[i]==q.ans?'text-blue-700 font-bold':''}">${CIR[i]} ${esc(c)}</li>`).join('')}</ol>`:''}`).join('')}
- if(d.lk&&d.lk.how!='비연계')h+=`<p class="mt-5 pt-3 border-t border-slate-100 text-[12px] text-slate-500">EBS: ${esc(d.lk.book||'')}${d.lk.page?' '+esc(d.lk.page)+'쪽':''}</p>`;
+  h+=`${!d.qs&&d.stem?`<div class="font-bold text-[17px] text-slate-900 mb-3 leading-snug">${esc(d.stem)}</div>`:''}${d.body?`<div class="bg-slate-50 border border-slate-200 rounded-lg p-5 leading-relaxed whitespace-pre-wrap font-serif" lang="en">${esc(d.body)}</div>`:''}`+
+  Q.map(q=>`${d.qs?`<div class="font-bold mt-5 mb-1">${q.no}. ${esc(q.stem)}</div>`:''}${q.ch?`<ol class="mt-3 space-y-1 text-slate-700 text-[15px]">${q.ch.map((c,i)=>`<li class="${CIR[i]==q.ans?'text-blue-700 font-bold':''}">${CIR[i]} ${esc(c)}</li>`).join('')}</ol>`:''}`).join('')}
+ if(d.lk&&d.lk.how!='비연계')h+=`<p class="mt-5 pt-3 border-t border-slate-100 text-[14px] text-slate-500">EBS: ${esc(d.lk.book||'')}${d.lk.page?' '+esc(d.lk.page)+'쪽':''}</p>`;
  $('#drawerContent').innerHTML=h;drawerBtn()}
 function drawerBtn(){const b=$('#drawerAddBtn'),on=S.cart.includes(S.cur.id);b.textContent=on?'시험지에서 빼기':'시험지에 담기';b.className=on?'w-full bg-slate-200 text-slate-700 font-bold py-3 rounded hover:bg-slate-300':'w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700'}
 function closeDrawer(){$('#scrim').classList.add('hidden');$('#drawer').classList.add('translate-x-full');S.cur=null;if(lastFocus)lastFocus.focus()}
@@ -238,13 +241,13 @@ function closeDrawer(){$('#scrim').classList.add('hidden');$('#drawer').classLis
 // ---------- 인쇄 ----------
 function today(){const d=new Date();return `${d.getFullYear()}. ${d.getMonth()+1}. ${d.getDate()}.`}
 function printRender(){const P=S.print,r=S.cart.map(find).filter(Boolean);if(!P.date)P.date=today();
- const G=(lg,k,a)=>`<div><div class="text-[11px] font-bold text-slate-500 mb-1">${lg}</div><div class="flex flex-wrap gap-1.5">${a.map((t,i)=>`<button data-pg="${k}" data-i="${i}" class="px-2.5 py-1 rounded border text-[12px] font-semibold ${P[k]==i?'bg-blue-50 border-blue-400 text-blue-700':'border-slate-200 text-slate-600'}">${t}</button>`).join('')}</div></div>`;
- const F=(lb,k,ph)=>`<label class="text-[11px] font-bold text-slate-500 flex flex-col gap-1">${lb}<input data-pt="${k}" value="${esc(P[k]||'')}" placeholder="${ph}" class="border border-slate-300 rounded px-2.5 py-1.5 text-[13px] font-normal text-slate-800"></label>`;
- const C=(k,lb)=>`<label class="flex items-center gap-2 text-[12px]"><input type="checkbox" class="cbx" data-pc="${k}" ${P[k]?'checked':''}>${lb}</label>`;
+ const G=(lg,k,a)=>`<div><div class="text-[13px] font-bold text-slate-500 mb-1">${lg}</div><div class="flex flex-wrap gap-1.5">${a.map((t,i)=>`<button data-pg="${k}" data-i="${i}" class="px-2.5 py-1 rounded border text-[14px] font-semibold ${P[k]==i?'bg-blue-50 border-blue-400 text-blue-700':'border-slate-200 text-slate-600'}">${t}</button>`).join('')}</div></div>`;
+ const F=(lb,k,ph)=>`<label class="text-[13px] font-bold text-slate-500 flex flex-col gap-1">${lb}<input data-pt="${k}" value="${esc(P[k]||'')}" placeholder="${ph}" class="border border-slate-300 rounded px-2.5 py-1.5 text-[15px] font-normal text-slate-800"></label>`;
+ const C=(k,lb)=>`<label class="flex items-center gap-2 text-[14px]"><input type="checkbox" class="cbx" data-pc="${k}" ${P[k]?'checked':''}>${lb}</label>`;
  $('#pmForm').innerHTML=G('만들 것','kind',['학생용 시험지','학생용 학습지','교사용(정답·해설)'])+G('종이','paper',['A4 1단','A4 2단','B4 2단'])+F('제목','title','예: 3학년 2학기 중간 대비 빈칸·순서')+F('날짜','date',today())+G('표지','cover',['없음','표지 넣기'])+F('학교','school','예: ○○고등학교')+F('선생님','teacher','예: 영어과 ○○○')+C('namebox','학년·반·번호·이름 칸')+C('ans','마지막 쪽에 정답표')+C('src','문항 위에 출처');
- const t=P.title||'영어 학습지',nb='<div class="flex gap-1.5 mt-3">'+['학년','반','번호','이름'].map(x=>`<span class="min-w-[48px] px-1.5 py-1 border border-slate-400 text-[11px]">${x}</span>`).join('')+'</div>';
+ const t=P.title||'영어 학습지',nb='<div class="flex gap-1.5 mt-3">'+['학년','반','번호','이름'].map(x=>`<span class="min-w-[48px] px-1.5 py-1 border border-slate-400 text-[13px]">${x}</span>`).join('')+'</div>';
  $('#pmPreview').innerHTML=(P.cover?`<div class="a4 flex flex-col items-center justify-center text-center gap-2"><small class="text-slate-500">${esc(P.school||'학교 이름')}</small><b class="text-[20px] leading-snug">${esc(t)}</b><span>${esc(P.date)}</span><span>${esc(P.teacher)}</span>${P.namebox?nb:''}<em class="not-italic text-slate-500 mt-2">${cnt(r)}문항</em></div>`:'')+
-  `<div class="a4"><div class="flex justify-between items-baseline border-b-2 border-slate-800 pb-1.5 mb-2"><b class="text-[14px]">${esc(t)}</b><span>${esc(P.date)}</span></div>${!P.cover&&P.namebox?nb.replace('mt-3','mb-2'):''}<ol class="${P.paper?'columns-2 gap-5':''}">${r.slice(0,16).map((d,i)=>`<li class="py-1 border-b border-dashed border-slate-300 break-inside-avoid">${i+1}. ${P.src?`<small class="text-slate-500">[${d.book?'수능특강 '+esc(d.lab):esc(exName(d.ex))+' '+d.lab+'번'}]</small> `:''}${esc(d.short)}</li>`).join('')}</ol>${r.length>16?`<p class="text-slate-500 mt-1">… 외 ${r.length-16}개</p>`:''}</div>`;
+  `<div class="a4"><div class="flex justify-between items-baseline border-b-2 border-slate-800 pb-1.5 mb-2"><b class="text-[16px]">${esc(t)}</b><span>${esc(P.date)}</span></div>${!P.cover&&P.namebox?nb.replace('mt-3','mb-2'):''}<ol class="${P.paper?'columns-2 gap-5':''}">${r.slice(0,16).map((d,i)=>`<li class="py-1 border-b border-dashed border-slate-300 break-inside-avoid">${i+1}. ${P.src?`<small class="text-slate-500">[${d.book?'수능특강 '+esc(d.lab):esc(exName(d.ex))+' '+d.lab+'번'}]</small> `:''}${esc(d.short)}</li>`).join('')}</ol>${r.length>16?`<p class="text-slate-500 mt-1">… 외 ${r.length-16}개</p>`:''}</div>`;
  $$('[data-pg]').forEach(b=>b.onclick=()=>{P[b.dataset.pg]=+b.dataset.i;save();printRender()});
  $$('[data-pt]').forEach(i=>i.oninput=()=>{P[i.dataset.pt]=i.value;save();const k=i.dataset.pt,pos=i.selectionStart;printRender();const n=$(`[data-pt="${k}"]`);n.focus();n.setSelectionRange(pos,pos)});
  $$('[data-pc]').forEach(c=>c.onchange=()=>{P[c.dataset.pc]=c.checked?1:0;save();printRender()})}
