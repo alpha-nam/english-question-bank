@@ -3,7 +3,7 @@ const TW=fs.readFileSync(E+'/tw.css','utf8');
 const QR=fs.readFileSync(E+'/node_modules/qrcode-generator/qrcode.js','utf8');
 const PD=E+'/node_modules/pretendard/dist/web/variable/';
 const FILE='/home/claude/english-question-bank/문제은행/시안/예시_화면시안.html';
-async function open(w,h,opts={}){const b=opts.browser||await chromium.launch();const ctx=await b.newContext({viewport:{width:w,height:h||900},colorScheme:opts.scheme||'light',hasTouch:!!opts.touch,isMobile:!!opts.touch});
+async function open(w,h,opts={}){const b=opts.browser||await chromium.launch();const ctx=await b.newContext({viewport:{width:w,height:h||900},colorScheme:opts.scheme||'light',forcedColors:opts.forced||'none',hasTouch:!!opts.touch,isMobile:!!opts.touch});
  await ctx.route('**/*',async r=>{const u=r.request().url();
   if(u.startsWith('https://cdn.tailwindcss.com'))return r.fulfill({contentType:'application/javascript',body:'document.head.insertAdjacentHTML("afterbegin",'+JSON.stringify('<style id="twlocal">'+TW+'</style>')+')'});
   if(u.includes('qrcode'))return r.fulfill({contentType:'application/javascript',body:QR});

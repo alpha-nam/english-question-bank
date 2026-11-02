@@ -525,6 +525,13 @@ button.bkc:hover{background:#f1f5f9}.bkc.on{border-color:#65a30d;background:#f7f
 #examStrip .strip8 .flex,#examStrip .strip8 span.flrow,#examStrip .strip8 .ml-auto{flex-wrap:wrap;max-width:100%}#examStrip .strip8{overflow-x:auto}
 #randBox>div{white-space:normal!important;flex-wrap:wrap;max-width:calc(100vw - 96px)}
 }
+@media (forced-colors:active){
+#examStrip button[data-hq2],#homeView button[data-hq2],#homeView button[data-hq],.qb{forced-color-adjust:none}
+#sideNav .nav-i[aria-current=page]{border:2px solid Highlight;font-weight:800}
+[aria-pressed=true],[aria-selected=true],.srcbtn.on,.on{border:2px solid Highlight!important}
+button:disabled{color:GrayText!important;border-color:GrayText!important}
+:focus-visible{outline:3px solid Highlight!important;outline-offset:2px}
+}
 </style>
 </head>
 <body class="h-screen flex">
