@@ -1,0 +1,16 @@
+{
+  "name": "qb-sian-e2e",
+  "private": true,
+  "description": "문제은행 시안(예시 화면) 끝까지 시험 — Playwright",
+  "scripts": {
+    "build": "cd .. && python build.py --예시",
+    "test": "playwright test",
+    "test:report": "playwright test --reporter=list,json"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "pretendard": "1.3.9",
+    "qrcode-generator": "1.4.4",
+    "tailwindcss": "3.4.17"
+  }
+}
