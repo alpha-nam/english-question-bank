@@ -470,9 +470,13 @@ button.bkc:hover{background:#f1f5f9}.bkc.on{border-color:#65a30d;background:#f7f
 .excard[open] .chev{transform:rotate(180deg)}
 .qchip{display:flex;align-items:center;gap:6px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;background:#fff;cursor:pointer}
 .qchip.on{border-color:#3b82f6;background:#eff6ff;color:#1d4ed8}
+/* 데스크톱 전용: 창이 1024px보다 좁으면 화면 대신 안내만 보인다(휴대폰·태블릿 배치는 만들지 않음) */
+#narrowNote{display:none}
+@media (max-width:1023px){#narrowNote{display:flex}body>:not(#narrowNote){display:none!important}}
 </style>
 </head>
 <body class="h-screen flex">
+<div id="narrowNote" role="alert" class="fixed inset-0 z-[100] bg-slate-50 items-center justify-center p-8 text-center"><div><p class="text-[20px] font-bold text-slate-900 mb-2">컴퓨터 화면에서 사용해 주세요</p><p class="text-[16px] text-slate-700">이 프로그램은 가로 1024px 이상의 컴퓨터 화면용입니다.<br>창을 넓히거나 컴퓨터에서 열어 주세요.</p></div></div>
 
 <!-- 1. 왼쪽 세로 메뉴 (2026-10-30, Clash Verge 식: 아이콘 + 짧은 이름, 선택은 연한 파란 띠, 맨 아래 내 시험지 요약) -->
 <aside id="sideNav" class="w-[188px] shrink-0 bg-white border-r border-slate-200 flex flex-col z-20 transition-[width]" aria-label="메뉴">
