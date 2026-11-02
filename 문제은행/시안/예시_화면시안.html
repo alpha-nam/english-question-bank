@@ -593,6 +593,7 @@ button:disabled{color:GrayText!important;border-color:GrayText!important}
         <select id="sortSel" aria-label="정렬" hidden class="tb7 border border-slate-200 rounded px-2 py-1 text-[14px] bg-white"><option value="no">번호 순</option><option value="wr">오답률 높은 순</option></select>
       </div>
     </div>
+    <a href="#cartHead" class="skip" id="skipCart">문항 목록 건너뛰고 내 시험지로</a>
     <div class="flex-1 overflow-auto bg-slate-50 relative" id="listArea"></div>
   </main>
 
@@ -1157,6 +1158,7 @@ document.querySelectorAll('[data-i3]').forEach(e=>{e.outerHTML=I3(e.dataset.i3,+
 ['House','Magnifying glass tilted right','Card file box','Link','Page facing up'].forEach((n,k)=>{const a=document.querySelectorAll('#sideNav .nav-i')[k],sv=a&&a.querySelector('svg');if(sv)sv.outerHTML=I3(n,24,'shrink-0')});
 function focusView(){const v=$('#'+S.view+'View');if(!v)return;const t=(S.view=='find'?$('#findView main'):v.querySelector('h2'))||v;t.setAttribute('tabindex','-1');t.focus({preventScroll:false})}
 $$('[data-view]').forEach(a=>a.onclick=e=>{e.preventDefault();S.view=a.dataset.view;render();focusView()});
+{const c=$('#skipCart');if(c)c.onclick=e=>{e.preventDefault();const h=$('#cartHead');h.setAttribute('tabindex','-1');h.focus()}}
 {const k=$('#skipLink');if(k)k.onclick=e=>{e.preventDefault();const v=$('#'+S.view+'View');const t=(S.view=='find'?$('#listArea'):v);if(t){t.setAttribute('tabindex','-1');t.focus()}}}
 $$('[data-src]').forEach(b=>b.onclick=()=>{S.src=b.dataset.src;render()});
 $('#resetBtn').onclick=resetAll;
