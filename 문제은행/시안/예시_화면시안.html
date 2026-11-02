@@ -470,6 +470,25 @@ button.bkc:hover{background:#f1f5f9}.bkc.on{border-color:#65a30d;background:#f7f
 .excard[open] .chev{transform:rotate(180deg)}
 .qchip{display:flex;align-items:center;gap:6px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;background:#fff;cursor:pointer}
 .qchip.on{border-color:#3b82f6;background:#eff6ff;color:#1d4ed8}
+
+/* 좁은 화면 (접근성 감사 2026-11-02): 1100 이하 한 단으로, 768 이하 카드·통계 줄이기 */
+@media screen and (max-width:1100px){
+#sideNav{width:64px!important}#sideNav .nav-i span,#sideNav h1,#sideNav #sideMini{display:none!important}#sideNav .nav-i{justify-content:center;padding:10px 0}#sideNav #navTgl{display:none}
+#findView{flex-direction:column;overflow-y:auto!important}
+#findView>aside{width:100%!important;border:0!important;border-bottom:1px solid #e2e8f0!important;flex-shrink:0}
+#findView #filterContainer{max-height:260px}
+#findView>main{flex:none!important;height:85vh;min-height:520px}
+#findView>aside:last-child{max-height:460px;border-top:1px solid #e2e8f0}
+#findView main>div:first-child>div:first-child{flex-wrap:wrap}
+#homeView .grid-cols-6{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#homeView .hc-h{flex-wrap:wrap;row-gap:4px;word-break:keep-all}#homeView .hc-h>span.ml-3{white-space:normal!important;margin-left:0!important;flex-wrap:wrap}#homeView .grid-cols-3{grid-template-columns:minmax(0,1fr)!important}#homeView .col-span-2{grid-column:auto!important}
+}
+@media screen and (max-width:768px){
+#homeView .grid-cols-6{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#setsView .grid-cols-2{grid-template-columns:minmax(0,1fr)!important}
+#printModal{padding:0!important}#printModal [class*="grid-cols-"]{grid-template-columns:minmax(0,1fr)!important;overflow-y:auto!important}
+#printModal #pmPreview{min-height:320px}#printModal [class*="grid-cols-"]>div{min-height:auto!important;overflow:visible!important}#printModal #pmForm{overflow:visible!important;flex:none!important;min-height:auto!important}#printModal #pmPreview{overflow:auto!important}
+}
 </style>
 </head>
 <body class="h-screen flex">
