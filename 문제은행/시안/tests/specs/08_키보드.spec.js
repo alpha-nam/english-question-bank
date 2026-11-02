@@ -55,7 +55,6 @@ test.describe('키보드', () => {
     await page.keyboard.press('Space');
     await expect(page.locator(`#listArea input[data-id="${id}"]`)).toBeChecked();
     const at = await page.evaluate(() => { const a = document.activeElement; return a === document.body ? 'body' : (a.dataset && a.dataset.id) || a.id || a.tagName; });
-    known(test, at !== id, `담은 뒤 초점이 ${at} 로 옮겨진다(목록을 다시 그림). 키보드 사용자는 연이어 담으려면 처음부터 Tab 을 다시 눌러야 한다. 홈 화면은 초점을 되살린다.`);
     expect(at).toBe(id);
   });
 
@@ -66,7 +65,6 @@ test.describe('키보드', () => {
     await expect(page.locator('#drawer')).not.toHaveClass(/translate-x-full/);
     await expect(page.locator('#drawer')).toBeFocused();
     const seq = await tabWithin(page, '#drawer', 25);
-    known(test, seq.includes(false), '서랍(aria-modal)에 초점 가두기가 없다: Tab 을 계속 누르면 초점이 서랍 밖(뒤쪽 목록)으로 나간다. keydown Tab 처리 또는 뒤쪽 inert 필요.');
     expect(seq.every(Boolean), `서랍 밖으로 나간 Tab 위치: ${seq.map((v, i) => v ? '' : i + 1).filter(Boolean)}`).toBe(true);
   });
 
@@ -109,7 +107,6 @@ test.describe('키보드', () => {
     await page.evaluate(() => document.getElementById('addAllBtn').click());
     await app.openPrint();
     const seq = await tabWithin(page, '#printModal', 40);
-    known(test, seq.includes(false), '인쇄 창(aria-modal)에 초점 가두기가 없다: Tab 을 계속 누르면 초점이 창 밖(뒤쪽 화면)으로 나간다.');
     expect(seq.every(Boolean), `창 밖으로 나간 Tab 위치: ${seq.map((v, i) => v ? '' : i + 1).filter(Boolean)}`).toBe(true);
   });
 });

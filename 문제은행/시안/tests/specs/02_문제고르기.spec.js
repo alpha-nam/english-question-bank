@@ -55,8 +55,6 @@ test.describe('문제 고르기', () => {
   test('aria-pressed 값은 true/false/mixed 중 하나여야 한다', async ({ app, page }) => {
     const bad = await page.$$eval('[aria-pressed]', a => a.filter(e => !['true', 'false', 'mixed'].includes(e.getAttribute('aria-pressed')))
       .map(e => `${e.outerHTML.slice(0, 60)}… aria-pressed="${e.getAttribute('aria-pressed')}"`));
-    known(test, bad.some(x => x.includes('data-og="교육청"')),
-      '시험이 0회인 기관 탭(교육청)의 aria-pressed가 "0"으로 나온다. allOn([])이 0을 돌려줌 → String(!!on) 필요');
     expect(bad).toEqual([]);
   });
 
