@@ -1,0 +1,1501 @@
+{
+ "home_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 49,
+  "targets": [],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 0,
+  "errs": []
+ },
+ "home_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 41,
+  "targets": [],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 0,
+  "errs": []
+ },
+ "home_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 41,
+  "targets": [
+   {
+    "s": "#homeView button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 89,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 98,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 98,
+    "h": 40
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 6,
+  "errs": []
+ },
+ "home_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 36,
+  "targets": [
+   {
+    "s": "#homeView button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 26,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 35,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 35,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 35,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 35,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 35,
+    "h": 40
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 6,
+  "errs": []
+ },
+ "find_table_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 126,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "find_table_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 89,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "find_table_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 96,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 5,
+  "errs": []
+ },
+ "find_table_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 58,
+  "targets": [
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 6,
+  "errs": []
+ },
+ "picker_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 136,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "picker_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 85,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 2,
+  "errs": []
+ },
+ "picker_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 93,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 3,
+  "errs": []
+ },
+ "picker_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 67,
+  "targets": [
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 8,
+  "errs": []
+ },
+ "find_book_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 50,
+  "targets": [
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "find_book_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 35,
+  "targets": [
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "find_book_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 35,
+  "targets": [
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "find_book_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 31,
+  "targets": [
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 3,
+  "errs": []
+ },
+ "drawer_q_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 152,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "drawer_q_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 115,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "drawer_q_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 122,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 5,
+  "errs": []
+ },
+ "drawer_q_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 84,
+  "targets": [
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 6,
+  "errs": []
+ },
+ "drawer_sol_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 137,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "drawer_sol_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 100,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "drawer_sol_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 107,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 5,
+  "errs": []
+ },
+ "drawer_sol_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 69,
+  "targets": [
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 6,
+  "errs": []
+ },
+ "print_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 201,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "print_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 115,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 4,
+  "errs": []
+ },
+ "print_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 122,
+  "targets": [
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#pmForm input[data-pt].h-10.border",
+    "t": "",
+    "w": 309,
+    "h": 40
+   },
+   {
+    "s": "#pmForm input[data-pc].cbx",
+    "t": "on",
+    "w": 709,
+    "h": 40
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 7,
+  "errs": []
+ },
+ "print_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 98,
+  "targets": [
+   {
+    "s": "#examStrip button[data-hq2].qb.in",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#pmForm input[data-pt].h-10.border",
+    "t": "",
+    "w": 309,
+    "h": 40
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 11,
+  "errs": []
+ },
+ "sets_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 21,
+  "targets": [],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 0,
+  "errs": []
+ },
+ "sets_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 14,
+  "targets": [],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 0,
+  "errs": []
+ },
+ "sets_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 14,
+  "targets": [
+   {
+    "s": "#set-mvyu1hq3 a.setbtn.sb-sol",
+    "t": "해설 화면 (새 창)",
+    "w": 115,
+    "h": 40
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 1,
+  "errs": []
+ },
+ "sets_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [],
+  "small": [],
+  "small13": 0,
+  "textN": 14,
+  "targets": [
+   {
+    "s": "#set-mvyu1m1g a.setbtn.sb-sol",
+    "t": "해설 화면 (새 창)",
+    "w": 115,
+    "h": 40
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 0,
+  "targetsN": 1,
+  "errs": []
+ },
+ "dark_1440": {
+  "bg": "rgb(248, 250, 252)",
+  "color": "rgb(30, 41, 59)",
+  "cs": true
+ },
+ "dark_390": {
+  "bg": "rgb(248, 250, 252)",
+  "color": "rgb(30, 41, 59)",
+  "cs": true
+ }
+}
