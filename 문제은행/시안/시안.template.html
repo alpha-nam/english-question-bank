@@ -205,6 +205,8 @@ body{background:#f8fafc;color:#1e293b;font-size:15px;overflow:hidden}
 .xp .xcol>.xend{margin-top:auto}
 
 /* 교사용 정답 한 줄(선지가 지문 속·그림일 때만) */
+.xsol .xsa{font:700 12px 'Noto Sans KR',sans-serif;color:#dc2626}.xsol .xsc{font-size:.95em}.xsol .xse{margin-top:3px;font:400 11.5px/1.6 'Noto Sans KR',sans-serif;text-align:justify;white-space:pre-line}.xsol .xse b{font-weight:700;margin-right:4px}.xsol .xnone{color:#64748b}.xsol .xans{font-size:12px;margin-top:4px}.xsol+.xsol,.pv-b .xsol{margin-bottom:10px}
+.dtab button[aria-selected=true]{background:#fff;color:#1e293b;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 .xq .xans1{margin-top:.3em;text-align:right;color:#dc2626;font:700 11px 'Noto Sans KR',sans-serif}
 .xq .blkf{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-skip-ink:none;white-space:pre-wrap}
 .xq i{font-style:italic} .xq .ch.chg{row-gap:.42em} .fni{display:inline-block} .ntb0,.ntb0 td,.ntb0 th{border:none!important;background:none!important;font-weight:normal}
@@ -599,7 +601,7 @@ const find=id=>D.find(d=>d.id==id)||BK[id];
 const SHELF=[['수능특강 영어듣기',0],['수능특강 영어',1],['수능특강 영어독해연습',0],['수능완성 영어',0]];
 
 // ---------- 상태 ----------
-const S={view:'home',open:{},lyr:'',lmo:'',lorg:'',src:'past',area:'read',org:'',exs:[],wq:'',types:[],q:'',sort:'no',cart:[],dv:'img',cur:null,
+const S={view:'home',open:{},lyr:'',lmo:'',lorg:'',src:'past',area:'read',org:'',exs:[],wq:'',types:[],q:'',sort:'no',cart:[],dv:'img',dt:'q',cur:null,
  print:{kind:0,paper:2,num:0,cover:0,title:'',date:'',school:'',teacher:'',namebox:1,ans:1,qr:1,src:1,v:3}};
 const def=(EXAMS.find(e=>e.k=='2026.09')||EXAMS[0]||{}).k;S.exs=def?[def]:[];
 try{const c=JSON.parse(localStorage.getItem('qb2_cart')||'[]');S.cart=c.filter(id=>find(id));const sp=JSON.parse(localStorage.getItem('qb2_print')||'{}');if(sp.v!=2&&sp.v!=3&&sp.v!=4){sp.ans=1;sp.qr=1;if(sp.kind==2)sp.kind=1;else sp.kind=0}if(sp.v!=3&&sp.v!=4){sp.paper=2}if(sp.v!=4){delete sp.title;sp.v=4}Object.assign(S.print,sp)}catch(e){}
@@ -690,7 +692,9 @@ let lastFocus=null;
 function openDrawer(id){const d=find(id);if(!d)return;S.cur=d;lastFocus=document.activeElement;S.dv=(d.img||(d.imgs&&d.imgs.length))?S.dv:'txt';drawerRender();$('#scrim').classList.remove('hidden');$('#drawer').classList.remove('translate-x-full');$('#drawer').focus()}
 function drawerRender(){const d=S.cur;$('#drawerTitle').textContent=d.book?`수능특강 영어 ${d.lab}`:`${exName(d.ex)} ${d.lab}번 · ${d.short}`;
  const hasImg=!!(d.img||(d.imgs&&d.imgs.length));$$('[data-dv]').forEach(b=>{b.setAttribute('aria-pressed',S.dv==b.dataset.dv);b.disabled=b.dataset.dv=='img'&&!hasImg});
- let h='';
+ let h=`<div class="seg dtab inline-flex p-0.5 mb-4 rounded-md bg-slate-200/60 text-[15px] font-semibold text-slate-500" role="tablist" aria-label="문항 보기">${[['q','문제'],['sol','해설']].map(([k,t])=>`<button role="tab" data-dt="${k}" id="dt-${k}" aria-selected="${S.dt==k}" aria-pressed="${S.dt==k}" aria-controls="dtPanel" class="px-4 py-1 rounded">${t}</button>`).join('')}</div><div id="dtPanel" role="tabpanel" aria-labelledby="dt-${S.dt}">`;
+ // 해설 탭(2026-11-02): 문항마다 따로 둔 해설(cm.ex 풀이, cm.tr 해석)을 보여 준다. 시험지를 어떻게 묶어도 해설지가 같은 자료로 모인다
+ if(S.dt=='sol'){$$('[data-dv]').forEach(b=>{b.setAttribute('aria-pressed',false);b.disabled=true});h+=solHtml(d)+'</div>';$('#drawerContent').innerHTML=h;drawerBtn();dtWire();return}
  if(d.top&&d.top.sel){const ai=CIR.indexOf(d.ans),w=d.top.sel.map((v,i)=>[v,i]).filter(x=>x[1]!=ai).sort((a,b)=>b[0]-a[0])[0];h+=`<div class="mb-4 flex flex-wrap gap-2 text-[14px]"><span class="px-2 py-1 bg-rose-50 border border-rose-200 text-rose-700 rounded font-bold">TOP15 ${d.top.rank}위 · 오답률 ${d.top.wr}%</span><span class="px-2 py-1 bg-slate-100 rounded font-semibold">정답 ${d.ans} ${d.top.sel[ai]}% · 매력적 오답 ${CIR[w[1]]} ${w[0]}%</span></div>`}
  if(S.dv=='img'&&hasImg){h+=(d.imgs&&d.imgs.length?d.imgs:[d.img]).map(s=>`<img src="${esc(s)}" alt="${esc(d.lab)}번 시험지 원본" class="w-full border border-slate-200 rounded mb-3">`).join('')}
  else{const Q=d.qs||[{stem:d.stem,ch:d.ch,ans:d.ans,no:d.no}];
@@ -700,9 +704,16 @@ function drawerRender(){const d=S.cur;$('#drawerTitle').textContent=d.book?`수�
  const sims=(d.sim||[]).map(([k,sc])=>[find(k),sc]).filter(x=>x[0]);
  if(sims.length)h+=`<div class="mt-5 pt-4 border-t border-slate-200"><div class="flex items-center gap-2 font-bold text-[15px] text-slate-800 mb-1">${I3('Card file box',24)}비슷한 기출 <span class="text-[13px] font-normal text-slate-600">지문 낱말이 많이 겹치는 지문</span></div>
   <div class="flex flex-col gap-1.5 mt-2">${sims.map(([x,sc])=>{const on=S.cart.includes(x.id);return `<div class="flex items-center gap-2 p-2 rounded-lg border border-slate-200 hover:border-blue-300"><button data-simgo="${esc(x.id)}" class="flex-1 min-w-0 text-left"><div class="text-[14px] font-bold text-slate-800">${esc(exName(x.ex))} ${esc(x.lab)}번 <span class="ml-1 px-1.5 rounded bg-slate-100 text-[12px] font-semibold text-slate-600">${esc(x.short)}</span>${x.top?` <span class="text-[12px] font-bold text-rose-700">TOP15 ${x.top.rank}위</span>`:''}</div><div class="text-[13px] text-slate-600 truncate">${x.topic?esc(x.topic):''} · 겹침 ${Math.round(sc*100)}점</div></button><button data-simadd="${esc(x.id)}" class="shrink-0 px-2.5 min-h-[34px] rounded-lg text-[13px] font-semibold ${on?'bg-slate-100 text-slate-600':'bg-blue-50 text-blue-700 border border-blue-200'}">${on?'담음 ✓':'담기'}</button></div>`}).join('')}</div></div>`;
- $('#drawerContent').innerHTML=h;drawerBtn();
+ $('#drawerContent').innerHTML=h+'</div>';drawerBtn();dtWire();
  $$('[data-simgo]').forEach(b=>b.onclick=()=>openDrawer(b.dataset.simgo));
  $$('[data-simadd]').forEach(b=>b.onclick=()=>{toggleCart(b.dataset.simadd);drawerRender()})}
+function dtWire(){$$('[data-dt]').forEach(b=>{b.onclick=()=>{S.dt=b.dataset.dt;drawerRender();const n=$(`[data-dt="${S.dt}"]`);if(n)n.focus()};b.onkeydown=e=>{if(e.key=='ArrowLeft'||e.key=='ArrowRight'){e.preventDefault();S.dt=S.dt=='q'?'sol':'q';drawerRender();$(`[data-dt="${S.dt}"]`).focus()}}})}
+// 문항 하나의 해설(서랍 해설 탭). 묶음 지문은 지문 해석을 한 번, 문항마다 정답·풀이
+const hasCm=c=>!!(c&&(c.ex||c.tr));
+function solHtml(d){const Q=d.qs||[{stem:d.stem,ch:d.ch,ans:d.ans,no:d.no,cm:d.cm}],g=d.qs&&d.cm&&d.cm.tr?d.cm.tr:'';
+ const one=q=>{const c=q.cm,ai=CIR.indexOf(q.ans);return `<div class="mb-4">${d.qs?`<div class="font-bold mb-1">${esc(q.no)}. ${esc(q.stem||'')}</div>`:''}<div class="text-[16px]">정답 <b class="text-rose-600 text-[19px]">${esc(q.ans||'')}</b>${q.ch&&ai>=0&&q.ch[ai]!=null&&!/^\s*[①②③④⑤]\s*$/.test(q.ch[ai])?` <span class="text-slate-700">${esc(q.ch[ai])}</span>`:''}</div>
+  ${c&&c.ex?`<div class="mt-3"><div class="text-[14px] font-bold text-blue-700">해설</div><p class="text-[15px] leading-relaxed whitespace-pre-line">${esc(c.ex)}</p></div>`:''}${c&&c.tr?`<div class="mt-3"><div class="text-[14px] font-bold text-slate-600">해석</div><p class="text-[15px] leading-relaxed text-slate-700 whitespace-pre-line">${esc(c.tr)}</p></div>`:''}${hasCm(c)||g?'':'<p class="mt-2 text-[15px] text-slate-500">해설 준비 중</p>'}</div>`};
+ return (g?`<div class="mb-4"><div class="text-[14px] font-bold text-slate-600">지문 해석</div><p class="text-[15px] leading-relaxed text-slate-700 whitespace-pre-line">${esc(g)}</p></div>`:'')+Q.map(one).join('')}
 function drawerBtn(){const b=$('#drawerAddBtn'),on=S.cart.includes(S.cur.id);b.textContent=on?'시험지에서 빼기':'시험지에 담기';b.className=on?'w-full bg-slate-200 text-slate-700 font-bold py-3 rounded hover:bg-slate-300':'w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700'}
 function closeDrawer(){$('#scrim').classList.add('hidden');$('#drawer').classList.add('translate-x-full');S.cur=null;if(lastFocus)lastFocus.focus()}
 
@@ -714,7 +725,7 @@ function printRender(){const P=S.print;if(!P.date)P.date=today();
  const F=(lb,k,ph)=>`<label class="pmlb flex flex-col gap-1.5 !mb-0">${lb}<input data-pt="${k}" value="${esc(P[k]||'')}" placeholder="${ph}" class="h-10 border border-slate-400 rounded-none px-2.5 text-[15px] font-medium text-slate-800"></label>`;
  const C=(k,lb)=>`<label class="h-10 flex items-center gap-2 text-[15px] font-semibold text-slate-800 cursor-pointer"><input type="checkbox" class="cbx" data-pc="${k}" ${P[k]?'checked':''}>${lb}</label>`;
  const Card=(ic,t,h)=>`<section class="pmcard" aria-label="${t}"><h4>${I3(ic,20)}${t}</h4>${h}</section>`;
- $('#pmForm').innerHTML=Card('Magnifying glass tilted right','보기',Z)+Card('Printer','출력',G('만들 것','kind',['학생용','교사용'])+G('번호','num',['1번부터 새로','원래 번호']))+Card('Page facing up','문제지',F('제목 (Optional)','title','문제지 맨 위 제목')+C('qr','첫 쪽에 해설 QR 코드'));
+ $('#pmForm').innerHTML=Card('Magnifying glass tilted right','보기',Z)+Card('Printer','출력',G('만들 것','kind',['학생용','교사용','해설지'])+G('번호','num',['1번부터 새로','원래 번호']))+Card('Page facing up','문제지',F('제목 (Optional)','title','문제지 맨 위 제목')+C('qr','첫 쪽에 해설 QR 코드'));
  $$('[data-pz]').forEach(b=>b.onclick=()=>{window.PZ=+b.dataset.pz;$$('[data-pz]').forEach(x=>{x.classList.toggle('on',x==b);x.setAttribute('aria-pressed',x==b)});pvShow()});
  // 글자 칸: 다시 그리지 않고 값만 바꿔서 한글 입력이 끊기지 않게
  $$('[data-pt]').forEach(i=>{i.addEventListener('input',e=>{P[i.dataset.pt]=i.value;save();if(!e.isComposing)pvSoon()});i.addEventListener('compositionend',()=>{P[i.dataset.pt]=i.value;save();pvSoon()})});
@@ -732,7 +743,7 @@ function pvShow(){const pgs=[...document.querySelectorAll('#pvPages .xp')],N=pgs
  if(!$('#pvPrev')){pr.innerHTML=`<div class="pmnav" role="group" aria-label="쪽 넘기기"><button id="pvPrev" aria-label="이전 쪽">‹</button><span id="pvNow" aria-live="polite"></span><button id="pvNext" aria-label="다음 쪽">›</button></div>`;$('#pvPrev').onclick=()=>{window.PI--;pvShow()};$('#pvNext').onclick=()=>{window.PI++;pvShow()}}
  const pv=$('#pvPrev'),nx=$('#pvNext'),had=document.activeElement;pv.disabled=window.PI==0;nx.disabled=window.PI==N-1;$('#pvNow').textContent=`${window.PI+1} / ${N} 쪽`;
  if(had==pv&&pv.disabled)nx.focus();if(had==nx&&nx.disabled)pv.focus();   // 끝 쪽에서 단추가 꺼져도 키보드 위치를 잃지 않게
- const r=S.cart.map(find).filter(Boolean);sum.textContent=`${S.print.kind==1?'교사용':'학생용'} · ${N}쪽 · ${cnt(r)}문항 · B4 2단`}
+ const r=S.cart.map(find).filter(Boolean);sum.textContent=`${['학생용','교사용','해설지'][S.print.kind]||'학생용'} · ${N}쪽 · ${cnt(r)}문항 · B4 2단`}
 (function(){let acc=0,lock=0,prev=0,scrolled=false;const box=$('#pmPreview');box.addEventListener('wheel',e=>{const N=document.querySelectorAll('#pvPages .xp').length;if(!N||e.ctrlKey)return;
  const dy=e.deltaY*(e.deltaMode==1?16:e.deltaMode==2?box.clientHeight:1),dn=dy>0,t=performance.now(),gap=t-prev;prev=t;
  if(box.scrollHeight>box.clientHeight+1&&(dn?box.scrollTop+box.clientHeight<box.scrollHeight-1:box.scrollTop>0)){scrolled=true;acc=0;return}
@@ -750,9 +761,9 @@ function previewRender(){const gen=++pvGen;const P=S.print;P.paper=2;P.cover=0; 
  const r=S.cart.map(find).filter(Boolean);
  const cols=P.paper==0?1:2,PW=860,PH=Math.round(PW*(P.paper==2?364/257:297/210)),PX=(window.PXO||63),   /* 좌우 여백: 실측 87.9pt(90px)에서 30% 줄임(제이님 2026-10-30, 20개 시험 비교로 결정) */
  PB=50,GAP=32,colW=(PW-PX*2-(cols-1)*GAP)/cols;
- const T=(P.title||'')+(P.kind==1?((P.title?' ':'')+'(교사용)'):'');
+ const SOL=P.kind==2,T=(P.title||'')+(P.kind==1?((P.title?' ':'')+'(교사용)'):SOL?((P.title?' ':'')+'(정답과 해설)'):'');
  const nb=false?`<div class="xnb">${['학년','반','번호','이름'].map(x=>`<span>${x}</span>`).join('')}</div>`:'';
- const head1=`<div class="xh1"><div class="xt">${esc(T)}</div><span class="kyo">제 3 교시</span><div class="xbig"><b>영어 영역${P.qr?`<span class="xqr2">${qrSvg(solUrl(S.cart,P.title),2)}<i>해설 QR</i></span>`:''}</b></div></div>${nb}`;
+ const head1=`<div class="xh1"><div class="xt">${esc(T)}</div><span class="kyo">제 3 교시</span><div class="xbig"><b>영어 영역${P.qr&&!SOL?`<span class="xqr2">${qrSvg(solUrl(S.cart,P.title),2)}<i>해설 QR</i></span>`:''}</b></div></div>${nb}`;
  const headN=pi=>`<div class="xhn"><b>영어 영역</b></div>`;
  const fmt=x=>esc(x);let no=0;const fnh=x=>fmt(x).replace(/\*+\u00a0(?:(?!\*+\u00a0)[\s\S])*/g,m=>`<span class="fni">${m.trim()}</span> `);
  // 2026-10-30 제이님 지적: 부정 발문 밑줄, ①~⑤·(a)~(e) 뒤 줄바꿈 금지, 지문 중간의 잘못된 줄바꿈 없애기
@@ -819,6 +830,11 @@ function previewRender(){const gen=++pvGen;const P=S.print;P.paper=2;P.cover=0; 
   else inner=`<span class="st">${fst(d.stem||'')}${d.pts==3?' <span class="p3">[3점]</span>':''}</span>${d.no>=13&&d.no<=15&&/^[^:\n]+: ＿＿＿$/.test((d.body||'').trim())?`<div class="bd blkline" lang="en"><span>${fmt(d.body.trim().replace(/ ＿＿＿$/,''))}</span><span class="blkl"></span></div>`:(d.body||'').trim()?((d.no==18||d.book&&/목적/.test(d.type||''))&&/^[^\n]{1,60}\n/.test(d.body)?fbd(d.body).replace('class="bd"','class="bd l18"'):fbd(d.body)):''}${/네모/.test(d.stem||'')?ch3(d.ch,d.ans):chs(d.ch,d.ans)}`;
   B.push({slot:ls,html:`<div class="xq"><span class="qn">${n}.</span> ${inner}${TE&&!/class="[^"]*\bok\b/.test(inner)?`<div class="xans1">정답 ${esc(d.ans||'')}</div>`:''}</div>`})   /* 선지가 지문 속에 있거나 그림이면 정답을 따로 한 줄 */});
  pend.forEach(i=>{if(B[i])B[i].brk=1});
+ if(SOL){   // 해설지(2026-11-02): 시험지와 같은 번호 순서로 문항마다 정답·해설을 모은다. 쪽 나누기·미리보기·PDF는 시험지와 같은 흐름
+  B.length=0;let k=0;const A=[],sb=(n,q,c,g)=>{const ai=CIR.indexOf(q.ans),ct=q.ch&&ai>=0&&q.ch[ai]!=null&&!/^\s*[①②③④⑤]\s*$/.test(q.ch[ai])?` <span class="xsc">${fmt(q.ch[ai])}</span>`:'';
+   return `<div class="xq xsol"><span class="qn">${n}.</span> <span class="xsa">정답 ${esc(q.ans||'')}</span>${ct}${c&&c.ex?`<div class="xse"><b>해설</b> ${fmt(c.ex)}</div>`:''}${c&&c.tr?`<div class="xse"><b>해석</b> ${fmt(c.tr)}</div>`:''}${hasCm(c)||g?'':'<div class="xse xnone">해설 준비 중</div>'}</div>`};
+  r.forEach(d=>{if(d.qs){const a=k+1,b=k+d.qs.length,g=d.cm&&d.cm.tr;if(g)B.push({slot:0,html:`<div class="xq xsol xsg"><div class="gh">[${NUM?d.lab:a+'~'+b}] 지문 해석</div><div class="xse">${fmt(g)}</div></div>`});d.qs.forEach((q,i)=>{k++;const n=NUM?q.no:k;A.push([n,q.ans]);B.push({slot:0,html:sb(n,q,q.cm,g)})})}else{k++;const n=NUM?d.no:k;A.push([n,d.ans]);B.push({slot:0,html:sb(n,d,d.cm,'')})}});
+  if(k)B.unshift({slot:0,html:`<div class="xq xsol"><div class="gh"><b>빠른 정답</b></div><div class="xans">${A.map(([a,b])=>`<span>${a}. ${esc(b||'')}</span>`).join('')}</div></div>`})}
  if(false&&r.length){   // 2026-10-30 제이님: 학생용 시험지에 정답표 넣지 않음
 let k=0;const ans=[];r.forEach(d=>{if(d.qs)d.qs.forEach(q=>{k++;ans.push([P.num?q.no:k,q.ans])});else{k++;ans.push([P.num?d.no:k,d.ans])}});
   B.push({slot:2,brk:1,html:`<div class="xq"><div class="gh"><b>정답</b></div><div class="xans">${ans.map(([a,b])=>`<span>${a}. ${b||''}</span>`).join('')}</div></div>`})}
@@ -894,7 +910,7 @@ let k=0;const ans=[];r.forEach(d=>{if(d.qs)d.qs.forEach(q=>{k++;ans.push([P.num?
    if(two.length==2&&two[0].top2==two[1].top2){const k=push(Math.min(room(two[0]),room(two[1])));two.forEach(c=>c.top2+=k)}else if(two.length==2&&two.every(c=>c.items[1].el&&room(c)>=0)){/* 둘째 문항 시작을 맞출 수 없는 쪽은 끝나는 줄을 맞춘다(제이님 2026-10-31). 넘친 단이나 축소된 문항이 있으면 하지 않는다(Codex) */const r=two.map(room),m=Math.min(...r),k=push(m);two.forEach((c,i)=>c.top2+=r[i]-m+k)}else two.forEach(c=>c.top2+=push(room(c)))});
   // 2026-10-30 제이님: 듣기 단 아래 빈자리를 문항 사이 간격으로 나눔(최대 48px, 넘는 만큼은 아래에 남김). 묶음 안(16~17번)·첫 안내 상자 뒤는 그대로, 문서 맨 끝 단은 벌리지 않음
   const GAPMAX=window.GAPMAX||48,used2=pages.flatMap(p=>p.cols).filter(c=>c.items.length),lastC=used2[used2.length-1];
-  pages.forEach((p,pi)=>p.cols.forEach(c=>{if(c==lastC||c.top2||!c.items.length||c.items.some(x=>x.slot||!x.el))return;
+  pages.forEach((p,pi)=>p.cols.forEach(c=>{if(SOL||c==lastC||c.top2||!c.items.length||c.items.some(x=>x.slot||!x.el))return;
    const cl=x=>x.el.firstElementChild.classList,ok=c.items.map((x,i)=>i>0&&!['gq','gc','xend'].some(k=>cl(x).contains(k))&&!cl(c.items[i-1]).contains('xbox')),n=ok.filter(Boolean).length;if(!n)return;
    const ex=Math.min(GAPMAX-18,Math.floor((avail(pi)-c.items.reduce((t,x)=>t+x.h,0)-18*(c.items.length-1))/n));if(ex>=0)c.items.forEach((x,i)=>{if(ok[i])x.ex=ex})}));
   const N=pages.length;
@@ -908,7 +924,7 @@ function printPrep(){const pgs=[...document.querySelectorAll('#pvPages .xp')];co
  const r=document.createElement('div');r.id='printRoot';pgs.forEach(p=>{const c=p.cloneNode(true);c.style.zoom='';c.style.display='';r.appendChild(c)});document.body.appendChild(r);return r}
 let printBusy=false,printTitle=null;
 function printNow(){if(printBusy)return;const r=printPrep();if(!r){toast('아직 미리보기가 만들어지지 않았습니다. 잠시 뒤 다시 눌러 주세요');return}
- printBusy=true;printTitle=document.title;document.title=(S.print.title||'').trim()||'영어 문제지';
+ printBusy=true;printTitle=document.title;document.title=((S.print.title||'').trim()||'영어 문제지')+(S.print.kind==2?' 해설지':'');
  toast('인쇄 창에서 대상을 “PDF로 저장”으로 고르고, 용지는 그대로 두세요 (Chrome·Edge 권장)');
  Promise.all([document.fonts.ready,...[...r.querySelectorAll('img')].map(i=>i.decode?i.decode().catch(()=>{}):0)]).then(()=>setTimeout(()=>window.print(),150))}
 // Ctrl+P로 인쇄해도 미리보기가 열려 있으면 같은 내용이 나오게 한다
