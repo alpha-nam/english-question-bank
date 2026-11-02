@@ -511,6 +511,15 @@ button.bkc:hover{background:#f1f5f9}.bkc.on{border-color:#65a30d;background:#f7f
 #listArea button[data-open],#pvPrev,#pvNext{min-width:40px}
 #homeView button[data-horg]:not(.on):not([aria-pressed=true]){color:#475569}
 }
+@media screen{body:has(#printModal.flex) #toast{bottom:auto;top:64px}}
+@media screen and (max-width:768px){
+:is(#sideNav,#homeView,#setsView,#findView,#drawer,#printModal,#toast) :is(button:not([data-hq2]):not([data-hq]):not(.qchip),select,summary,input[type=search],[role=tab]){min-height:44px;min-width:44px}
+#examStrip a,#examStrip button[data-exrm]{min-height:44px;min-width:44px}
+#sideNav .nav-i{min-height:44px;min-width:44px}
+#findView label{min-height:44px}
+#examStrip .strip8 .flex,#examStrip .strip8 span.flrow,#examStrip .strip8 .ml-auto{flex-wrap:wrap;max-width:100%}#examStrip .strip8{overflow-x:auto}
+#randBox>div{white-space:normal!important;flex-wrap:wrap;max-width:calc(100vw - 96px)}
+}
 </style>
 </head>
 <body class="h-screen flex">
@@ -734,7 +743,7 @@ let lastFocus=null;
 function openDrawer(id){const d=find(id);if(!d)return;S.cur=d;lastFocus=document.activeElement;S.dv=(d.img||(d.imgs&&d.imgs.length))?S.dv:'txt';drawerRender();$('#scrim').classList.remove('hidden');$('#drawer').inert=false;$('#drawer').classList.remove('translate-x-full');$('#drawer').focus()}
 function drawerRender(){const d=S.cur;$('#drawerTitle').textContent=d.book?`수능특강 영어 ${d.lab}`:`${exName(d.ex)} ${d.lab}번 · ${d.short}`;
  const hasImg=!!(d.img||(d.imgs&&d.imgs.length));$$('[data-dv]').forEach(b=>{b.setAttribute('aria-pressed',S.dv==b.dataset.dv);b.disabled=b.dataset.dv=='img'&&!hasImg});
- let h=`<div class="seg dtab inline-flex p-0.5 mb-4 rounded-md bg-slate-200/60 text-[15px] font-semibold text-slate-500" role="tablist" aria-label="문항 보기">${[['q','문제'],['sol','해설']].map(([k,t])=>`<button role="tab" data-dt="${k}" id="dt-${k}" aria-selected="${S.dt==k}" aria-pressed="${S.dt==k}" aria-controls="dtPanel" class="px-4 py-1 rounded">${t}</button>`).join('')}</div><div id="dtPanel" role="tabpanel" aria-labelledby="dt-${S.dt}">`;
+ let h=`<div class="seg dtab inline-flex p-0.5 mb-4 rounded-md bg-slate-200/60 text-[15px] font-semibold text-slate-500" role="tablist" aria-label="문항 보기">${[['q','문제'],['sol','해설']].map(([k,t])=>`<button role="tab" data-dt="${k}" id="dt-${k}" aria-selected="${S.dt==k}" aria-pressed="${S.dt==k}" tabindex="${S.dt==k?0:-1}" aria-controls="dtPanel" class="px-4 py-1 rounded">${t}</button>`).join('')}</div><div id="dtPanel" role="tabpanel" aria-labelledby="dt-${S.dt}">`;
  // 해설 탭(2026-11-02): 문항마다 따로 둔 해설(cm.ex 풀이, cm.tr 해석)을 보여 준다. 시험지를 어떻게 묶어도 해설지가 같은 자료로 모인다
  if(S.dt=='sol'){$$('[data-dv]').forEach(b=>{b.setAttribute('aria-pressed',false);b.disabled=true});h+=solHtml(d)+'</div>';$('#drawerContent').innerHTML=h;drawerBtn();dtWire();return}
  if(d.top&&d.top.sel){const ai=CIR.indexOf(d.ans),w=d.top.sel.map((v,i)=>[v,i]).filter(x=>x[1]!=ai).sort((a,b)=>b[0]-a[0])[0];h+=`<div class="mb-4 flex flex-wrap gap-2 text-[14px]"><span class="px-2 py-1 bg-rose-50 border border-rose-200 text-rose-700 rounded font-bold">TOP15 ${d.top.rank}위 · 오답률 ${d.top.wr}%</span><span class="px-2 py-1 bg-slate-100 rounded font-semibold">정답 ${d.ans} ${d.top.sel[ai]}% · 매력적 오답 ${CIR[w[1]]} ${w[0]}%</span></div>`}
@@ -1010,7 +1019,8 @@ function renderStrip(){const X=$('#examStrip');if(S.src=='book'){renderBookStrip
  X.querySelectorAll('[data-hl]').forEach(b=>b.onclick=()=>{try{localStorage.setItem('qb2_hl2',b.dataset.hl)}catch(e){}hlApply();renderStrip();keep(`[data-hl="${b.dataset.hl}"]`)});
  const setEx=(a,q)=>{const ks=a.map(e=>e.k);S.exs=allOn(a)?S.exs.filter(k=>!ks.includes(k)):[...new Set(S.exs.concat(ks))];S.lyr=S.lmo=S.lorg='';render();keep(q)};
  X.querySelectorAll('[data-hq2]').forEach(b=>b.onclick=ev=>{ev.preventDefault();openDrawer(b.dataset.hq2)});
- X.querySelector('[data-so]').onclick=()=>{S.so=S.so?0:1;renderStrip();keep('[data-so]')};
+ X.querySelector('[data-so]').onclick=()=>{S.so=S.so?0:1;renderStrip();keep(S.so?'#examPanel button':'[data-so]')};
+ X.onkeydown=e=>{if(e.key=='Escape'&&S.so&&$('#drawer').inert&&$('#printModal').classList.contains('hidden')){e.preventDefault();S.so=0;renderStrip();keep('[data-so]')}};
  X.querySelectorAll('[data-exrm]').forEach(b=>b.onclick=()=>{S.exs=S.exs.filter(v=>v!=b.dataset.exrm);render();keep('[data-so]')});
  const all=X.querySelector('[data-exall]');if(all)all.onclick=()=>{S.exs=[];S.lyr=S.lmo=S.lorg='';render();keep('[data-so]')};
  X.querySelectorAll('[data-yr]').forEach(b=>b.onclick=()=>setEx(EXAMS.filter(e=>e.cy==+b.dataset.yr),`[data-yr="${b.dataset.yr}"]`));

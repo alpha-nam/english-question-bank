@@ -40,60 +40,6 @@
   "textN": 41,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "전체",
-    "w": 46,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "평가원",
-    "w": 59,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "교육청",
-    "w": 59,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-htop2].topbtn.shrink-0",
-    "t": "오답률 TOP15 담기",
-    "w": 132,
-    "h": 40
-   },
-   {
     "s": "#homeView button[data-hq2].qb.cut",
     "t": "18번 목적",
     "w": 89,
@@ -135,7 +81,7 @@
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 18,
+  "targetsN": 6,
   "errs": []
  },
  "home_390": {
@@ -146,60 +92,6 @@
   "small13": 0,
   "textN": 36,
   "targets": [
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "전체",
-    "w": 46,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "평가원",
-    "w": 59,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-horg].px-2.5.py-0.5",
-    "t": "교육청",
-    "w": 59,
-    "h": 40
-   },
-   {
-    "s": "#homeView button[data-htop2].topbtn.shrink-0",
-    "t": "오답률 TOP15 담기",
-    "w": 132,
-    "h": 40
-   },
    {
     "s": "#homeView button[data-hq2].qb.cut",
     "t": "18번 목적",
@@ -242,7 +134,7 @@
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 15,
+  "targetsN": 6,
   "errs": []
  },
  "find_table_1440": {
@@ -361,105 +253,50 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 102,
+  "textN": 96,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 186,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 234,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 250,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 47,
+  "targetsN": 5,
   "errs": []
  },
  "find_table_390": {
@@ -468,111 +305,51 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 59,
+  "textN": 58,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 60,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 108,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 124,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
    }
   ],
   "noname": [],
   "hscroll": false,
   "wide": [],
-  "clipped": [
-   {
-    "s": "#findView",
-    "sw": 367,
-    "cw": 326
-   }
-  ],
+  "clipped": [],
   "smallN": 0,
-  "targetsN": 32,
+  "targetsN": 6,
   "errs": []
  },
  "picker_1440": {
@@ -679,105 +456,38 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 98,
+  "textN": 93,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 186,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 234,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 250,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 51,
+  "targetsN": 3,
   "errs": []
  },
  "picker_390": {
@@ -786,111 +496,68 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 65,
+  "textN": 67,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
    },
    {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 60,
-    "h": 40
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 108,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 124,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
-  "clipped": [
-   {
-    "s": "#findView",
-    "sw": 367,
-    "cw": 326
-   }
-  ],
+  "clipped": [],
   "smallN": 0,
-  "targetsN": 38,
+  "targetsN": 8,
   "errs": []
  },
  "find_book_1440": {
@@ -984,84 +651,6 @@
   "textN": 35,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#findView button[data-src].srcbtn",
-    "t": "기출문제",
-    "w": 117,
-    "h": 40
-   },
-   {
-    "s": "#findView button[data-src].srcbtn",
-    "t": "EBS 교재 문항",
-    "w": 154,
-    "h": 40
-   },
-   {
-    "s": "#searchInput",
-    "t": "단어, 표현, 소재 등으로 찾기",
-    "w": 270,
-    "h": 40
-   },
-   {
-    "s": "#examStrip button[data-so].tgl7",
-    "t": "교재 선택 열기 ▾",
-    "w": 122,
-    "h": 40
-   },
-   {
     "s": "#selectAllB",
     "t": "보이는 문항 모두 담기",
     "w": 24,
@@ -1072,6 +661,18 @@
     "t": "7강 Ex 01 담기",
     "w": 24,
     "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 24,
+    "h": 24
    }
   ],
   "noname": [],
@@ -1079,7 +680,7 @@
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 17,
+  "targetsN": 4,
   "errs": []
  },
  "find_book_390": {
@@ -1091,84 +692,6 @@
   "textN": 31,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-bty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#findView button[data-src].srcbtn",
-    "t": "기출문제",
-    "w": 117,
-    "h": 40
-   },
-   {
-    "s": "#findView button[data-src].srcbtn",
-    "t": "EBS 교재 문항",
-    "w": 154,
-    "h": 40
-   },
-   {
-    "s": "#searchInput",
-    "t": "단어, 표현, 소재 등으로 찾기",
-    "w": 176,
-    "h": 40
-   },
-   {
-    "s": "#examStrip button[data-so].tgl7",
-    "t": "교재 선택 열기 ▾",
-    "w": 122,
-    "h": 40
-   },
-   {
     "s": "#selectAllB",
     "t": "보이는 문항 모두 담기",
     "w": 24,
@@ -1179,6 +702,12 @@
     "t": "7강 Ex 01 담기",
     "w": 24,
     "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 24,
+    "h": 24
    }
   ],
   "noname": [],
@@ -1186,7 +715,7 @@
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 16,
+  "targetsN": 3,
   "errs": []
  },
  "drawer_q_1440": {
@@ -1305,105 +834,50 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 128,
+  "textN": 122,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 186,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 234,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 250,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 54,
+  "targetsN": 5,
   "errs": []
  },
  "drawer_q_390": {
@@ -1412,111 +886,51 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 85,
+  "textN": 84,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 60,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 108,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 124,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
    }
   ],
   "noname": [],
   "hscroll": false,
   "wide": [],
-  "clipped": [
-   {
-    "s": "#findView",
-    "sw": 367,
-    "cw": 326
-   }
-  ],
+  "clipped": [],
   "smallN": 0,
-  "targetsN": 37,
+  "targetsN": 6,
   "errs": []
  },
  "drawer_sol_1440": {
@@ -1635,105 +1049,50 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 113,
+  "textN": 107,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 186,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 234,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 250,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 52,
+  "targetsN": 5,
   "errs": []
  },
  "drawer_sol_390": {
@@ -1742,111 +1101,51 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 70,
+  "textN": 69,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 21,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
     "h": 44
    },
    {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 60,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 108,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 124,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
    }
   ],
   "noname": [],
   "hscroll": false,
   "wide": [],
-  "clipped": [
-   {
-    "s": "#findView",
-    "sw": 367,
-    "cw": 326
-   }
-  ],
+  "clipped": [],
   "smallN": 0,
-  "targetsN": 35,
+  "targetsN": 6,
   "errs": []
  },
  "print_1440": {
@@ -1965,105 +1264,62 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 128,
+  "textN": 122,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#pmForm input[data-pt].h-10.border",
     "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
+    "w": 309,
     "h": 40
    },
    {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 186,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 234,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 250,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
+    "s": "#pmForm input[data-pc].cbx",
     "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 672,
+    "w": 709,
     "h": 40
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 63,
+  "targetsN": 7,
   "errs": []
  },
  "print_390": {
@@ -2072,111 +1328,86 @@
   "contrast": [],
   "small": [],
   "small13": 0,
-  "textN": 81,
+  "textN": 98,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
+    "s": "#examStrip button[data-hq2].qb.in",
+    "t": "18번 목적",
+    "w": 21,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 30,
+    "h": 44
+   },
+   {
+    "s": "#selectAll",
+    "t": "보이는 문항 모두 담기",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 1",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 2",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "2099년 9월 예시 가짜지문 3",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#pmForm input[data-pt].h-10.border",
     "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#resetBtn",
-    "t": "초기화",
-    "w": 55,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "전체",
-    "w": 60,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "듣기 1~17번",
-    "w": 108,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
-    "t": "독해 18~45번",
-    "w": 124,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-wq].rad",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-tyall].cbx",
-    "t": "독해 유형 전체 선택",
-    "w": 50,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
-    "h": 40
-   },
-   {
-    "s": "#filterContainer input[data-ty].cbx",
-    "t": "on",
-    "w": 294,
+    "w": 309,
     "h": 40
    }
   ],
-  "noname": [],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
   "hscroll": false,
   "wide": [],
-  "clipped": [
-   {
-    "s": "#findView",
-    "sw": 367,
-    "cw": 326
-   }
-  ],
+  "clipped": [],
   "smallN": 0,
-  "targetsN": 45,
+  "targetsN": 11,
   "errs": []
  },
  "sets_1440": {
@@ -2220,55 +1451,7 @@
   "textN": 14,
   "targets": [
    {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#set-mvytd1l3 button[data-sdel].sb-del2",
-    "t": "예시 문제지 삭제",
-    "w": 58,
-    "h": 40
-   },
-   {
-    "s": "#set-mvytd1l3 button[data-sload].setbtn.sb-load",
-    "t": "시험지 수정",
-    "w": 103,
-    "h": 40
-   },
-   {
-    "s": "#set-mvytd1l3 button[data-sprint].setbtn.sb-print",
-    "t": "인쇄",
-    "w": 84,
-    "h": 40
-   },
-   {
-    "s": "#set-mvytd1l3 a.setbtn.sb-sol",
+    "s": "#set-mvytrehp a.setbtn.sb-sol",
     "t": "해설 화면 (새 창)",
     "w": 115,
     "h": 40
@@ -2279,7 +1462,7 @@
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 9,
+  "targetsN": 1,
   "errs": []
  },
  "sets_390": {
@@ -2289,56 +1472,13 @@
   "small": [],
   "small13": 0,
   "textN": 14,
-  "targets": [
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a[data-view].nav-i.on",
-    "t": "",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "연계 분석 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#sideNav a.nav-i.nav-off",
-    "t": "모의고사 (준비 중)",
-    "w": 43,
-    "h": 44
-   },
-   {
-    "s": "#set-mvytd5vv button[data-sdel].sb-del2",
-    "t": "예시 문제지 삭제",
-    "w": 40,
-    "h": 49
-   },
-   {
-    "s": "#set-mvytd5vv button[data-sprint].setbtn.sb-print",
-    "t": "인쇄",
-    "w": 84,
-    "h": 40
-   }
-  ],
+  "targets": [],
   "noname": [],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 7,
+  "targetsN": 0,
   "errs": []
  },
  "dark_1440": {
