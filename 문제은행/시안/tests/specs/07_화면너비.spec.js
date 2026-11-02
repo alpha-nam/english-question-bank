@@ -59,6 +59,9 @@ for (const [name, setup] of Object.entries(scenes)) {
     info.annotations.push({ type: '잘린 요소', description: clip.join(' | ') || '없음' });
     known(test, (clip.length > 0 || inner.length > 0) && w < 1440,
       `${w}px: 화면에 반응형(좁은 화면) 배치가 없다. 왼쪽 메뉴 188px + 필터 272px + 내 시험지 320px, 인쇄 창 오른쪽 설정 320px가 고정 폭이라 창 밖으로 잘린다. body가 overflow:hidden이라 가로 스크롤 대신 잘림으로 나타난다.`);
+    // 1440에서도 보이는 문제: 인쇄 설정(#pmForm)은 세로 스크롤이 생기면(클래식 스크롤바 약 19px) 입력칸이 그만큼 넘쳐 옆으로 밀린다
+    known(test, w === 1440 && clip.length === 0 && inner.length > 0 && inner.every(x => x.startsWith('div#pmForm')),
+      '1440px: 인쇄 설정 칸(#pmForm)에 세로 스크롤바가 생기면 입력칸(제목 등) 폭이 스크롤바 폭만큼 넘쳐 안쪽 가로 스크롤이 생긴다(338>319). 입력칸에 min-w-0/w-full 필요.');
     expect({ clip, inner }, '창 밖으로 잘리거나 안쪽에서 옆으로 밀리는 곳이 없어야 합니다').toEqual({ clip: [], inner: [] });
   });
 }
