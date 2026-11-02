@@ -1,0 +1,5337 @@
+{
+ "home_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~2099",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "평가원",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~209",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "모의평가·수능",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "교육청 학력평가",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "EBSi 기준",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "0/6문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "평가원 문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView span.obadge.pg",
+    "t": "평가원",
+    "fs": 12
+   },
+   {
+    "s": "#homeView button[data-htop2].topbtn.shrink-0",
+    "t": "오답률 TOP15 담기",
+    "fs": 14
+   }
+  ],
+  "small13": 1,
+  "textN": 49,
+  "targets": [
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "전체",
+    "w": 46,
+    "h": 27
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "평가원",
+    "w": 59,
+    "h": 27
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "교육청",
+    "w": 59,
+    "h": 27
+   },
+   {
+    "s": "#homeView button[data-hsets].ml-auto.font-semibold",
+    "t": "모두 보기",
+    "w": 55,
+    "h": 23
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 4,
+  "errs": []
+ },
+ "home_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~2099",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "평가원",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~209",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "모의평가·수능",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "교육청 학력평가",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "EBSi 기준",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "0/6문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "평가원 문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView span.obadge.pg",
+    "t": "평가원",
+    "fs": 12
+   },
+   {
+    "s": "#homeView button[data-htop2].topbtn.shrink-0",
+    "t": "오답률 TOP15 담기",
+    "fs": 14
+   }
+  ],
+  "small13": 1,
+  "textN": 49,
+  "targets": [
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "전체",
+    "w": 33,
+    "h": 72
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "평가원",
+    "w": 33,
+    "h": 72
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "교육청",
+    "w": 33,
+    "h": 72
+   },
+   {
+    "s": "#homeView button[data-hsets].ml-auto.font-semibold",
+    "t": "모두 보기",
+    "w": 55,
+    "h": 23
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 4,
+  "errs": []
+ },
+ "home_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~2099",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "시험 1회 · 2099~209",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "모의평가·수능",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "교육청 학력평가",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "EBSi 기준",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "0/6문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView div.text-slate-400.truncate",
+    "t": "평가원 문항",
+    "fs": 14
+   },
+   {
+    "s": "#homeView span.obadge.pg",
+    "t": "평가원",
+    "fs": 12
+   },
+   {
+    "s": "#homeView button[data-htop2].topbtn.shrink-0",
+    "t": "오답률 TOP15 담기",
+    "fs": 14
+   }
+  ],
+  "small13": 1,
+  "textN": 47,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-horg].px-2.5.py-0.5",
+    "t": "전체",
+    "w": 33,
+    "h": 72
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 38,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 47,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 47,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 47,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 47,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 47,
+    "h": 40
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 13,
+  "errs": []
+ },
+ "home_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#homeView span.obadge.pg",
+    "t": "평가원",
+    "fs": 12
+   },
+   {
+    "s": "#homeView button[data-htop2].topbtn.shrink-0",
+    "t": "오답률 TOP15 담기",
+    "fs": 14
+   }
+  ],
+  "small13": 1,
+  "textN": 26,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 5,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "31번 빈칸 · 오답률 68.4%",
+    "w": 5,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "32번 빈칸 · 오답률 77.2%",
+    "w": 5,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "36번 순서 · 오답률 58.9%",
+    "w": 5,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hq2].qb.t1",
+    "t": "38번 삽입 · 오답률 72.5%",
+    "w": 5,
+    "h": 40
+   },
+   {
+    "s": "#homeView button[data-hprint].flex-1.py-2",
+    "t": "인쇄 및 미리보기",
+    "w": 14,
+    "h": 184
+   },
+   {
+    "s": "#homeView button[data-hsave].px-3.py-2",
+    "t": "저장",
+    "w": 40,
+    "h": 184
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 13,
+  "errs": []
+ },
+ "find_table_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 126,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-og].on",
+    "t": "평가원 1",
+    "w": 103,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-og]",
+    "t": "교육청 0",
+    "w": 106,
+    "h": 36
+   },
+   {
+    "s": "#examStrip a",
+    "t": "문제 (새 창)",
+    "w": 65,
+    "h": 34
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 35,
+  "errs": []
+ },
+ "find_table_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 113,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 8,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 17,
+    "h": 44
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 30,
+  "errs": []
+ },
+ "find_table_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 83,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 10,
+  "targetsN": 30,
+  "errs": []
+ },
+ "find_table_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   }
+  ],
+  "small13": 0,
+  "textN": 26,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 3,
+  "targetsN": 17,
+  "errs": []
+ },
+ "picker_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 136,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-og].on",
+    "t": "평가원 1",
+    "w": 103,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-og]",
+    "t": "교육청 0",
+    "w": 106,
+    "h": 36
+   },
+   {
+    "s": "#examStrip a",
+    "t": "문제 (새 창)",
+    "w": 65,
+    "h": 34
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 43,
+  "errs": []
+ },
+ "picker_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 107,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 닫기 ▴",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 8,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 17,
+    "h": 44
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 10,
+  "targetsN": 34,
+  "errs": []
+ },
+ "picker_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 85,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 10,
+  "targetsN": 25,
+  "errs": []
+ },
+ "picker_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 57,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "기출문제",
+    "w": 117,
+    "h": 42
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "EBS 교재 문항",
+    "w": 154,
+    "h": 42
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 11,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 20,
+    "h": 105
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 닫기 ▴",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "w": 287,
+    "h": 32
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 8,
+  "targetsN": 13,
+  "errs": []
+ },
+ "find_book_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 50,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "교재 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "w": 287,
+    "h": 32
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 11,
+  "errs": []
+ },
+ "find_book_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 50,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "교재 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "w": 287,
+    "h": 32
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 11,
+  "errs": []
+ },
+ "find_book_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 48,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-bty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "기출문제",
+    "w": 117,
+    "h": 42
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "EBS 교재 문항",
+    "w": 154,
+    "h": 42
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "교재 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 18,
+    "h": 18
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 4,
+  "targetsN": 19,
+  "errs": []
+ },
+ "find_book_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 46,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "기출문제",
+    "w": 117,
+    "h": 42
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "EBS 교재 문항",
+    "w": 154,
+    "h": 42
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "교재 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#selectAllB",
+    "t": "보이는 문항 모두 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "7강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "13강 Ex 02 담기",
+    "w": 18,
+    "h": 18
+   },
+   {
+    "s": "#listArea input[data-id].cbx.mx-auto",
+    "t": "16강 Ex 01 담기",
+    "w": 18,
+    "h": 18
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 4,
+  "targetsN": 16,
+  "errs": []
+ },
+ "drawer_q_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-sol",
+    "t": "해설",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.font-normal.text-slate-600",
+    "t": "지문 낱말이 많이 겹치는 지문",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel div.font-bold.text-slate-800",
+    "t": "2099년 9월 예시 가짜지문",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.ml-1.px-1.5",
+    "t": "삽입",
+    "fs": 12
+   }
+  ],
+  "small13": 4,
+  "textN": 152,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-og].on",
+    "t": "평가원 1",
+    "w": 103,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-og]",
+    "t": "교육청 0",
+    "w": 106,
+    "h": 36
+   },
+   {
+    "s": "#examStrip a",
+    "t": "문제 (새 창)",
+    "w": 65,
+    "h": 34
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 23,
+  "targetsN": 42,
+  "errs": []
+ },
+ "drawer_q_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-sol",
+    "t": "해설",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.font-normal.text-slate-600",
+    "t": "지문 낱말이 많이 겹치는 지문",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel div.font-bold.text-slate-800",
+    "t": "2099년 9월 예시 가짜지문",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.ml-1.px-1.5",
+    "t": "삽입",
+    "fs": 12
+   }
+  ],
+  "small13": 4,
+  "textN": 139,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 8,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 17,
+    "h": 44
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 23,
+  "targetsN": 37,
+  "errs": []
+ },
+ "drawer_q_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-sol",
+    "t": "해설",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.font-normal.text-slate-600",
+    "t": "지문 낱말이 많이 겹치는 지문",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel div.font-bold.text-slate-800",
+    "t": "2099년 9월 예시 가짜지문",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.ml-1.px-1.5",
+    "t": "삽입",
+    "fs": 12
+   }
+  ],
+  "small13": 4,
+  "textN": 109,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 23,
+  "targetsN": 39,
+  "errs": []
+ },
+ "drawer_q_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-sol",
+    "t": "해설",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.font-normal.text-slate-600",
+    "t": "지문 낱말이 많이 겹치는 지문",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel div.font-bold.text-slate-800",
+    "t": "2099년 9월 예시 가짜지문",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.ml-1.px-1.5",
+    "t": "삽입",
+    "fs": 12
+   },
+   {
+    "s": "#dtPanel span.font-bold.text-rose-700",
+    "t": "TOP15 2위",
+    "fs": 12
+   },
+   {
+    "s": "#dtPanel div.text-slate-600.truncate",
+    "t": "새들이 숨긴 씨앗을 찾는 방법",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel button[data-simadd].shrink-0.px-2.5",
+    "t": "담기",
+    "fs": 13
+   },
+   {
+    "s": "#dtPanel div.font-bold.text-slate-800",
+    "t": "2099년 9월 예시 가짜지문",
+    "fs": 14
+   },
+   {
+    "s": "#dtPanel span.ml-1.px-1.5",
+    "t": "요지",
+    "fs": 12
+   },
+   {
+    "s": "#dtPanel span.font-bold.text-rose-700",
+    "t": "TOP15 9위",
+    "fs": 12
+   },
+   {
+    "s": "#dtPanel div.text-slate-600.truncate",
+    "t": "설명하기가 이해를 돕는 이유 ",
+    "fs": 13
+   }
+  ],
+  "small13": 4,
+  "textN": 52,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 16,
+  "targetsN": 22,
+  "errs": []
+ },
+ "drawer_sol_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-q",
+    "t": "문제",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 137,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-og].on",
+    "t": "평가원 1",
+    "w": 103,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-og]",
+    "t": "교육청 0",
+    "w": 106,
+    "h": 36
+   },
+   {
+    "s": "#examStrip a",
+    "t": "문제 (새 창)",
+    "w": 65,
+    "h": 34
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 12,
+  "targetsN": 40,
+  "errs": []
+ },
+ "drawer_sol_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-q",
+    "t": "문제",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 124,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.cut",
+    "t": "18번 목적",
+    "w": 8,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 17,
+    "h": 44
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 12,
+  "targetsN": 35,
+  "errs": []
+ },
+ "drawer_sol_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-q",
+    "t": "문제",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 94,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 12,
+  "targetsN": 35,
+  "errs": []
+ },
+ "drawer_sol_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "r": 4.13,
+    "need": 4.5,
+    "fs": 14,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(234,239,244)"
+   },
+   {
+    "s": "#dt-q",
+    "t": "문제",
+    "r": 4.21,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(237,241,246)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "시험지 원본",
+    "fs": 14
+   },
+   {
+    "s": "#drawer button[data-dv].px-2.5.py-1",
+    "t": "텍스트",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 37,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 5,
+  "targetsN": 20,
+  "errs": []
+ },
+ "print_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   },
+   {
+    "s": "#cartList span.w-5.h-5",
+    "t": "1",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   },
+   {
+    "s": "#cartList button[data-mv].w-6.h-6",
+    "t": "▲",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#cartList button[data-rm].w-6.h-6",
+    "t": "✕",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "만들 것",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "번호",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm label.pmlb.flex",
+    "t": "제목 (Optional)",
+    "fs": 14
+   },
+   {
+    "s": "#pmSum",
+    "t": "학생용 · 2쪽 · 6문항 ·",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 201,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 226,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-og].on",
+    "t": "평가원 1",
+    "w": 103,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-og]",
+    "t": "교육청 0",
+    "w": 106,
+    "h": 36
+   },
+   {
+    "s": "#examStrip a",
+    "t": "문제 (새 창)",
+    "w": 65,
+    "h": 34
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 14,
+  "targetsN": 67,
+  "errs": []
+ },
+ "print_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#listArea span.text-slate-400",
+    "t": "22%",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 16,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   },
+   {
+    "s": "#cartList span.w-5.h-5",
+    "t": "1",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   },
+   {
+    "s": "#cartList button[data-mv].w-6.h-6",
+    "t": "▲",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#cartList button[data-rm].w-6.h-6",
+    "t": "✕",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "만들 것",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "번호",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm label.pmlb.flex",
+    "t": "제목 (Optional)",
+    "fs": 14
+   },
+   {
+    "s": "#pmSum",
+    "t": "학생용 · 2쪽 · 6문항 ·",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 188,
+  "targets": [
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#searchInput",
+    "t": "단어, 표현, 소재 등으로 찾기",
+    "w": 140,
+    "h": 38
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 72,
+    "h": 32
+   },
+   {
+    "s": "#examStrip button[data-so].tgl7",
+    "t": "시험 선택 열기 ▾",
+    "w": 122,
+    "h": 36
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.in",
+    "t": "18번 목적",
+    "w": 8,
+    "h": 44
+   },
+   {
+    "s": "#examStrip button[data-hq2].qb.t2",
+    "t": "22번 요지 · 오답률 46% (",
+    "w": 17,
+    "h": 44
+   }
+  ],
+  "noname": [
+   {
+    "s": "#randBtn",
+    "html": "<button id=\"randBtn\" class=\"tb7 px-3 py-1.5 rounded bg-blue-600 text-white font-semibold text-[14px] hover:bg-blue-700\">"
+   }
+  ],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 14,
+  "targetsN": 62,
+  "errs": []
+ },
+ "print_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#cartList span.w-5.h-5",
+    "t": "1",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   },
+   {
+    "s": "#cartList button[data-mv].w-6.h-6",
+    "t": "▲",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#cartList button[data-rm].w-6.h-6",
+    "t": "✕",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "0",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#saveSetBtn small",
+    "t": "(QR 해설 만들기)",
+    "fs": 13
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "만들 것",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "번호",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm label.pmlb.flex",
+    "t": "제목 (Optional)",
+    "fs": 14
+   },
+   {
+    "s": "#pmSum",
+    "t": "학생용 · 2쪽 · 6문항 ·",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 164,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-wq].rad",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   },
+   {
+    "s": "#filterContainer input[data-ty].cbx",
+    "t": "on",
+    "w": 239,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 580
+   }
+  ],
+  "smallN": 14,
+  "targetsN": 64,
+  "errs": []
+ },
+ "print_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#cartList span.w-5.h-5",
+    "t": "1",
+    "r": 4.34,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(100, 116, 139)",
+    "bg": "rgb(241,245,249)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#filterContainer small",
+    "t": "18~45번",
+    "fs": 13
+   },
+   {
+    "s": "#filterContainer label.tyall",
+    "t": "전체",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "fs": 14
+   },
+   {
+    "s": "#examStrip em",
+    "t": "1",
+    "fs": 13
+   },
+   {
+    "s": "#examStrip em",
+    "t": "원본 자료",
+    "fs": 14
+   },
+   {
+    "s": "#clearBtn",
+    "t": "전체 비우기",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "만들 것",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm div.pmlb",
+    "t": "번호",
+    "fs": 14
+   },
+   {
+    "s": "#pmForm label.pmlb.flex",
+    "t": "제목 (Optional)",
+    "fs": 14
+   },
+   {
+    "s": "#pmSum",
+    "t": "학생용 · 2쪽 · 6문항 ·",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 114,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#resetBtn",
+    "t": "초기화",
+    "w": 57,
+    "h": 32
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "전체",
+    "w": 43,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "듣기 1~17번",
+    "w": 90,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer button[data-area].flex-1.whitespace-nowrap",
+    "t": "독해 18~45번",
+    "w": 105,
+    "h": 40
+   },
+   {
+    "s": "#filterContainer input[data-tyall].cbx",
+    "t": "독해 유형 전체 선택",
+    "w": 45,
+    "h": 20
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "기출문제",
+    "w": 117,
+    "h": 42
+   },
+   {
+    "s": "#findView button[data-src].srcbtn",
+    "t": "EBS 교재 문항",
+    "w": 154,
+    "h": 42
+   },
+   {
+    "s": "#examStrip button[data-exrm]",
+    "t": "2099년 9월 예시 가짜지문 빼",
+    "w": 11,
+    "h": 24
+   },
+   {
+    "s": "#examStrip button[data-exall].clrt",
+    "t": "선택 지우기",
+    "w": 20,
+    "h": 105
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [
+   {
+    "s": "#findView",
+    "sw": 830,
+    "cw": 202
+   }
+  ],
+  "smallN": 12,
+  "targetsN": 31,
+  "errs": []
+ },
+ "sets_1440": {
+  "w": 1440,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#set-mvysm82v button[data-sdel].sb-del2",
+    "t": "삭제",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 13,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#setsView p.text-slate-400.mt-6",
+    "t": "시안 안내: 지금은 이 컴퓨터 브라우",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#set-mvysm82v button[data-sdel].sb-del2",
+    "t": "삭제",
+    "fs": 13
+   },
+   {
+    "s": "#set-mvysm82v div.shrink-0.flex",
+    "t": "학생용 해설 QR",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 21,
+  "targets": [
+   {
+    "s": "#set-mvysm82v button[data-sdel].sb-del2",
+    "t": "예시 문제지 삭제",
+    "w": 54,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 1,
+  "errs": []
+ },
+ "sets_1024": {
+  "w": 1024,
+  "minT": 40,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#set-mvysmcge button[data-sdel].sb-del2",
+    "t": "삭제",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 13,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#setsView p.text-slate-400.mt-6",
+    "t": "시안 안내: 지금은 이 컴퓨터 브라우",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#set-mvysmcge button[data-sdel].sb-del2",
+    "t": "삭제",
+    "fs": 13
+   },
+   {
+    "s": "#set-mvysmcge div.shrink-0.flex",
+    "t": "학생용 해설 QR",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 21,
+  "targets": [
+   {
+    "s": "#set-mvysmcge button[data-sdel].sb-del2",
+    "t": "예시 문제지 삭제",
+    "w": 54,
+    "h": 24
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 1,
+  "errs": []
+ },
+ "sets_768": {
+  "w": 768,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#set-mvysmgs5 button[data-sdel].sb-del2",
+    "t": "삭제",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 13,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#setsView p.text-slate-400.mt-6",
+    "t": "시안 안내: 지금은 이 컴퓨터 브라우",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#set-mvysmgs5 button[data-sdel].sb-del2",
+    "t": "삭제",
+    "fs": 13
+   },
+   {
+    "s": "#set-mvysmgs5 div.shrink-0.flex",
+    "t": "학생용 해설 QR",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 21,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#set-mvysmgs5 button[data-sdel].sb-del2",
+    "t": "예시 문제지 삭제",
+    "w": 43,
+    "h": 43
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 7,
+  "errs": []
+ },
+ "sets_390": {
+  "w": 390,
+  "minT": 44,
+  "contrast": [
+   {
+    "s": "#sideNav span",
+    "t": "연계 분석",
+    "r": 1.48,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#set-mvysml39 button[data-sdel].sb-del2",
+    "t": "삭제",
+    "r": 2.56,
+    "need": 4.5,
+    "fs": 13,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "s": "#setsView p.text-slate-400.mt-6",
+    "t": "시안 안내: 지금은 이 컴퓨터 브라우",
+    "r": 2.45,
+    "need": 4.5,
+    "fs": 15,
+    "fg": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)"
+   }
+  ],
+  "small": [
+   {
+    "s": "#sideNav div.w-7.h-7",
+    "t": "Q",
+    "fs": 14
+   },
+   {
+    "s": "#navTgl span",
+    "t": "메뉴 접기",
+    "fs": 14
+   },
+   {
+    "s": "#set-mvysml39 button[data-sdel].sb-del2",
+    "t": "삭제",
+    "fs": 13
+   },
+   {
+    "s": "#set-mvysml39 div.shrink-0.flex",
+    "t": "학생용 해설 QR",
+    "fs": 14
+   }
+  ],
+  "small13": 0,
+  "textN": 19,
+  "targets": [
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "홈",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i",
+    "t": "문제 고르기",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a[data-view].nav-i.on",
+    "t": "보관함",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "연계 분석 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#sideNav a.nav-i.nav-off",
+    "t": "모의고사 (준비 중)",
+    "w": 167,
+    "h": 42
+   },
+   {
+    "s": "#navTgl",
+    "t": "« 메뉴 접기",
+    "w": 167,
+    "h": 40
+   },
+   {
+    "s": "#set-mvysml39 button[data-sdel].sb-del2",
+    "t": "예시 문제지 삭제",
+    "w": 43,
+    "h": 43
+   },
+   {
+    "s": "#set-mvysml39 button[data-sload].setbtn.sb-load",
+    "t": "시험지 수정",
+    "w": 44,
+    "h": 122
+   }
+  ],
+  "noname": [],
+  "hscroll": false,
+  "wide": [],
+  "clipped": [],
+  "smallN": 4,
+  "targetsN": 8,
+  "errs": []
+ },
+ "dark_1440": {
+  "bg": "rgb(248, 250, 252)",
+  "color": "rgb(30, 41, 59)",
+  "cs": true
+ },
+ "dark_390": {
+  "bg": "rgb(248, 250, 252)",
+  "color": "rgb(30, 41, 59)",
+  "cs": true
+ }
+}
