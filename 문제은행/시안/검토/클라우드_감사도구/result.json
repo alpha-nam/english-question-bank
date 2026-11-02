@@ -1451,7 +1451,7 @@
   "textN": 14,
   "targets": [
    {
-    "s": "#set-mvyty02q a.setbtn.sb-sol",
+    "s": "#set-mvyu1hq3 a.setbtn.sb-sol",
     "t": "해설 화면 (새 창)",
     "w": 115,
     "h": 40
@@ -1472,13 +1472,20 @@
   "small": [],
   "small13": 0,
   "textN": 14,
-  "targets": [],
+  "targets": [
+   {
+    "s": "#set-mvyu1m1g a.setbtn.sb-sol",
+    "t": "해설 화면 (새 창)",
+    "w": 115,
+    "h": 40
+   }
+  ],
   "noname": [],
   "hscroll": false,
   "wide": [],
   "clipped": [],
   "smallN": 0,
-  "targetsN": 0,
+  "targetsN": 1,
   "errs": []
  },
  "dark_1440": {
