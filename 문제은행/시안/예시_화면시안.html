@@ -489,9 +489,32 @@ button.bkc:hover{background:#f1f5f9}.bkc.on{border-color:#65a30d;background:#f7f
 #printModal{padding:0!important}#printModal [class*="grid-cols-"]{grid-template-columns:minmax(0,1fr)!important;overflow-y:auto!important}
 #printModal #pmPreview{min-height:320px}#printModal [class*="grid-cols-"]>div{min-height:auto!important;overflow:visible!important}#printModal #pmForm{overflow:visible!important;flex:none!important;min-height:auto!important}#printModal #pmPreview{overflow:auto!important}
 }
+
+/* 접근성 감사: 글자 15px 이상, 누르는 곳 40px 이상, 옅은 글자색 진하게 (인쇄 미리보기 종이는 제외) */
+@media screen{
+:is(#sideNav,#homeView,#setsView,#findView,#drawer,#pmForm,#pmSum,#toast) :is(.text-\[12px\],.text-\[13px\],.text-\[14px\],small,.obadge){font-size:15px}
+:is(#sideNav,#homeView,#setsView,#findView,#drawer,#printModal,#toast) :is(.text-slate-400,.text-slate-300){color:#64748b}
+#sideNav .nav-off,#sideNav .nav-off span{color:#64748b}
+:is(#homeView,#setsView,#findView,#drawer,#printModal,#toast) :is(button:not([data-hq2]):not([data-hq]):not(.qchip),select,summary,input[type=search]){min-height:40px}
+:is(#findView,#drawer) label{min-height:40px;display:flex;align-items:center;gap:6px}
+#drawer [data-dv],#drawer [role=tab]{color:#475569}#drawer [aria-selected=true],#drawer [data-dv][aria-pressed=true]{color:inherit}
+.skip{position:absolute;left:8px;top:-60px;z-index:100;background:#1d4ed8;color:#fff;padding:10px 14px;border-radius:8px;font-weight:700}.skip:focus{top:8px}
+#homeView h2:focus,#findView main:focus,#setsView h2:focus{outline:none}
+}
+@media screen{
+.tyall,.clrt,#examStrip em,#clearBtn,.pmlb,#pmSum,.topbtn,.sb-del2{font-size:15px!important}
+.sb-del2{color:#64748b!important;min-height:40px;min-width:40px}
+#sideNav .w-7.h-7{font-size:15px}
+#examStrip a,#examStrip button[data-exrm]{min-height:40px;min-width:40px;display:inline-flex;align-items:center;justify-content:center}
+#listArea input.cbx,#listArea input[type=checkbox],#selectAll{width:24px;height:24px}
+#listArea td:has(>input.cbx),#listArea th:has(>input[type=checkbox]){padding:8px}
+#listArea button[data-open],#pvPrev,#pvNext{min-width:40px}
+#homeView button[data-horg]:not(.on):not([aria-pressed=true]){color:#475569}
+}
 </style>
 </head>
 <body class="h-screen flex">
+<a href="#listArea" class="skip" id="skipLink">문항 목록으로 건너뛰기</a>
 
 <!-- 1. 왼쪽 세로 메뉴 (2026-10-30, Clash Verge 식: 아이콘 + 짧은 이름, 선택은 연한 파란 띠, 맨 아래 내 시험지 요약) -->
 <aside id="sideNav" class="w-[188px] shrink-0 bg-white border-r border-slate-200 flex flex-col z-20 transition-[width]" aria-label="메뉴">
@@ -1110,7 +1133,9 @@ function navMini(){try{return localStorage.getItem('qb2_nav')=='mini'}catch(e){r
 document.querySelectorAll('[data-i3]').forEach(e=>{e.outerHTML=I3(e.dataset.i3,+(e.dataset.px||22))});
 {const h=document.getElementById('cartHead');if(h)h.insertAdjacentHTML('afterbegin',I3('Memo',24));[['allIc','Check mark button'],['topIc','Fire'],['randIc','Game die']].forEach(([id,n])=>{const e=document.getElementById(id);if(e)e.outerHTML=I3(n,20)})}
 ['House','Magnifying glass tilted right','Card file box','Link','Page facing up'].forEach((n,k)=>{const a=document.querySelectorAll('#sideNav .nav-i')[k],sv=a&&a.querySelector('svg');if(sv)sv.outerHTML=I3(n,24,'shrink-0')});
-$$('[data-view]').forEach(a=>a.onclick=e=>{e.preventDefault();S.view=a.dataset.view;render()});
+function focusView(){const v=$('#'+S.view+'View');if(!v)return;const t=(S.view=='find'?$('#findView main'):v.querySelector('h2'))||v;t.setAttribute('tabindex','-1');t.focus({preventScroll:false})}
+$$('[data-view]').forEach(a=>a.onclick=e=>{e.preventDefault();S.view=a.dataset.view;render();focusView()});
+{const k=$('#skipLink');if(k)k.onclick=e=>{e.preventDefault();const v=$('#'+S.view+'View');const t=(S.view=='find'?$('#listArea'):v);if(t){t.setAttribute('tabindex','-1');t.focus()}}}
 $$('[data-src]').forEach(b=>b.onclick=()=>{S.src=b.dataset.src;render()});
 $('#resetBtn').onclick=resetAll;
 $('#searchInput').addEventListener('input',e=>{S.q=e.target.value.trim().toLowerCase();render()});
